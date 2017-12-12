@@ -13,9 +13,9 @@ Changes are tracked using the git version control system.
 Instructors:
 ------------
 
-* Martin Skarzynski - marskar at gmail
-* Benjamin Cohen - benjapaulcohen at gmail
-* Michael Chambers - michaelchambers at gmail
+* Martin Skarzynski - marskar at gmail dot com
+* Benjamin Cohen - benjapaulcohen at gmail dot com
+* Michael Chambers - michael.chambers2 at nih dot gov
 
 Course Description
 ------------------
@@ -37,15 +37,13 @@ By the end of this course you should be able to:
 Communication
 ------------
 
-**Before contacting us**, please check to see if your question has already been answered elsewhere, e.g. https://stackoverflow.com/
+**Before contacting us**, please check to see if your question has already been answered elsewhere, e.g. [StackOverflow](https://stackoverflow.com/).
 
 If you cannot find the answer, please make sure to ask your question thoughtfully (https://stackoverflow.com/help/how-to-ask) and provide everything needed to answer e.g. code, error message, dataset, etc.
 
 In general, please use the [course Slack workspace](https://biof309.slack.com) to communicate with classmates and instructors. If you have a course-relevant question or something to share, Slack is simply better than email. In case of personal/private question/concerns, please use Slack direct message (DM).
-In case of an emergency, please send a DM on Slack *and* an email.
 
-First class: January 30, 2018
-Final class: May 8, 2018
+In case of an emergency, please send a DM on Slack *and* an email.
 
 Logistics
 ---------
@@ -57,11 +55,14 @@ This is a one-semester course starting on the 30th of January 2018 and finishing
 Attendance in class is strongly recommended; however, we realize other commitments may occasionally prevent attendance. If you miss a class, please review the materials available at the course [github repository](https://github.com/marskar/biof309_spring2018) and keep up with activities and homework.
 
 Important dates:
-* January 30 : Class starts
-* January 30 - February 28 : Late Registration ($10.00 late registration fee per course applies)
-* February 6 : Last day to drop/withdraw
-* April 10 : Last day to change status (credit or audit)
-* May 8 : Class ends
+
+- November 13 – January 26 : Online Registration
+- January 11 : Open House
+- January 30 : Class starts
+- January 29 – February 16 : Late Registration ($10.00 late registration fee per course applies)
+- February 23 : Last day to drop
+- March 30 : Last day to change status (credit or audit)
+- May 8 : Class ends
 
 Required Materials
 ------------------
@@ -71,7 +72,7 @@ Required Materials
 *Programing without a computer would be an exceptional feat.*
 For the course, we will use the
 1. [Anaconda Scientific Python Distribution](https://www.continuum.io/downloads) and the
-2. [PyCharm Integrated Development Environment (IDE)](https://www.jetbrains.com/pycharm/student)
+2. [PyCharm Integrated Development Environment (IDE)](https://www.jetbrains.com/pycharm/)
 
 The Anaconda installer will automatically install most of the software we will use during the course, including [Jupyter Notebooks](http://jupyter-notebook.readthedocs.io/en/latest/examples/Notebook/What%20is%20the%20Jupyter%20Notebook.html).
 
@@ -90,37 +91,52 @@ The homework assignments are:
 
 01. DUE January 30, 2018 (BEFORE Class)
     - Install [Anaconda Scientific Python Distribution](https://www.continuum.io/downloads)
-    - Install [PyCharm](https://www.jetbrains.com/pycharm/student)
-    - Reading: Chapters 01.01-01.04 in [Python Data Science Handbook](https://github.com/jakevdp/PythonDataScienceHandbook/tree/master/notebooks)
+    - Install [PyCharm](https://www.jetbrains.com/student)
 
 02. DUE February 6, 2018 (BEFORE Class)
     - [Python Basics](https://campus.datacamp.com/courses/intro-to-python-for-data-science/chapter-1-python-basics)
-    - Reading: Chapters 01-06 in [Whirlwind Tour of Python](https://github.com/jakevdp/WhirlwindTourOfPython)
+    - Chapters 01-05 in [Whirlwind Tour of Python](https://github.com/jakevdp/WhirlwindTourOfPython)
+    - Chapter 02 in [Python for Data Analysis](https://github.com/wesm/pydata-book)
+
 03. DUE February 13, 2018 (BEFORE Class)
     - [Python Lists](https://campus.datacamp.com/courses/intro-to-python-for-data-science/chapter-2-python-lists)
     - [Functions and Packages](https://campus.datacamp.com/courses/intro-to-python-for-data-science/chapter-3-functions-and-packages)
-    - Chapter 09 in [Whirlwind Tour of
+    - Chapter 08 & 13 in [Whirlwind Tour of
     Python](https://github.com/jakevdp/WhirlwindTourOfPython)
+    - Chapter 03 in [Python for Data Analysis](https://github.com/wesm/pydata-book)
+
 04. DUE February 20, 2018 (BEFORE Class)
     - [Loops](https://campus.datacamp.com/courses/intermediate-python-for-data-science/loops)
     - [Logic, Control Flow and Filtering](https://campus.datacamp.com/courses/intermediate-python-for-data-science/logic-control-flow-and-filtering)
-    - Reading: Chapter 07-08 in
+    - Chapter 06, 07, & 09 in
     [Whirlwind Tour of Python](https://github.com/jakevdp/WhirlwindTourOfPython)
+
 05. DUE February 27, 2018 (BEFORE Class)
     - Biopython TBD
-    - Reading: Chapter 00-02 in [Biopython-Notebook](https://github.com/tiagoantao/biopython-notebook/tree/master/notebooks)
+    - Chapter 00-02 in [Biopython-Notebook](https://github.com/tiagoantao/biopython-notebook/tree/master/notebooks)
 
 06. DUE March 6, 2018 (BEFORE Class)
     - [NumPy](https://campus.datacamp.com/courses/intro-to-python-for-data-science/chapter-4-numpy)
-    - Reading: Chapter 02 in [Python Data Science Handbook](https://github.com/jakevdp/PythonDataScienceHandbook/tree/master/notebooks)
+    - Chapter 02 in [Python Data Science Handbook](https://github.com/jakevdp/PythonDataScienceHandbook/tree/master/notebooks)
+    - Chapter 04 in [Python for Data Analysis](https://github.com/wesm/pydata-book)
+
 07. DUE March 13, 2018 (BEFORE Class)
 - [Dictionaries & Pandas](https://campus.datacamp.com/courses/intermediate-python-for-data-science/dictionaries-pandas)
-- Reading: Chapter 03 in [Python Data Science Handbook](https://github.com/jakevdp/PythonDataScienceHandbook/tree/master/notebooks)
+- Chapter 03 in [Python Data Science Handbook](https://github.com/jakevdp/PythonDataScienceHandbook/tree/master/notebooks)
+- Chapter 05-12 in [Python for Data Analysis](https://github.com/wesm/pydata-book)
+
 08. DUE March 20, 2018 (BEFORE Class)
     - [Getting Started with Machine Learning in Python](https://campus.datacamp.com/courses/kaggle-python-tutorial-on-machine-learning/getting-started-with-python)
     - [Predicting with Decision Trees](https://campus.datacamp.com/courses/kaggle-python-tutorial-on-machine-learning/predicting-with-decision-trees)
     - [Improving your Predictions through Random Forests](https://campus.datacamp.com/courses/kaggle-python-tutorial-on-machine-learning/improving-your-predictions-through-random-forests)
-    - Reading: Chapter 05 in [Python Data Science Handbook](https://github.com/jakevdp/PythonDataScienceHandbook/tree/master/notebooks)
+    - Chapter 05 in [Python Data Science Handbook](https://github.com/jakevdp/PythonDataScienceHandbook/tree/master/notebooks)
+
+09. WORK ON FINAL PROJECTS
+Depending on your final project, you might find the following topics useful:
+- [Error handling](https://github.com/jakevdp/WhirlwindTourOfPython/blob/master/09-Errors-and-Exceptions.ipynb)
+- [Comprehensions](https://github.com/jakevdp/WhirlwindTourOfPython/blob/master/10-Iterators.ipynb)
+- [Iterators](https://github.com/jakevdp/WhirlwindTourOfPython/blob/master/10-Iterators.ipynb) and [Generators](https://github.com/jakevdp/WhirlwindTourOfPython/blob/master/12-Generators.ipynb)
+- [Regular Expressions](https://github.com/jakevdp/WhirlwindTourOfPython/blob/master/14-Strings-and-Regular-Expressions.ipynb)
 
 Optional Materials
 ------------------
@@ -132,31 +148,20 @@ Recommended Books
 -----------------
 **There is no required textbook for this course.**
 
-We do, however, highly recommend [Python for Data Science](https://github.com/jakevdp/PythonDataScienceHandbook) and its companion text [A Whirlwind Tour of Python](https://github.com/jakevdp/WhirlwindTourOfPython). Both books are available free on GitHub in Jupyter Notebook form. For maximum enjoyment, consider reading the relevant chapters before coming to class.
+We do, however, highly recommend [Python for Data Science](https://github.com/jakevdp/PythonDataScienceHandbook) and its companion text [A Whirlwind Tour of Python](https://github.com/jakevdp/WhirlwindTourOfPython) by Jake Vandeplas. Both of these books are available free on GitHub in Jupyter Notebook form. The code for [Python for Data Analysis](https://github.com/wesm/pydata-book) by Wes McKinney is also on GitHub but the text is only available in the printed copy of the book. For maximum enjoyment, consider working through the relevant chapters before coming to class.
 
 We will link to relevant online resources throughout the course.
 
-If you would like additional
-material on the basics, the following resources may be useful:
+If you would like additional material on the basics, the following resources may be useful:
 
-* [Python for
-Biologists](http://pythonforbiologists.com/) by Martin Jones; an archived PDF
-may be found in this repo in the extras folder under the name p4b.pdf.
-* [Learn
-Python the Hard Way (ebook freely available from the
-author)](http://learnpythonthehardway.org/book/) by Zed A. Shaw; a [video
-course](http://learnpythonthehardway.org/) is also available.
-* [Think Python
-(ebook freely available from the
-author)](http://www.greenteapress.com/thinkpython/thinkpython.html) by Allen B.
-Downey.
-* [Python for Everybody: Exploring Data in Python 3 (ebook freely
-available from the author)](https://www.pythonlearn.com/book.php) by Charles
-Severance
-* [Python
-Cookbook](http://chimera.labs.oreilly.com/books/1230000000393/index.html) by David Beazy
-* [The Hitchhiker’s Guide to Python](http://docs.python-guide.org/en/latest/).
-* [Python automate the boring stuff](www.automatetheboringstuff.com)
+* [Python for Biologists](http://pythonforbiologists.com/) by Martin Jones.
+* [Learn Python the Hard Way (ebook freely available from the author)](http://learnpythonthehardway.org/book/) by Zed A. Shaw; a [video course](http://learnpythonthehardway.org/) is also available.
+* [Think Python (ebook freely available from the author)](http://www.greenteapress.com/thinkpython/thinkpython.html) by Allen B. Downey.
+* [Python for Everybody: Exploring Data in Python 3 (ebook freely available from the author)](https://www.pythonlearn.com/book.php) by Charles Severance.
+* [Python Cookbook](http://chimera.labs.oreilly.com/books/1230000000393/index.html) by David Beazy.
+* [The Hitchhiker’s Guide to Python](http://docs.python-guide.org/en/latest/) by Kenneth Reitz and‎ Tanya Schlusser.
+* [Automate the boring stuff with python](www.automatetheboringstuff.com) by Al Sweigart.
+* [Introduction to Machine Learning with Python](https://github.com/amueller/introduction_to_ml_with_python) by Andreas Mueller and Sarah Guido.
 
 For more information about Python, please see the official [Python Software Foundation website](https://www.python.org/).
 
@@ -213,7 +218,4 @@ Grading the __final project__ will be done using the following rubric:
 Course Materials
 ----------------
 
-Course materials are
-available from
-the course [GitHub
-repository](https://github.com/marskar/BIO309_Fall2017).
+Course materials are available from the course [GitHub repository](https://github.com/marskar/BIO309_Fall2017).
