@@ -148,7 +148,7 @@ Recommended Books
 -----------------
 **There is no required textbook for this course.**
 
-We do, however, highly recommend [Python for Data Science](https://github.com/jakevdp/PythonDataScienceHandbook) and its companion text [A Whirlwind Tour of Python](https://github.com/jakevdp/WhirlwindTourOfPython) by Jake Vandeplas. Both of these books are available free on GitHub in Jupyter Notebook form. The code for [Python for Data Analysis](https://github.com/wesm/pydata-book) by Wes McKinney is also on GitHub but the text is only available in the printed copy of the book. For maximum enjoyment, consider working through the relevant chapters before coming to class.
+We do, however, highly recommend [Python for Data Science](https://github.com/jakevdp/PythonDataScienceHandbook) and its companion text [A Whirlwind Tour of Python](https://github.com/jakevdp/WhirlwindTourOfPython) by Jake Vanderplas. Both of these books are available free on GitHub in Jupyter Notebook form. The code for [Python for Data Analysis](https://github.com/wesm/pydata-book) by Wes McKinney is also on GitHub but the text is only available in the printed copy of the book. For maximum enjoyment, consider working through the relevant chapters before coming to class.
 
 We will link to relevant online resources throughout the course.
 
