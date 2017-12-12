@@ -1,0 +1,219 @@
+Syllabus
+========
+**Introduction to Python Programming - BIOF309 - FAES**
+
+**Spring 2018**
+
+**Time: Tuesday 5:30PM - 7:30PM**
+
+*This document is subject to revision!*
+
+Changes are tracked using the git version control system.
+
+Instructors:
+------------
+
+* Martin Skarzynski - marskar at gmail
+* Benjamin Cohen - benjapaulcohen at gmail
+* Michael Chambers - michaelchambers at gmail
+
+Course Description
+------------------
+
+This course is designed for non-programmers, biologists, or those without specific knowledge of Python to learn how to program. Week by week, we will slowly build up your skills and understanding of programming and the Python language. There will be in class demonstrations, using [Jupyter Notebooks](http://jupyter-notebook.readthedocs.io/en/latest/examples/Notebook/What%20is%20the%20Jupyter%20Notebook.html), activities to be completed outside of class, mostly using [DataCamp](https://www.datacamp.com), for you to practice and learn at your own pace.
+
+Learning Objectives
+-------------------
+
+By the end of this course you should be able to:
+1. Look at a task and determine if you can or should automate it
+2. Create working Python programs
+3. Understand the difference between Python object types (i.e. lists, dicts)
+4. Perform data analysis and visualization with Python
+5. Use git for version control and collaboration
+6. Demonstrate your Python skills with a project
+
+
+Communication
+------------
+
+**Before contacting us**, please check to see if your question has already been answered elsewhere, e.g. https://stackoverflow.com/
+
+If you cannot find the answer, please make sure to ask your question thoughtfully (https://stackoverflow.com/help/how-to-ask) and provide everything needed to answer e.g. code, error message, dataset, etc.
+
+In general, please use the [course Slack workspace](https://biof309.slack.com) to communicate with classmates and instructors. If you have a course-relevant question or something to share, Slack is simply better than email. In case of personal/private question/concerns, please use Slack direct message (DM).
+In case of an emergency, please send a DM on Slack *and* an email.
+
+First class: January 30, 2018
+Final class: May 8, 2018
+
+Logistics
+---------
+
+This is a one-semester course starting on the 30th of January 2018 and finishing on 8th of May 2018.
+
+**Class Location: Rathskeller, Building 60, NIH Bethesda campus**
+
+Attendance in class is strongly recommended; however, we realize other commitments may occasionally prevent attendance. If you miss a class, please review the materials available at the course [github repository](https://github.com/marskar/biof309_spring2018) and keep up with activities and homework.
+
+Important dates:
+* January 30 : Class starts
+* January 30 - February 28 : Late Registration ($10.00 late registration fee per course applies)
+* February 6 : Last day to drop/withdraw
+* April 10 : Last day to change status (credit or audit)
+* May 8 : Class ends
+
+Required Materials
+------------------
+
+**Each student is encouraged to bring their own laptop to each class.**
+
+*Programing without a computer would be an exceptional feat.*
+For the course, we will use the
+1. [Anaconda Scientific Python Distribution](https://www.continuum.io/downloads) and the
+2. [PyCharm Integrated Development Environment (IDE)](https://www.jetbrains.com/pycharm/student)
+
+The Anaconda installer will automatically install most of the software we will use during the course, including [Jupyter Notebooks](http://jupyter-notebook.readthedocs.io/en/latest/examples/Notebook/What%20is%20the%20Jupyter%20Notebook.html).
+
+All of the course materials are available on GitHub. Before accessing the [course materials repo](https://github.com/marskar/biof309_spring2017), you should know that
+1. it is likely to be under constant development throughout the semester and
+2. you are not expected to work through _everything_ contained therein!
+
+We will discuss the most interesting examples during class and point out others to be reviewed outside of class.
+
+The very nice folks at [DataCamp](https://www.datacamp.com) have given us access to their awesome teaching materials.
+
+Homework
+--------
+
+The homework assignments are:
+
+01. DUE January 30, 2018 (BEFORE Class)
+    - Install [Anaconda Scientific Python Distribution](https://www.continuum.io/downloads)
+    - Install [PyCharm](https://www.jetbrains.com/pycharm/student)
+    - Reading: Chapters 01.01-01.04 in [Python Data Science Handbook](https://github.com/jakevdp/PythonDataScienceHandbook/tree/master/notebooks)
+
+02. DUE February 6, 2018 (BEFORE Class)
+    - [Python Basics](https://campus.datacamp.com/courses/intro-to-python-for-data-science/chapter-1-python-basics)
+    - Reading: Chapters 01-06 in [Whirlwind Tour of Python](https://github.com/jakevdp/WhirlwindTourOfPython)
+03. DUE February 13, 2018 (BEFORE Class)
+    - [Python Lists](https://campus.datacamp.com/courses/intro-to-python-for-data-science/chapter-2-python-lists)
+    - [Functions and Packages](https://campus.datacamp.com/courses/intro-to-python-for-data-science/chapter-3-functions-and-packages)
+    - Chapter 09 in [Whirlwind Tour of
+    Python](https://github.com/jakevdp/WhirlwindTourOfPython)
+04. DUE February 20, 2018 (BEFORE Class)
+    - [Loops](https://campus.datacamp.com/courses/intermediate-python-for-data-science/loops)
+    - [Logic, Control Flow and Filtering](https://campus.datacamp.com/courses/intermediate-python-for-data-science/logic-control-flow-and-filtering)
+    - Reading: Chapter 07-08 in
+    [Whirlwind Tour of Python](https://github.com/jakevdp/WhirlwindTourOfPython)
+05. DUE February 27, 2018 (BEFORE Class)
+    - Biopython TBD
+    - Reading: Chapter 00-02 in [Biopython-Notebook](https://github.com/tiagoantao/biopython-notebook/tree/master/notebooks)
+
+06. DUE March 6, 2018 (BEFORE Class)
+    - [NumPy](https://campus.datacamp.com/courses/intro-to-python-for-data-science/chapter-4-numpy)
+    - Reading: Chapter 02 in [Python Data Science Handbook](https://github.com/jakevdp/PythonDataScienceHandbook/tree/master/notebooks)
+07. DUE March 13, 2018 (BEFORE Class)
+- [Dictionaries & Pandas](https://campus.datacamp.com/courses/intermediate-python-for-data-science/dictionaries-pandas)
+- Reading: Chapter 03 in [Python Data Science Handbook](https://github.com/jakevdp/PythonDataScienceHandbook/tree/master/notebooks)
+08. DUE March 20, 2018 (BEFORE Class)
+    - [Getting Started with Machine Learning in Python](https://campus.datacamp.com/courses/kaggle-python-tutorial-on-machine-learning/getting-started-with-python)
+    - [Predicting with Decision Trees](https://campus.datacamp.com/courses/kaggle-python-tutorial-on-machine-learning/predicting-with-decision-trees)
+    - [Improving your Predictions through Random Forests](https://campus.datacamp.com/courses/kaggle-python-tutorial-on-machine-learning/improving-your-predictions-through-random-forests)
+    - Reading: Chapter 05 in [Python Data Science Handbook](https://github.com/jakevdp/PythonDataScienceHandbook/tree/master/notebooks)
+
+Optional Materials
+------------------
+
+[GitHub](https://github.com) is offering some free awesome resources to students, that might be of interest to you, depending on your background: [GitHub student pack](https://education.github.com/pack).
+
+
+Recommended Books
+-----------------
+**There is no required textbook for this course.**
+
+We do, however, highly recommend [Python for Data Science](https://github.com/jakevdp/PythonDataScienceHandbook) and its companion text [A Whirlwind Tour of Python](https://github.com/jakevdp/WhirlwindTourOfPython). Both books are available free on GitHub in Jupyter Notebook form. For maximum enjoyment, consider reading the relevant chapters before coming to class.
+
+We will link to relevant online resources throughout the course.
+
+If you would like additional
+material on the basics, the following resources may be useful:
+
+* [Python for
+Biologists](http://pythonforbiologists.com/) by Martin Jones; an archived PDF
+may be found in this repo in the extras folder under the name p4b.pdf.
+* [Learn
+Python the Hard Way (ebook freely available from the
+author)](http://learnpythonthehardway.org/book/) by Zed A. Shaw; a [video
+course](http://learnpythonthehardway.org/) is also available.
+* [Think Python
+(ebook freely available from the
+author)](http://www.greenteapress.com/thinkpython/thinkpython.html) by Allen B.
+Downey.
+* [Python for Everybody: Exploring Data in Python 3 (ebook freely
+available from the author)](https://www.pythonlearn.com/book.php) by Charles
+Severance
+* [Python
+Cookbook](http://chimera.labs.oreilly.com/books/1230000000393/index.html) by David Beazy
+* [The Hitchhiker’s Guide to Python](http://docs.python-guide.org/en/latest/).
+* [Python automate the boring stuff](www.automatetheboringstuff.com)
+
+For more information about Python, please see the official [Python Software Foundation website](https://www.python.org/).
+
+Assignments and Grading
+-----------------------
+The emphasis of the course is on learning and mastering the skills covered. We hope that everyone will be able to complete the assignments and project. If some of the material appears unclear, please ask for clarification.
+
+Assignments will be uploaded to the GitHub classroom setup for the course.
+
+Grading __assignments__ will be done using the following rubric:
+
+* Program runs, produces correct result, contains useful comments, meaningful variable names, follows coding conventions: A+
+* Program runs, produces correct result, contains useful comments: A
+* Program runs, produces something close to the correct result: B
+* Program runs, does not produce correct result: C
+* Program does not run: Incomplete (I)
+
+Grading the __final project__ will be done using the following rubric:
+
+* Project description / Specification
+
+  - Goals unclear, difficulty demonstrating functionality (1-3)
+  - Goals for the project and functionality are discussed but difficult to follow (4-6)
+  - Goals for the project and functionality are discussed (7-9)
+  - Goals for the project and functionality are logically presented and clearly communicated (10-12)
+
+* Documentation
+
+  - Only comments embedded in the code (1-3)
+  - Objects and methods have docstrings (4-6)
+  - Objects and methods have docstrings, additional standalone documentation (7-9)
+  - Objects and methods have docstrings, extensive standalone documentation with example usage (10-12)
+
+* Readability
+  - The code is poorly organized and very difficult to read (1-3)
+  - The code is readable, but challenging to understand (4-6)
+  - The code is fairly easy to read (7-9)
+  - The code is well organized and very easy to read (10-12)
+
+* Reusability
+
+  - The code is not organized for reusability (1-3)
+  - Some parts of the code could be reused (4-6)
+  - Most of the code could be reused (7-9)
+  - Each part of the code, and the whole, could be reused (10-12)
+
+* Performance
+
+  - Program does not run (1-6)
+  - Program runs, but does not produce correct output (7-12)
+  - Program runs, produces correct output under most conditions (13-18)
+  - Program runs, produces correct output with robust error checking (19-24)
+
+Course Materials
+----------------
+
+Course materials are
+available from
+the course [GitHub
+repository](https://github.com/marskar/BIO309_Fall2017).
