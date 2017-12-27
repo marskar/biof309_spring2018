@@ -8,3 +8,11 @@ with open("ideavim_actions.java") as f:
     src = f.read()
 matches = re.findall(r'\"(.+?)\"', src)
 matches[:100]
+
+test
+
+bas
+
+asac bas
+
+

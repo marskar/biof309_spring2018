@@ -1,0 +1,1815 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>ideavim</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:////Users/marskar/.atom/packages/markdown-preview-enhanced/node_modules/@shd101wyy/mume/dependencies/katex/katex.min.css">
+      
+      
+      
+      
+      
+      
+
+      <style> 
+      /**
+ * prism.js Github theme based on GitHub's theme.
+ * @author Sam Clarke
+ */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #333;
+  background: none;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.4;
+
+  -moz-tab-size: 8;
+  -o-tab-size: 8;
+  tab-size: 8;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: .8em;
+  overflow: auto;
+  /* border: 1px solid #ddd; */
+  border-radius: 3px;
+  /* background: #fff; */
+  background: #f5f5f5;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal;
+  background: #f5f5f5;
+}
+
+.token.comment,
+.token.blockquote {
+  color: #969896;
+}
+
+.token.cdata {
+  color: #183691;
+}
+
+.token.doctype,
+.token.punctuation,
+.token.variable,
+.token.macro.property {
+  color: #333;
+}
+
+.token.operator,
+.token.important,
+.token.keyword,
+.token.rule,
+.token.builtin {
+  color: #a71d5d;
+}
+
+.token.string,
+.token.url,
+.token.regex,
+.token.attr-value {
+  color: #183691;
+}
+
+.token.property,
+.token.number,
+.token.boolean,
+.token.entity,
+.token.atrule,
+.token.constant,
+.token.symbol,
+.token.command,
+.token.code {
+  color: #0086b3;
+}
+
+.token.tag,
+.token.selector,
+.token.prolog {
+  color: #63a35c;
+}
+
+.token.function,
+.token.namespace,
+.token.pseudo-element,
+.token.class,
+.token.class-name,
+.token.pseudo-class,
+.token.id,
+.token.url-reference .token.variable,
+.token.attr-name {
+  color: #795da3;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+.token.title,
+.token.title .token.punctuation {
+  font-weight: bold;
+  color: #1d3e81;
+}
+
+.token.list {
+  color: #ed6a43;
+}
+
+.token.inserted {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.token.deleted {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+
+/* JSON */
+.language-json .token.property {
+  color: #183691;
+}
+
+.language-markup .token.tag .token.punctuation {
+  color: #333;
+}
+
+/* CSS */
+code.language-css,
+.language-css .token.function {
+  color: #0086b3;
+}
+
+/* YAML */
+.language-yaml .token.atrule {
+  color: #63a35c;
+}
+
+code.language-yaml {
+  color: #183691;
+}
+
+/* Ruby */
+.language-ruby .token.function {
+  color: #333;
+}
+
+/* Markdown */
+.language-markdown .token.url {
+  color: #795da3;
+}
+
+/* Makefile */
+.language-makefile .token.symbol {
+  color: #795da3;
+}
+
+.language-makefile .token.variable {
+  color: #183691;
+}
+
+.language-makefile .token.builtin {
+  color: #0086b3;
+}
+
+/* Bash */
+.language-bash .token.keyword {
+  color: #0086b3;
+}html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ul,html body>ol{margin-bottom:16px}html body ul,html body ol{padding-left:2em}html body ul.no-list,html body ol.no-list{padding:0;list-style-type:none}html body ul ul,html body ul ol,html body ol ol,html body ol ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:bold;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:bold}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em !important;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::before,html body code::after{letter-spacing:-0.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;font-size:.85em !important;word-break:normal;white-space:pre;background:transparent;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;font-size:.85em !important;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:before,html body pre tt:before,html body pre code:after,html body pre tt:after{content:normal}html body p,html body blockquote,html body ul,html body ol,html body dl,html body pre{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body pre,html body code{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .pagebreak,.markdown-preview .newpage{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center !important}.markdown-preview:not([for="preview"]) .code-chunk .btn-group{display:none}.markdown-preview:not([for="preview"]) .code-chunk .status{display:none}.markdown-preview:not([for="preview"]) .code-chunk .output-div{margin-bottom:16px}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0}@media screen and (min-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px)}}@media screen and (max-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{font-size:14px !important;padding:1em}}@media print{html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,0.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{padding:0 1.6em;margin-top:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc li{margin-bottom:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{list-style-type:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% -  300px);padding:2em calc(50% - 457px -  150px);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+ 
+      </style>
+    </head>
+    <body for="html-export">
+      <div class="mume markdown-preview   ">
+      <h2 class="mume-header" id="ideavim-keyboard-shortcuts">IdeaVim Keyboard Shortcuts</h2>
+
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>⌫ : BACKSPACE</td>
+<td>⌦ : Delete</td>
+<td>⇧ : Shift</td>
+<td>⇥ : Tab</td>
+<td>␣ : Space</td>
+<td>⏎ : Enter</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Mode</th>
+<th>Action</th>
+<th>Type</th>
+<th>Key(s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NV</td>
+<td>VisualToggleLineMode</td>
+<td>OTHER_READONLY</td>
+<td>V</td>
+</tr>
+<tr>
+<td>NV</td>
+<td>VisualToggleBlockMode</td>
+<td>OTHER_READONLY</td>
+<td>Q CTRL, V CTRL</td>
+</tr>
+<tr>
+<td>NV</td>
+<td>MotionMark</td>
+<td>OTHER_READONLY</td>
+<td>m</td>
+</tr>
+<tr>
+<td>NV</td>
+<td>GotoDeclaration</td>
+<td>OTHER_READONLY</td>
+<td>gD, gd, ] CTRL</td>
+</tr>
+<tr>
+<td>NV</td>
+<td>FileGetLocationInfo</td>
+<td>OTHER_READONLY</td>
+<td>g, G CTRL</td>
+</tr>
+<tr>
+<td>NV</td>
+<td>CollapseAllRegions</td>
+<td>OTHER_READONLY</td>
+<td>zM</td>
+</tr>
+<tr>
+<td>NV</td>
+<td>CollapseRegion</td>
+<td>OTHER_READONLY</td>
+<td>zc</td>
+</tr>
+<tr>
+<td>NV</td>
+<td>CollapseRegionRecursively</td>
+<td>OTHER_READONLY</td>
+<td>zC</td>
+</tr>
+<tr>
+<td>NV</td>
+<td>ExpandAllRegions</td>
+<td>OTHER_READONLY</td>
+<td>zR</td>
+</tr>
+<tr>
+<td>NV</td>
+<td>ExpandRegion</td>
+<td>OTHER_READONLY</td>
+<td>zo</td>
+</tr>
+<tr>
+<td>NV</td>
+<td>ExpandRegionRecursively</td>
+<td>OTHER_READONLY</td>
+<td>zO</td>
+</tr>
+<tr>
+<td>NV</td>
+<td>ToggleRecording</td>
+<td>OTHER_READONLY</td>
+<td>q</td>
+</tr>
+</tbody>
+</table>
+<h3 class="mume-header" id="text-object-actions-for-visual-and-operator-pending-modes">Text Object Actions for Visual and Operator Pending Modes</h3>
+
+<table>
+<thead>
+<tr>
+<th>Mode</th>
+<th>Action</th>
+<th>Type</th>
+<th>Keymap</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>VO</td>
+<td>MotionGotoFileMark</td>
+<td>MOTION</td>
+<td>`</td>
+</tr>
+<tr>
+<td>VO</td>
+<td>MotionGotoFileMarkLine</td>
+<td>MOTION</td>
+<td>'</td>
+</tr>
+<tr>
+<td>VO</td>
+<td>MotionGotoFileMark</td>
+<td>MOTION</td>
+<td>g`</td>
+</tr>
+<tr>
+<td>VO</td>
+<td>MotionGotoFileMarkLine</td>
+<td>MOTION</td>
+<td>g</td>
+</tr>
+<tr>
+<td>VO</td>
+<td>MotionTextOuterWord</td>
+<td>MOTION</td>
+<td>aw</td>
+</tr>
+<tr>
+<td>VO</td>
+<td>MotionTextOuterBigWord</td>
+<td>MOTION</td>
+<td>aW</td>
+</tr>
+<tr>
+<td>VO</td>
+<td>MotionTextInnerWord</td>
+<td>MOTION</td>
+<td>iw</td>
+</tr>
+<tr>
+<td>VO</td>
+<td>MotionTextInnerBigWord</td>
+<td>MOTION</td>
+<td>iW</td>
+</tr>
+<tr>
+<td>VO</td>
+<td>MotionInnerParagraph</td>
+<td>MOTION</td>
+<td>ip</td>
+</tr>
+<tr>
+<td>VO</td>
+<td>MotionOuterParagraph</td>
+<td>MOTION</td>
+<td>ap</td>
+</tr>
+<tr>
+<td>VO</td>
+<td>MotionInnerSentence</td>
+<td>MOTION</td>
+<td>is</td>
+</tr>
+<tr>
+<td>VO</td>
+<td>MotionOuterSentence</td>
+<td>MOTION</td>
+<td>as</td>
+</tr>
+<tr>
+<td>VO</td>
+<td>MotionInnerBlockAngle</td>
+<td>MOTION</td>
+<td>i&lt;, i&gt;</td>
+</tr>
+<tr>
+<td>VO</td>
+<td>MotionInnerBlockBrace</td>
+<td>MOTION</td>
+<td>iB, i{, i}</td>
+</tr>
+<tr>
+<td>VO</td>
+<td>MotionInnerBlockBracket</td>
+<td>MOTION</td>
+<td>i[, i]</td>
+</tr>
+<tr>
+<td>VO</td>
+<td>MotionInnerBlockParen</td>
+<td>MOTION</td>
+<td>ib, i(, i)</td>
+</tr>
+<tr>
+<td>VO</td>
+<td>MotionInnerBlockDoubleQuote</td>
+<td>MOTION</td>
+<td>i&quot;</td>
+</tr>
+<tr>
+<td>VO</td>
+<td>MotionInnerBlockSingleQuote</td>
+<td>MOTION</td>
+<td>i'</td>
+</tr>
+<tr>
+<td>VO</td>
+<td>MotionInnerBlockBackQuote</td>
+<td>MOTION</td>
+<td>i`</td>
+</tr>
+<tr>
+<td>VO</td>
+<td>MotionOuterBlockAngle</td>
+<td>MOTION</td>
+<td>a&lt;, a&gt;</td>
+</tr>
+<tr>
+<td>VO</td>
+<td>MotionInnerBlockTag</td>
+<td>MOTION</td>
+<td>it</td>
+</tr>
+<tr>
+<td>VO</td>
+<td>MotionOuterBlockBrace</td>
+<td>MOTION</td>
+<td>aB, a{, a}</td>
+</tr>
+<tr>
+<td>VO</td>
+<td>MotionOuterBlockBracket</td>
+<td>MOTION</td>
+<td>a[, a]</td>
+</tr>
+<tr>
+<td>VO</td>
+<td>MotionOuterBlockParen</td>
+<td>MOTION</td>
+<td>ab, a(, a)</td>
+</tr>
+<tr>
+<td>VO</td>
+<td>MotionOuterBlockDoubleQuote</td>
+<td>MOTION</td>
+<td>a&quot;</td>
+</tr>
+<tr>
+<td>VO</td>
+<td>MotionOuterBlockSingleQuote</td>
+<td>MOTION</td>
+<td>a'</td>
+</tr>
+<tr>
+<td>VO</td>
+<td>MotionOuterBlockBackQuote</td>
+<td>MOTION</td>
+<td>a`</td>
+</tr>
+<tr>
+<td>VO</td>
+<td>MotionOuterBlockTag</td>
+<td>MOTION</td>
+<td>at</td>
+</tr>
+<tr>
+<td>NO</td>
+<td>ResetMode</td>
+<td>RESET</td>
+<td>\ CTRL, N CTRL</td>
+</tr>
+<tr>
+<td>C</td>
+<td>ProcessExEntry</td>
+<td>OTHER_READ_WRITE</td>
+<td>↩, M CTRL, (char0x0a, (char0x0d</td>
+</tr>
+<tr>
+<td>NVO</td>
+<td>CopySelectRegister</td>
+<td>SELECT_REGISTER</td>
+<td>&quot;</td>
+</tr>
+<tr>
+<td>NVO</td>
+<td>MotionNextTab</td>
+<td>MOTION</td>
+<td>gt</td>
+</tr>
+<tr>
+<td>NVO</td>
+<td>MotionPreviousTab</td>
+<td>MOTION</td>
+<td>gT</td>
+</tr>
+<tr>
+<td>NVO</td>
+<td>MotionCamelEndLeft</td>
+<td>MOTION</td>
+<td>]b</td>
+</tr>
+<tr>
+<td>NVO</td>
+<td>MotionCamelEndRight</td>
+<td>MOTION</td>
+<td>]w</td>
+</tr>
+<tr>
+<td>NVO</td>
+<td>MotionCamelLeft</td>
+<td>MOTION</td>
+<td>[b</td>
+</tr>
+<tr>
+<td>NVO</td>
+<td>MotionCamelRight</td>
+<td>MOTION</td>
+<td>[w</td>
+</tr>
+<tr>
+<td>NVO</td>
+<td>MotionColumn</td>
+<td>MOTION</td>
+<td>|</td>
+</tr>
+<tr>
+<td>NVO</td>
+<td>MotionDown</td>
+<td>MOTION</td>
+<td>j, ↓, N CTRL</td>
+</tr>
+<tr>
+<td>NVO</td>
+<td>MotionDown</td>
+<td>MOTION</td>
+<td>gj, g, ↓</td>
+</tr>
+<tr>
+<td>NVO</td>
+<td>MotionDownFirstNonSpace</td>
+<td>MOTION</td>
+<td>+, ↩, M CTRL</td>
+</tr>
+<tr>
+<td>NVO</td>
+<td>MotionDownLess1FirstNonSpace</td>
+<td>MOTION</td>
+<td>_</td>
+</tr>
+<tr>
+<td>NVO</td>
+<td>MotionFirstColumn</td>
+<td>MOTION</td>
+<td>0, HOME</td>
+</tr>
+<tr>
+<td>NVO</td>
+<td>MotionFirstScreenColumn</td>
+<td>MOTION</td>
+<td>g0, g, HOME</td>
+</tr>
+<tr>
+<td>NVO</td>
+<td>MotionFirstNonSpace</td>
+<td>MOTION</td>
+<td>^</td>
+</tr>
+<tr>
+<td>NVO</td>
+<td>MotionFirstScreenNonSpace</td>
+<td>MOTION</td>
+<td>g^</td>
+</tr>
+<tr>
+<td>NVO</td>
+<td>MotionFirstScreenLine</td>
+<td>MOTION</td>
+<td>H</td>
+</tr>
+<tr>
+<td>NVO</td>
+<td>MotionGotoLineFirst</td>
+<td>MOTION</td>
+<td>gg, HOME CTRL</td>
+</tr>
+<tr>
+<td>NVO</td>
+<td>MotionGotoLineLast</td>
+<td>MOTION</td>
+<td>G</td>
+</tr>
+<tr>
+<td>NVO</td>
+<td>MotionGotoLineLastEnd</td>
+<td>MOTION</td>
+<td>END CTRL</td>
+</tr>
+<tr>
+<td>NVO</td>
+<td>MotionLastColumn</td>
+<td>MOTION</td>
+<td>$, END</td>
+</tr>
+<tr>
+<td>NVO</td>
+<td>MotionLastScreenColumn</td>
+<td>MOTION</td>
+<td>g$, g, END</td>
+</tr>
+<tr>
+<td>NVO</td>
+<td>MotionLastMatchChar</td>
+<td>MOTION</td>
+<td>|</td>
+</tr>
+<tr>
+<td>NVO</td>
+<td>MotionLastMatchCharReverse</td>
+<td>MOTION</td>
+<td>,</td>
+</tr>
+<tr>
+<td>NVO</td>
+<td>MotionLastNonSpace</td>
+<td>MOTION</td>
+<td>g_</td>
+</tr>
+<tr>
+<td>NVO</td>
+<td>MotionLastScreenLine</td>
+<td>MOTION</td>
+<td>L</td>
+</tr>
+<tr>
+<td>NVO</td>
+<td>MotionLeft</td>
+<td>MOTION</td>
+<td>h, ←</td>
+</tr>
+<tr>
+<td>NVO</td>
+<td>MotionLeftMatchChar</td>
+<td>MOTION</td>
+<td>F</td>
+</tr>
+<tr>
+<td>NVO</td>
+<td>MotionLeftTillMatchChar</td>
+<td>MOTION</td>
+<td>T</td>
+</tr>
+<tr>
+<td>NVO</td>
+<td>MotionLeftWrap</td>
+<td>MOTION</td>
+<td>⌫, H CTRL</td>
+</tr>
+<tr>
+<td>NVO</td>
+<td>MotionMiddleColumn</td>
+<td>MOTION</td>
+<td>gm</td>
+</tr>
+<tr>
+<td>NVO</td>
+<td>MotionMiddleScreenLine</td>
+<td>MOTION</td>
+<td>M</td>
+</tr>
+<tr>
+<td>NVO</td>
+<td>MotionNthCharacter</td>
+<td>MOTION</td>
+<td>go</td>
+</tr>
+<tr>
+<td>NVO</td>
+<td>MotionPercentOrMatch</td>
+<td>MOTION</td>
+<td>%</td>
+</tr>
+<tr>
+<td>NVO</td>
+<td>MotionRight</td>
+<td>MOTION</td>
+<td>l, →</td>
+</tr>
+<tr>
+<td>NVO</td>
+<td>MotionRightMatchChar</td>
+<td>MOTION</td>
+<td>f</td>
+</tr>
+<tr>
+<td>NVO</td>
+<td>MotionRightTillMatchChar</td>
+<td>MOTION</td>
+<td>t</td>
+</tr>
+<tr>
+<td>NVO</td>
+<td>MotionRightWrap</td>
+<td>MOTION</td>
+<td>␣</td>
+</tr>
+<tr>
+<td>NVO</td>
+<td>MotionScrollFirstScreenLine</td>
+<td>OTHER_READONLY</td>
+<td>zt</td>
+</tr>
+<tr>
+<td>NVO</td>
+<td>MotionScrollFirstScreenColumn</td>
+<td>OTHER_READONLY</td>
+<td>zs</td>
+</tr>
+<tr>
+<td>NVO</td>
+<td>MotionScrollFirstScreenLineStart</td>
+<td>OTHER_READONLY</td>
+<td>z, ↩</td>
+</tr>
+<tr>
+<td>NVO</td>
+<td>MotionScrollFirstScreenLinePageStart</td>
+<td>OTHER_READONLY</td>
+<td>z+</td>
+</tr>
+<tr>
+<td>NVO</td>
+<td>MotionScrollHalfPageDown</td>
+<td>OTHER_READONLY</td>
+<td>D CTRL</td>
+</tr>
+<tr>
+<td>NVO</td>
+<td>MotionScrollHalfPageUp</td>
+<td>OTHER_READONLY</td>
+<td>U CTRL</td>
+</tr>
+<tr>
+<td>NVO</td>
+<td>MotionScrollLastScreenLine</td>
+<td>OTHER_READONLY</td>
+<td>zb</td>
+</tr>
+<tr>
+<td>NVO</td>
+<td>MotionScrollLastScreenColumn</td>
+<td>OTHER_READONLY</td>
+<td>ze</td>
+</tr>
+<tr>
+<td>NVO</td>
+<td>MotionScrollLastScreenLineStart</td>
+<td>OTHER_READONLY</td>
+<td>z-</td>
+</tr>
+<tr>
+<td>NVO</td>
+<td>MotionScrollLastScreenLinePageStart</td>
+<td>OTHER_READONLY</td>
+<td>z^</td>
+</tr>
+<tr>
+<td>NVO</td>
+<td>MotionScrollLineDown</td>
+<td>OTHER_READONLY</td>
+<td>E CTRL</td>
+</tr>
+<tr>
+<td>NVO</td>
+<td>MotionScrollLineUp</td>
+<td>OTHER_READONLY</td>
+<td>Y CTRL</td>
+</tr>
+<tr>
+<td>NVO</td>
+<td>MotionScrollMiddleScreenLine</td>
+<td>OTHER_READONLY</td>
+<td>zz</td>
+</tr>
+<tr>
+<td>NVO</td>
+<td>MotionScrollMiddleScreenLineStart</td>
+<td>OTHER_READONLY</td>
+<td>z.</td>
+</tr>
+<tr>
+<td>NVO</td>
+<td>MotionScrollColumnLeft</td>
+<td>OTHER_READONLY</td>
+<td>zl, z, ←</td>
+</tr>
+<tr>
+<td>NVO</td>
+<td>MotionScrollColumnRight</td>
+<td>OTHER_READONLY</td>
+<td>zh, z, →</td>
+</tr>
+<tr>
+<td>NVO</td>
+<td>MotionScrollPageDown</td>
+<td>OTHER_READONLY</td>
+<td>↓ ⇧, F CTRL, ⇟</td>
+</tr>
+<tr>
+<td>NVO</td>
+<td>MotionScrollPageUp</td>
+<td>OTHER_READONLY</td>
+<td>B CTRL, ⇞, ↑ ⇧</td>
+</tr>
+<tr>
+<td>NVO</td>
+<td>MotionUp</td>
+<td>MOTION</td>
+<td>k, P CTRL, ↑</td>
+</tr>
+<tr>
+<td>NVO</td>
+<td>MotionUp</td>
+<td>MOTION</td>
+<td>gk, g, ↑</td>
+</tr>
+<tr>
+<td>NVO</td>
+<td>MotionUpFirstNonSpace</td>
+<td>MOTION</td>
+<td>-</td>
+</tr>
+<tr>
+<td>NVO</td>
+<td>MotionWordEndLeft</td>
+<td>MOTION</td>
+<td>ge</td>
+</tr>
+<tr>
+<td>NVO</td>
+<td>MotionWordEndRight</td>
+<td>MOTION</td>
+<td>e</td>
+</tr>
+<tr>
+<td>NVO</td>
+<td>MotionWordLeft</td>
+<td>MOTION</td>
+<td>b, ← ⇧</td>
+</tr>
+<tr>
+<td>NVO</td>
+<td>MotionWordRight</td>
+<td>MOTION</td>
+<td>w, → ⇧</td>
+</tr>
+<tr>
+<td>NVO</td>
+<td>MotionBigWordEndLeft</td>
+<td>MOTION</td>
+<td>gE</td>
+</tr>
+<tr>
+<td>NVO</td>
+<td>MotionBigWordEndRight</td>
+<td>MOTION</td>
+<td>E</td>
+</tr>
+<tr>
+<td>NVO</td>
+<td>MotionBigWordLeft</td>
+<td>MOTION</td>
+<td>B, ← CTRL</td>
+</tr>
+<tr>
+<td>NVO</td>
+<td>MotionBigWordRight</td>
+<td>MOTION</td>
+<td>W, → CTRL</td>
+</tr>
+<tr>
+<td>NVO</td>
+<td>MotionSentenceStartPrevious</td>
+<td>MOTION</td>
+<td>(</td>
+</tr>
+<tr>
+<td>NVO</td>
+<td>MotionSentenceStartNext</td>
+<td>MOTION</td>
+<td>)</td>
+</tr>
+<tr>
+<td>NVO</td>
+<td>MotionSentenceEndPrevious</td>
+<td>MOTION</td>
+<td>g(</td>
+</tr>
+<tr>
+<td>NVO</td>
+<td>MotionSentenceEndNext</td>
+<td>MOTION</td>
+<td>g)</td>
+</tr>
+<tr>
+<td>NVO</td>
+<td>MotionParagraphPrevious</td>
+<td>MOTION</td>
+<td>{</td>
+</tr>
+<tr>
+<td>NVO</td>
+<td>MotionParagraphNext</td>
+<td>MOTION</td>
+<td>}</td>
+</tr>
+<tr>
+<td>NVO</td>
+<td>MotionUnmatchedBraceOpen</td>
+<td>MOTION</td>
+<td>[{</td>
+</tr>
+<tr>
+<td>NVO</td>
+<td>MotionUnmatchedBraceClose</td>
+<td>MOTION</td>
+<td>]}</td>
+</tr>
+<tr>
+<td>NVO</td>
+<td>MotionUnmatchedParenOpen</td>
+<td>MOTION</td>
+<td>[(</td>
+</tr>
+<tr>
+<td>NVO</td>
+<td>MotionUnmatchedParenClose</td>
+<td>MOTION</td>
+<td>])</td>
+</tr>
+<tr>
+<td>NVO</td>
+<td>MotionSectionBackwardEnd</td>
+<td>MOTION</td>
+<td>[]</td>
+</tr>
+<tr>
+<td>NVO</td>
+<td>MotionSectionBackwardStart</td>
+<td>MOTION</td>
+<td>[[</td>
+</tr>
+<tr>
+<td>NVO</td>
+<td>MotionSectionForwardEnd</td>
+<td>MOTION</td>
+<td>]]</td>
+</tr>
+<tr>
+<td>NVO</td>
+<td>MotionSectionForwardStart</td>
+<td>MOTION</td>
+<td>][</td>
+</tr>
+<tr>
+<td>NVO</td>
+<td>MotionMethodBackwardEnd</td>
+<td>MOTION</td>
+<td>[M</td>
+</tr>
+<tr>
+<td>NVO</td>
+<td>MotionMethodBackwardStart</td>
+<td>MOTION</td>
+<td>[m</td>
+</tr>
+<tr>
+<td>NVO</td>
+<td>MotionMethodForwardEnd</td>
+<td>MOTION</td>
+<td>]M</td>
+</tr>
+<tr>
+<td>NVO</td>
+<td>MotionMethodForwardStart</td>
+<td>MOTION</td>
+<td>]m</td>
+</tr>
+</tbody>
+</table>
+<h3 class="mume-header" id="misc-actions">Misc Actions</h3>
+
+<table>
+<thead>
+<tr>
+<th>Mode</th>
+<th>Action</th>
+<th>Type</th>
+<th>Keymap</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NVO</td>
+<td>SearchFwdEntry</td>
+<td>MOTION</td>
+<td>/</td>
+</tr>
+<tr>
+<td>NVO</td>
+<td>SearchRevEntry</td>
+<td>MOTION</td>
+<td>?</td>
+</tr>
+<tr>
+<td>NVO</td>
+<td>SearchAgainNext</td>
+<td>MOTION</td>
+<td>n</td>
+</tr>
+<tr>
+<td>NVO</td>
+<td>SearchAgainPrevious</td>
+<td>MOTION</td>
+<td>N</td>
+</tr>
+<tr>
+<td>NVO</td>
+<td>ExEntry</td>
+<td>OTHER_READ_WRITE</td>
+<td>:</td>
+</tr>
+<tr>
+<td>NVO</td>
+<td>SearchWholeWordForward</td>
+<td>MOTION</td>
+<td>*</td>
+</tr>
+<tr>
+<td>NVO</td>
+<td>SearchWholeWordBackward</td>
+<td>MOTION</td>
+<td>#</td>
+</tr>
+<tr>
+<td>NVO</td>
+<td>SearchWordForward</td>
+<td>MOTION</td>
+<td>g*</td>
+</tr>
+<tr>
+<td>NVO</td>
+<td>SearchWordBackward</td>
+<td>MOTION</td>
+<td>g#</td>
+</tr>
+</tbody>
+</table>
+<h3 class="mume-header" id="copypaste-actions">Copy/Paste Actions</h3>
+
+<table>
+<thead>
+<tr>
+<th>Mode</th>
+<th>Action</th>
+<th>Type</th>
+<th>Keymap</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>N</td>
+<td>CopyPutTextBeforeCursor</td>
+<td>PASTE</td>
+<td>P</td>
+</tr>
+<tr>
+<td>N</td>
+<td>CopyPutTextAfterCursor</td>
+<td>PASTE</td>
+<td>p</td>
+</tr>
+<tr>
+<td>N</td>
+<td>CopyPutTextBeforeCursorMoveCursor</td>
+<td>PASTE</td>
+<td>gP</td>
+</tr>
+<tr>
+<td>N</td>
+<td>CopyPutTextAfterCursorMoveCursor</td>
+<td>PASTE</td>
+<td>gp</td>
+</tr>
+<tr>
+<td>N</td>
+<td>CopyPutTextBeforeCursorNoIndent</td>
+<td>PASTE</td>
+<td>[P, ]P</td>
+</tr>
+<tr>
+<td>N</td>
+<td>CopyPutTextAfterCursorNoIndent</td>
+<td>PASTE</td>
+<td>[p, ]p</td>
+</tr>
+<tr>
+<td>N</td>
+<td>CopyYankLine</td>
+<td>COPY</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>N</td>
+<td>CopyYankLine</td>
+<td>COPY</td>
+<td>yy</td>
+</tr>
+<tr>
+<td>N</td>
+<td>CopyYankMotion</td>
+<td>COPY</td>
+<td>y</td>
+</tr>
+</tbody>
+</table>
+<h3 class="mume-header" id="insertreplacechange-actions">Insert/Replace/Change Actions</h3>
+
+<table>
+<thead>
+<tr>
+<th>Mode</th>
+<th>Action</th>
+<th>Type</th>
+<th>Keymap</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>N</td>
+<td>ChangeCaseLowerMotion</td>
+<td>CHANGE</td>
+<td>gu</td>
+</tr>
+<tr>
+<td>N</td>
+<td>ChangeCaseToggleCharacter</td>
+<td>CHANGE</td>
+<td>~</td>
+</tr>
+<tr>
+<td>N</td>
+<td>ChangeCaseToggleMotion</td>
+<td>CHANGE</td>
+<td>g~</td>
+</tr>
+<tr>
+<td>N</td>
+<td>ChangeCaseUpperMotion</td>
+<td>CHANGE</td>
+<td>gU</td>
+</tr>
+<tr>
+<td>N</td>
+<td>ChangeCharacter</td>
+<td>CHANGE</td>
+<td>r</td>
+</tr>
+<tr>
+<td>N</td>
+<td>ChangeCharacters</td>
+<td>CHANGE</td>
+<td>s</td>
+</tr>
+<tr>
+<td>N</td>
+<td>ChangeEndOfLine</td>
+<td>CHANGE</td>
+<td>C</td>
+</tr>
+<tr>
+<td>N</td>
+<td>ChangeLine</td>
+<td>CHANGE</td>
+<td>cc, S</td>
+</tr>
+<tr>
+<td>N</td>
+<td>ChangeNumberInc</td>
+<td>CHANGE</td>
+<td>A CTRL</td>
+</tr>
+<tr>
+<td>N</td>
+<td>ChangeNumberDec</td>
+<td>CHANGE</td>
+<td>X CTRL</td>
+</tr>
+<tr>
+<td>N</td>
+<td>ChangeMotion</td>
+<td>CHANGE</td>
+<td>c</td>
+</tr>
+<tr>
+<td>N</td>
+<td>ChangeReplace</td>
+<td>CHANGE</td>
+<td>R</td>
+</tr>
+<tr>
+<td>N</td>
+<td>DeleteCharacter</td>
+<td>DELETE</td>
+<td>⌦</td>
+</tr>
+<tr>
+<td>N</td>
+<td>DeleteCharacterLeft</td>
+<td>DELETE</td>
+<td>X</td>
+</tr>
+<tr>
+<td>N</td>
+<td>DeleteCharacterRight</td>
+<td>DELETE</td>
+<td>x</td>
+</tr>
+<tr>
+<td>N</td>
+<td>DeleteEndOfLine</td>
+<td>DELETE</td>
+<td>D</td>
+</tr>
+<tr>
+<td>N</td>
+<td>DeleteJoinLines</td>
+<td>DELETE</td>
+<td>gJ</td>
+</tr>
+<tr>
+<td>N</td>
+<td>DeleteJoinLinesSpaces</td>
+<td>DELETE</td>
+<td>J</td>
+</tr>
+<tr>
+<td>N</td>
+<td>DeleteLine</td>
+<td>DELETE</td>
+<td>dd</td>
+</tr>
+<tr>
+<td>N</td>
+<td>DeleteMotion</td>
+<td>DELETE</td>
+<td>d</td>
+</tr>
+<tr>
+<td>N</td>
+<td>FilterCountLines</td>
+<td>CHANGE</td>
+<td>!!</td>
+</tr>
+<tr>
+<td>N</td>
+<td>FilterMotion</td>
+<td>CHANGE</td>
+<td>!</td>
+</tr>
+<tr>
+<td>N</td>
+<td>InsertAfterCursor</td>
+<td>INSERT</td>
+<td>a</td>
+</tr>
+<tr>
+<td>N</td>
+<td>InsertAfterLineEnd</td>
+<td>INSERT</td>
+<td>A</td>
+</tr>
+<tr>
+<td>N</td>
+<td>InsertAtPreviousInsert</td>
+<td>INSERT</td>
+<td>gi</td>
+</tr>
+<tr>
+<td>N</td>
+<td>InsertBeforeFirstNonBlank</td>
+<td>INSERT</td>
+<td>I</td>
+</tr>
+<tr>
+<td>N</td>
+<td>InsertLineStart</td>
+<td>INSERT</td>
+<td>gI</td>
+</tr>
+<tr>
+<td>N</td>
+<td>InsertNewLineAbove</td>
+<td>INSERT</td>
+<td>O</td>
+</tr>
+<tr>
+<td>N</td>
+<td>InsertNewLineBelow</td>
+<td>INSERT</td>
+<td>o</td>
+</tr>
+</tbody>
+</table>
+<h3 class="mume-header" id="motion-actions">Motion Actions</h3>
+
+<table>
+<thead>
+<tr>
+<th>Mode</th>
+<th>Action</th>
+<th>Type</th>
+<th>Keymap</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>N</td>
+<td>MotionGotoMark</td>
+<td>MOTION</td>
+<td>`</td>
+</tr>
+<tr>
+<td>N</td>
+<td>MotionGotoMarkLine</td>
+<td>MOTION</td>
+<td>'</td>
+</tr>
+<tr>
+<td>N</td>
+<td>MotionGotoMark</td>
+<td>MOTION</td>
+<td>g`</td>
+</tr>
+<tr>
+<td>N</td>
+<td>MotionGotoMarkLine</td>
+<td>MOTION</td>
+<td>g</td>
+</tr>
+</tbody>
+</table>
+<h3 class="mume-header" id="misc-actions-1">Misc Actions</h3>
+
+<table>
+<thead>
+<tr>
+<th>Mode</th>
+<th>Action</th>
+<th>Type</th>
+<th>Keymap</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>N</td>
+<td>LastSearchReplace</td>
+<td>OTHER_WRITABLE</td>
+<td>&amp;</td>
+</tr>
+<tr>
+<td>N</td>
+<td>LastGlobalSearchReplace</td>
+<td>OTHER_WRITABLE</td>
+<td>g&amp;</td>
+</tr>
+<tr>
+<td>N</td>
+<td>RepeatChange</td>
+<td>OTHER_WRITABLE</td>
+<td>.</td>
+</tr>
+<tr>
+<td>N</td>
+<td>RepeatExCommand</td>
+<td>OTHER_WRITABLE</td>
+<td>@:</td>
+</tr>
+<tr>
+<td>N</td>
+<td>QuickJavaDoc</td>
+<td>OTHER_READONLY</td>
+<td>K</td>
+</tr>
+<tr>
+<td>N</td>
+<td>Redo</td>
+<td>OTHER_WRITABLE</td>
+<td>R CTRL</td>
+</tr>
+<tr>
+<td>N</td>
+<td>Undo</td>
+<td>OTHER_WRITABLE</td>
+<td>u, UNDO</td>
+</tr>
+</tbody>
+</table>
+<h3 class="mume-header" id="file-actions">File Actions</h3>
+
+<table>
+<thead>
+<tr>
+<th>Mode</th>
+<th>Action</th>
+<th>Type</th>
+<th>Keymap</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>N</td>
+<td>FileSaveClose</td>
+<td>OTHER_WRITABLE</td>
+<td>ZQ, ZZ</td>
+</tr>
+<tr>
+<td>N</td>
+<td>FilePrevious</td>
+<td>OTHER_READONLY</td>
+<td>6 CTRL</td>
+</tr>
+</tbody>
+</table>
+<h3 class="mume-header" id="shift-actions">Shift Actions</h3>
+
+<table>
+<thead>
+<tr>
+<th>Mode</th>
+<th>Action</th>
+<th>Type</th>
+<th>Keymap</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>N</td>
+<td>AutoIndentLines</td>
+<td>CHANGE</td>
+<td>==</td>
+</tr>
+<tr>
+<td>N</td>
+<td>AutoIndentMotion</td>
+<td>CHANGE</td>
+<td>=</td>
+</tr>
+<tr>
+<td>N</td>
+<td>ShiftLeftLines</td>
+<td>CHANGE</td>
+<td>&lt;&lt;</td>
+</tr>
+<tr>
+<td>N</td>
+<td>ShiftLeftMotion</td>
+<td>CHANGE</td>
+<td>&lt;</td>
+</tr>
+<tr>
+<td>N</td>
+<td>ShiftRightLines</td>
+<td>CHANGE</td>
+<td>&gt;&gt;</td>
+</tr>
+<tr>
+<td>N</td>
+<td>ShiftRightMotion</td>
+<td>CHANGE</td>
+<td>&gt;</td>
+</tr>
+</tbody>
+</table>
+<h3 class="mume-header" id="jump-actions">Jump Actions</h3>
+
+<table>
+<thead>
+<tr>
+<th>Mode</th>
+<th>Action</th>
+<th>Type</th>
+<th>Keymap</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>N</td>
+<td>MotionJumpNext</td>
+<td>OTHER_READONLY</td>
+<td>I CTRL, ⇥</td>
+</tr>
+<tr>
+<td>N</td>
+<td>MotionJumpPrevious</td>
+<td>OTHER_READONLY</td>
+<td>O CTRL, T CTRL</td>
+</tr>
+<tr>
+<td>N</td>
+<td>FileGetAscii</td>
+<td>OTHER_READONLY</td>
+<td>ga</td>
+</tr>
+<tr>
+<td>N</td>
+<td>FileGetHex</td>
+<td>OTHER_READONLY</td>
+<td>g8</td>
+</tr>
+<tr>
+<td>N</td>
+<td>FileGetFileInfo</td>
+<td>OTHER_READONLY</td>
+<td>G CTRL</td>
+</tr>
+</tbody>
+</table>
+<h3 class="mume-header" id="macro-actions">Macro Actions</h3>
+
+<table>
+<thead>
+<tr>
+<th>Mode</th>
+<th>Action</th>
+<th>Type</th>
+<th>Keymap</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>N</td>
+<td>PlaybackLastRegister</td>
+<td>OTHER_WRITABLE</td>
+<td>@@</td>
+</tr>
+<tr>
+<td>N</td>
+<td>PlaybackRegister</td>
+<td>OTHER_WRITABLE</td>
+<td>@</td>
+</tr>
+</tbody>
+</table>
+<h3 class="mume-header" id="other-insert-actions">Other insert actions</h3>
+
+<table>
+<thead>
+<tr>
+<th>Mode</th>
+<th>Action</th>
+<th>Type</th>
+<th>Keymap</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>I</td>
+<td>EditorBackSpace</td>
+<td>INSERT</td>
+<td>H CTRL, ⌫</td>
+</tr>
+<tr>
+<td>I</td>
+<td>EditorDelete</td>
+<td>INSERT</td>
+<td>⌦</td>
+</tr>
+<tr>
+<td>I</td>
+<td>EditorDown</td>
+<td>INSERT</td>
+<td>↓</td>
+</tr>
+<tr>
+<td>I</td>
+<td>EditorTab</td>
+<td>INSERT</td>
+<td>I CTRL, ⇥</td>
+</tr>
+<tr>
+<td>I</td>
+<td>EditorUp</td>
+<td>INSERT</td>
+<td>↑</td>
+</tr>
+<tr>
+<td>I</td>
+<td>InsertCharacterAboveCursor</td>
+<td>INSERT</td>
+<td>Y CTRL</td>
+</tr>
+<tr>
+<td>I</td>
+<td>InsertCharacterBelowCursor</td>
+<td>INSERT</td>
+<td>E CTRL</td>
+</tr>
+<tr>
+<td>I</td>
+<td>InsertDeleteInsertedText</td>
+<td>INSERT</td>
+<td>U CTRL</td>
+</tr>
+<tr>
+<td>I</td>
+<td>InsertDeletePreviousWord</td>
+<td>INSERT</td>
+<td>W CTRL</td>
+</tr>
+<tr>
+<td>I</td>
+<td>InsertEnter</td>
+<td>INSERT</td>
+<td>M CTRL, ↩</td>
+</tr>
+<tr>
+<td>I</td>
+<td>InsertPreviousInsert</td>
+<td>INSERT</td>
+<td>A CTRL</td>
+</tr>
+<tr>
+<td>I</td>
+<td>InsertPreviousInsertExit</td>
+<td>INSERT</td>
+<td>2 CTRL, ⇧ 2 CTRL, @ CTRL</td>
+</tr>
+<tr>
+<td>I</td>
+<td>InsertRegister</td>
+<td>INSERT</td>
+<td>R CTRL</td>
+</tr>
+<tr>
+<td>I</td>
+<td>InsertReplaceToggle</td>
+<td>INSERT</td>
+<td>INSERT</td>
+</tr>
+<tr>
+<td>I</td>
+<td>InsertSingleCommand</td>
+<td>INSERT</td>
+<td>O CTRL</td>
+</tr>
+<tr>
+<td>I</td>
+<td>MotionFirstColumn</td>
+<td>INSERT</td>
+<td>HOME</td>
+</tr>
+<tr>
+<td>I</td>
+<td>MotionGotoLineFirst</td>
+<td>INSERT</td>
+<td>HOME CTRL</td>
+</tr>
+<tr>
+<td>I</td>
+<td>MotionGotoLineLastEnd</td>
+<td>INSERT</td>
+<td>END CTRL</td>
+</tr>
+<tr>
+<td>I</td>
+<td>MotionLastColumn</td>
+<td>INSERT</td>
+<td>END, 0</td>
+</tr>
+<tr>
+<td>I</td>
+<td>MotionLeft</td>
+<td>INSERT</td>
+<td>←</td>
+</tr>
+<tr>
+<td>I</td>
+<td>MotionRight</td>
+<td>INSERT</td>
+<td>→</td>
+</tr>
+<tr>
+<td>I</td>
+<td>MotionScrollPageUp</td>
+<td>INSERT</td>
+<td>⇞, ↑ CTRL, ↑ ⇧</td>
+</tr>
+<tr>
+<td>I</td>
+<td>MotionScrollPageDown</td>
+<td>INSERT</td>
+<td>⇟, ↓ CTRL, ↓ ⇧</td>
+</tr>
+<tr>
+<td>I</td>
+<td>MotionWordLeft</td>
+<td>INSERT</td>
+<td>← CTRL, ← ⇧</td>
+</tr>
+<tr>
+<td>I</td>
+<td>MotionWordRight</td>
+<td>INSERT</td>
+<td>→ CTRL, → ⇧</td>
+</tr>
+<tr>
+<td>I</td>
+<td>ShiftLeftLines</td>
+<td>INSERT</td>
+<td>D CTRL</td>
+</tr>
+<tr>
+<td>I</td>
+<td>ShiftRightLines</td>
+<td>INSERT</td>
+<td>T CTRL</td>
+</tr>
+</tbody>
+</table>
+
+      </div>
+      <div class="md-sidebar-toc"><ul>
+<li><a href="#ideavim-keyboard-shortcuts">IdeaVim Keyboard Shortcuts</a>
+<ul>
+<li><a href="#text-object-actions-for-visual-and-operator-pending-modes">Text Object Actions for Visual and Operator Pending Modes</a></li>
+<li><a href="#misc-actions">Misc Actions</a></li>
+<li><a href="#copypaste-actions">Copy/Paste Actions</a></li>
+<li><a href="#insertreplacechange-actions">Insert/Replace/Change Actions</a></li>
+<li><a href="#motion-actions">Motion Actions</a></li>
+<li><a href="#misc-actions-1">Misc Actions</a></li>
+<li><a href="#file-actions">File Actions</a></li>
+<li><a href="#shift-actions">Shift Actions</a></li>
+<li><a href="#jump-actions">Jump Actions</a></li>
+<li><a href="#macro-actions">Macro Actions</a></li>
+<li><a href="#other-insert-actions">Other insert actions</a></li>
+</ul>
+</li>
+</ul>
+</div>
+      <a id="sidebar-toc-btn">≡</a>
+    </body>
+    
+    
+    
+    <script>
+(function bindTaskListEvent() {
+  var taskListItemCheckboxes = document.body.getElementsByClassName('task-list-item-checkbox')
+  for (var i = 0; i < taskListItemCheckboxes.length; i++) {
+    var checkbox = taskListItemCheckboxes[i]
+    var li = checkbox.parentElement
+    if (li.tagName !== 'LI') li = li.parentElement
+    if (li.tagName === 'LI') {
+      li.classList.add('task-list-item')
+    }
+  }
+}())    
+</script>
+    
+<script>
+
+var sidebarTOCBtn = document.getElementById('sidebar-toc-btn')
+sidebarTOCBtn.addEventListener('click', function(event) {
+  event.stopPropagation()
+  if (document.body.hasAttribute('html-show-sidebar-toc')) {
+    document.body.removeAttribute('html-show-sidebar-toc')
+  } else {
+    document.body.setAttribute('html-show-sidebar-toc', true)
+  }
+})
+</script>
+      
+  </html>
