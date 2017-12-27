@@ -50,7 +50,7 @@
 |VO| MotionOuterBlockBackQuote | MOTION| a` |
 |VO| MotionOuterBlockTag | MOTION| at |
 |NO| ResetMode | RESET| \ CTRL, N CTRL |
-|C| ProcessExEntry | OTHER_READ_WRITE| ↩, M CTRL, (char0x0a, (char0x0d|
+|C| ProcessExEntry | OTHER_READ_WRITE| ↩, M CTRL |
 |NVO| CopySelectRegister | SELECT_REGISTER| " |
 |NVO| MotionNextTab | MOTION| gt |
 |NVO| MotionPreviousTab | MOTION| gT |
