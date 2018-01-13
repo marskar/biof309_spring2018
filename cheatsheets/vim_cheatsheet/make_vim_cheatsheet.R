@@ -252,10 +252,10 @@ W_norm_use = "[count]W"
 W_norm_desc = "jump forward [count] WORDS to the start of the next WORD"
 #x
 x_norm_use = "[count]x"
-x_norm_desc = "undo all latest changes on the line where the latest change was made"
+x_norm_desc = "delete [count] characters to the right"
 #X
 X_norm_use = "[count]X"
-X_norm_desc = "undo all latest changes on the line where the latest change was made"
+X_norm_desc = "delete [count] characters to the left"
 #y
 y_norm_use = "[count]y"
 y_norm_desc = "undo all latest changes on the line where the latest change was made"
