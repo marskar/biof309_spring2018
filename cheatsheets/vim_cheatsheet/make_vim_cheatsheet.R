@@ -1,9 +1,13 @@
-a_norm_use = "[count]a{text}<CR>"
+#a
+a_norm_use = "[count]a{text}"
 a_norm_desc = "insert text after cursor [count] times"
-A_norm_use = "[count]A{text}<CR>"
+#A
+A_norm_use = "[count]A{text}"
 A_norm_desc = "insert text at end of line [count] times"
+#b
 b_norm_use = "[count]b"
 b_norm_desc = "jump back [count] words" 
+#B
 B_norm_use = "[count]B"
 B_norm_desc = "jump back [count] WORDS" 
 #c
@@ -55,8 +59,10 @@ ct_use = "c[count]T{char} or [count]cT{char}"
 ct_desc = "delete everything from the cursor up to {char}, skipping [count]-1 occurrences, then enter Insert mode"
 cT_use = "c[count]T{char} or [count]cT{char}"
 cT_desc = "delete everything from the cursor back to {char}, then enter Insert mode"
+#C
 C_norm_use = "[count]C"
 C_norm_desc = "delete from cursor to end of line and [count]-1 more lines, then enter Insert mode"
+#d
 d_norm_use = "[count]d<object> = d[count]<object>"
 d_norm_desc = "delete everything that [count] {motion} moves over"
 dab_norm_use = "dab"
@@ -105,13 +111,19 @@ dt_use = "d[count]t{char} or [count]dt{char}"
 dt_desc = "delete everything from the cursor up to {char}, skipping [count]-1 occurrences"
 dT_use = "d[count]T{char} or [count]dT{char}"
 dT_desc = "delete everything from the cursor back to {char}"
+#D
 D_norm_use = "[count]D"
 D_norm_desc = "delete from cursor to end of line and [count]-1 more lines"
 #e
 e_norm_use = "[count]e"
 e_norm_desc = "jump forward [count] words to word end" 
+#E
+E_norm_use = "[count]E"
+E_norm_desc = "jump forward [count] WORDS to WORD end" 
+#f
 f_norm_use = "[count]f{char}"
 f_norm_desc = "jump forward to {char}, skipping [count]-1 occurrences"
+#F
 F_norm_use = "[count]F{char}"
 F_norm_desc = "jump back to {char}, skipping [count]-1 occurrences"
 #g
@@ -121,8 +133,6 @@ gE_norm_use = "[count]gE"
 gE_norm_desc = "jump back [count] WORDS to WORD end"
 gg_norm_use = "[count]gg"
 gg_norm_desc = "jump to line number [count], default = 1st line"
-G_norm_use = "[count]G"
-G_norm_desc = "jump to line number [count], default = last line"
 gh_norm_use = "gh"
 gh_norm_desc = "enter Select mode"
 gH_norm_use = "gH"
@@ -131,6 +141,8 @@ gi_norm_use = "gi"
 gi_norm_desc = "jump to the position where Insert mode was last stopped ('^ mark) and enter Insert mode" 
 gj_norm_use = "[count]gj"
 gj_norm_desc = "move down [count] display lines (not by line numbers)"
+gJ_norm_use = "[count]gJ"
+gJ_norm_desc = "join the [count] following lines without spaces in between"
 gk_norm_use = "[count]gk"
 gk_norm_desc = "move up [count] display lines (not by line numbers)"
 gm_norm_use = "gm"
@@ -145,19 +157,117 @@ g_comma_norm_use = "[count]g,"
 g_comma_norm_desc = "jump to next position in change list, skipping [count]-1 occurrences"
 g_underscore_norm_use = "[count]g_"
 g_underscore_norm_desc = "jump to last non-blank character [count]-1 lines below"
+#G
+G_norm_use = "[count]G"
+G_norm_desc = "jump to line number [count], default = last line"
 #h
 h_norm_use = "[count]h"
 h_norm_desc = "move [count] characters to the left"
+#H
+H_norm_use = "[count]H"
+H_norm_desc = "jump to [count]-1 lines from bottom of window."
 #i
-i_norm_use = "[count]a{text}<CR>"
+i_norm_use = "[count]i{text}<CR>"
 i_norm_desc = "insert text before cursor [count] times"
-I_norm_use = "[count]A{text}<CR>"
+#I
+I_norm_use = "[count]I{text}<CR>"
 I_norm_desc = "insert text at start of line [count] times"
+#j
+j_norm_use = "[count]j"
+j_norm_desc = "move down [count] characters"
+#J
+J_norm_use = "[count]J"
+J_norm_desc = "join the [count] following lines with spaces in between"
+#k
+k_norm_use = "[count]k"
+k_norm_desc = "move up [count] characters"
+#l
+l_norm_use = "[count]l"
+l_norm_desc = "move [count] characters to the left"
+#L
+L_norm_use = "[count]L"
+L_norm_desc = "jump to [count]-1 lines from bottom of window."
+#m
+m_norm_use = "m{a-zA-Z}"
+m_norm_desc = "set mark {a-zA-Z} at cursor position"
+#M
+M_norm_use = "M"
+M_norm_desc = "jump to the middle line"
+#n
+n_norm_use = "[count]n"
+n_norm_desc = "Jump forward to the next '/' match or back to previous '?' match, skipping [count]-1 occurrences"
+#N
+N_norm_use = "[count]N"
+N_norm_desc = "Jump back to the previous '/' match or forward to next '?' match, skipping [count]-1 occurrences"
+#o
+o_norm_use = "[count]o"
+o_norm_desc = "insert [count] lines below current line"
+#O
+O_norm_use = "[count]O"
+O_norm_desc = "insert [count] lines above current line"
+#p
+p_norm_use = "[count]p"
+p_norm_desc = "paste character(s) to right of cursor or line(s) below current line, [count] times"
+#P
+P_norm_use = "[count]P"
+P_norm_desc = "paste character(s) to left of cursor or line(s) above current line, [count] times"
+#q
+q_norm_use = 'q{0-9a-zA-Z"}'
+q_norm_desc = 'Record typed characters into register {0-9a-zA-Z"}'
+#r
+r_norm_use = "[count]r{char}"
+r_norm_desc = "replace the character under the cursor with [count] copies of {char}"
+#R
+R_norm_use = "[count]R{text}"
+R_norm_desc = "enter Replace mode and overwrite text to the right of the cursor with [count] copies of {text}"
+#s
+s_norm_use = "[count]s{text}"
+s_norm_desc = "delete [count] characters and enter Insert mode"
+#S
+S_norm_use = "[count]S{text}"
+S_norm_desc = "delete [count] lines and enter Insert mode"
+#t
 t_norm_use = "[count]t{char}"
 t_norm_desc = "jump forward to before {char}, skipping [count]-1 occurrences"
-T_norm_key = "T"
+#T
 T_norm_use = "[count]T{char}"
 T_norm_desc = "jump back to before {char}, skipping [count]-1 occurrences"
+#u
+u_norm_use = "[count]u"
+u_norm_desc = "undo [count] changes"
+#U
+U_norm_use = "[count]U"
+U_norm_desc = "undo all latest changes on the line where the latest change was made"
+#v
+v_norm_use = "[count]v"
+v_norm_desc = "enter visual mode to select characters, if [count] is provided it multiplies the previous visual selection"
+#V
+V_norm_use = "[count]V"
+V_norm_desc = "enter visual mode to select lines, if [count] is provided it multiplies the previous visual selection"
+#w
+w_norm_use = "[count]w"
+w_norm_desc = "jump forward [count] words to the start of the next word"
+#W
+W_norm_use = "[count]W"
+W_norm_desc = "jump forward [count] WORDS to the start of the next WORD"
+#x
+x_norm_use = "[count]x"
+x_norm_desc = "undo all latest changes on the line where the latest change was made"
+#X
+X_norm_use = "[count]X"
+X_norm_desc = "undo all latest changes on the line where the latest change was made"
+#y
+y_norm_use = "[count]y"
+y_norm_desc = "undo all latest changes on the line where the latest change was made"
+#Y
+Y_norm_use = "[count]Y"
+Y_norm_desc = "undo all latest changes on the line where the latest change was made"
+#z
+z_norm_use = "[count]z"
+z_norm_desc = "undo all latest changes on the line where the latest change was made"
+#Z
+Z_norm_use = "[count]Z"
+Z_norm_desc = "undo all latest changes on the line where the latest change was made"
 
 df <- data.frame(
     mode = modes,
