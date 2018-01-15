@@ -1,12 +1,13 @@
+#Normal Mode
 #a
-a_norm_use = "[count]a{text}"
-a_norm_desc = "insert text after cursor [count] times"
+norm_61_use = "[count]a{text}"
+norm_61_desc = "insert text after cursor [count] times"
 #A
-A_norm_use = "[count]A{text}"
-A_norm_desc = "insert text at end of line [count] times"
+norm_41_use = "[count]A{text}"
+norm_41_desc = "insert text at end of line [count] times"
 #b
-b_norm_use = "[count]b"
-b_norm_desc = "jump back [count] words" 
+norm_62_use = "[count]b"
+norm_62_desc = "jump back [count] words" 
 #B
 B_norm_use = "[count]B"
 B_norm_desc = "jump back [count] WORDS" 
@@ -324,6 +325,9 @@ z_dash_norm_desc = "scroll so that the cursor line is at the bottom, move cursor
 #Z
 Z_norm_use = "[count]Z"
 Z_norm_desc = "undo all latest changes on the line where the latest change was made"
+
+#Insert Mode
+
 
 df <- data.frame(
     mode = modes,
