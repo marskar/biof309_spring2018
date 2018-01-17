@@ -1,3 +1,16 @@
+"Include some of the neovim defaults, others below
+set autoindent
+set autoread
+set backspace=indent,eol,start
+set belloff=all
+set complete=.,w,b,u,t,i
+set display+=lastline
+set formatoptions=tcqj
+set history=10000
+set laststatus=2
+set tabpagemax=50
+set ttyfast
+
 " Change the shape of the cursor in different modes, as per: http://vim.wikia.com/wiki/Change_cursor_shape_in_different_modes
 let &t_SI = "\<Esc>]50;CursorShape=1\x7"
 let &t_SR = "\<Esc>]50;CursorShape=2\x7"
@@ -21,11 +34,15 @@ set number relativenumber
 " Set background to dark; the default background in MacVim is white
 set background=dark
 
-" Copied from https://github.com/mcantor/no_plugins/blob/master/no_plugins.vim
 
 " enable syntax and plugins (for netrw)
 syntax enable
 filetype plugin on
+
+" enable builtin matchit package
+packadd! matchit
+
+" Copied from https://github.com/mcantor/no_plugins
 
 " FINDING FILES:
 
