@@ -1,0 +1,43 @@
+<application>
+  <component name="DimensionService">
+    <location key="WELCOME_SCREEN.0.0.1440.900" x="719" y="387" />
+    <location key="com.intellij.ide.util.TipDialog.0.0.1440.900" x="438" y="288" />
+    <location key="SettingsEditor.0.0.1440.900" x="184" y="0" />
+    <location key="ProcessPopupWindow.0.0.1440.900" x="1035" y="704" />
+    <location key="GitCloneDialog.0.0.1440.900" x="308" y="319" />
+    <location key="CommitChangelistDialog2.0.0.1440.900" x="289" y="81" />
+    <location key="Vcs.Push.Dialog.0.0.1440.900" x="404" y="200" />
+    <location key="git4idea.merge.GitPullDialog.0.0.1440.900" x="352" y="260" />
+    <location key="find.popup.0.0.1440.900" x="303" y="177" />
+    <location key="#com.intellij.execution.impl.EditConfigurationsDialog.0.0.1440.900" x="184" y="122" />
+    <location key="#Browse_JetBrains_Plugins_.0.0.1440.900" x="600" y="111" />
+    <location key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser.0.0.1440.900" x="744" y="32" />
+    <location key="vcs.readOnlyHandler.ReadOnlyStatusDialog.0.0.1440.900" x="457" y="299" />
+    <location key="SettingsEditor.0.0.1440.900@216dpi" x="0" y="0" />
+    <location key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate.0.0.1440.900@216dpi" x="255" y="260" />
+    <size key="ProcessPopupWindow.0.0.1440.900" width="400" height="174" />
+    <size key="GridCell.Tab.0.left.0.0.1440.900" width="1440" height="239" />
+    <size key="GridCell.Tab.0.center.0.0.1440.900" width="1440" height="239" />
+    <size key="GridCell.Tab.0.right.0.0.1440.900" width="1440" height="239" />
+    <size key="GridCell.Tab.0.bottom.0.0.1440.900" width="1440" height="239" />
+    <size key="find.popup.0.0.1440.900" width="986" height="720" />
+    <size key="GridCell.Tab.1.left.0.0.1440.900" width="1402" height="282" />
+    <size key="GridCell.Tab.1.center.0.0.1440.900" width="1402" height="282" />
+    <size key="GridCell.Tab.1.right.0.0.1440.900" width="1402" height="282" />
+    <size key="GridCell.Tab.1.bottom.0.0.1440.900" width="1402" height="282" />
+    <size key="javadoc.popup.0.0.1440.900" width="666" height="210" />
+    <size key="GridCell.Tab.0.left.0.0.1024.768" width="1024" height="301" />
+    <size key="GridCell.Tab.0.center.0.0.1024.768" width="1024" height="301" />
+    <size key="GridCell.Tab.0.right.0.0.1024.768" width="1024" height="301" />
+    <size key="GridCell.Tab.0.bottom.0.0.1024.768" width="1024" height="301" />
+    <size key="GridCell.Tab.1.left.0.0.1024.768" width="1024" height="245" />
+    <size key="GridCell.Tab.1.center.0.0.1024.768" width="1024" height="245" />
+    <size key="GridCell.Tab.1.right.0.0.1024.768" width="1024" height="245" />
+    <size key="GridCell.Tab.1.bottom.0.0.1024.768" width="1024" height="245" />
+    <size key="SettingsEditor.0.0.1440.900" width="1256" height="900" />
+    <size key="GridCell.Tab.0.left.0.0.1440.900@216dpi" width="1440" height="257" />
+    <size key="GridCell.Tab.0.center.0.0.1440.900@216dpi" width="1440" height="257" />
+    <size key="GridCell.Tab.0.right.0.0.1440.900@216dpi" width="1440" height="257" />
+    <size key="GridCell.Tab.0.bottom.0.0.1440.900@216dpi" width="1440" height="257" />
+  </component>
+</application>

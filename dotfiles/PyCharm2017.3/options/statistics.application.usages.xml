@@ -1,0 +1,34 @@
+<application>
+  <component name="UsageTrigger">
+    <counts>
+      <entry feature="StripeButton[Docker].hidden" count="7" />
+      <entry feature="StripeButton[SciView].hidden" count="10" />
+      <entry feature="StripeButton[SciView].shown" count="9" />
+      <entry feature="StripeButton[Version Control].shown" count="3" />
+      <entry feature="StripeButton[Version_Control].shown" count="3" />
+      <entry feature="execute.Python.Ipnb.Run" count="14" />
+      <entry feature="execute.PythonConfigurationType.Debug" count="2" />
+      <entry feature="execute.PythonConfigurationType.Run" count="22" />
+      <entry feature="ide.settings.Appearance" count="2" />
+      <entry feature="ide.settings.Color Scheme" count="4" />
+      <entry feature="ide.settings.Console" count="1" />
+      <entry feature="ide.settings.Font" count="1" />
+      <entry feature="ide.settings.Keymap" count="16" />
+      <entry feature="ide.settings.Plugins" count="1" />
+      <entry feature="ide.settings.Project Interpreter" count="2" />
+      <entry feature="ide.settings.Project_Interpreter" count="1" />
+      <entry feature="ide.settings.Vim Emulation" count="8" />
+      <entry feature="ideaapp.started" count="16" />
+      <entry feature="project.view.pane.ProjectPane" count="2" />
+      <entry feature="project.view.pane.Scope.Changed Files" count="1" />
+      <entry feature="project.view.pane.Scope.Default" count="2" />
+      <entry feature="project.view.pane.Scope.Problems" count="1" />
+      <entry feature="project.view.pane.Scope.Project Files" count="2" />
+      <entry feature="project.view.pane.Scratches" count="2" />
+      <entry feature="python.console.local" count="26" />
+      <entry feature="terminal.mac" count="5" />
+      <entry feature="welcome.screen.WelcomeScreen.GetFromVcs" count="1" />
+      <entry feature="welcome.screen.WelcomeScreen.OpenDirectoryProject" count="4" />
+    </counts>
+  </component>
+</application>

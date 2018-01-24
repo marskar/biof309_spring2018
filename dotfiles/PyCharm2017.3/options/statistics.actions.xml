@@ -1,0 +1,133 @@
+<application>
+  <component name="ActionsCollector">
+    <counts>
+      <entry action="$Copy" count="1" />
+      <entry action="$Delete" count="20" />
+      <entry action="$Redo" count="14" />
+      <entry action="$SelectAll" count="37" />
+      <entry action="$Undo" count="151" />
+      <entry action="ActivateDatabaseToolWindow" count="14" />
+      <entry action="ActivateDockerToolWindow" count="4" />
+      <entry action="ActivateEventLogToolWindow" count="6" />
+      <entry action="ActivateFavoritesToolWindow" count="7" />
+      <entry action="ActivateProjectToolWindow" count="24" />
+      <entry action="ActivatePythonConsoleToolWindow" count="18" />
+      <entry action="ActivateRunToolWindow" count="8" />
+      <entry action="ActivateSciViewToolWindow" count="10" />
+      <entry action="ActivateStructureToolWindow" count="1" />
+      <entry action="ActivateTODOToolWindow" count="3" />
+      <entry action="ActivateTerminalToolWindow" count="10" />
+      <entry action="Annotate types" count="1" />
+      <entry action="Back" count="8" />
+      <entry action="CheckForUpdate" count="1" />
+      <entry action="CheckinProject" count="1" />
+      <entry action="ChooseRunConfiguration" count="22" />
+      <entry action="CloseProject" count="3" />
+      <entry action="CodeCompletion" count="8" />
+      <entry action="CollapseRegion" count="1" />
+      <entry action="CollapseSelection" count="1" />
+      <entry action="CommentByLineComment" count="6" />
+      <entry action="Configure Python Interpreter" count="3" />
+      <entry action="ConsoleView.ClearAll" count="1" />
+      <entry action="Convert  from module import  to  import module " count="1" />
+      <entry action="Convert between single-quoted and double-quoted strings" count="2" />
+      <entry action="CreateLauncherScript" count="1" />
+      <entry action="Editor notification option" count="1" />
+      <entry action="EditorBackSpace" count="556" />
+      <entry action="EditorChooseLookupItem" count="8" />
+      <entry action="EditorChooseLookupItemReplace" count="34" />
+      <entry action="EditorCloneCaretAbove" count="7" />
+      <entry action="EditorCloneCaretBelow" count="3" />
+      <entry action="EditorCopy" count="59" />
+      <entry action="EditorCut" count="3" />
+      <entry action="EditorDeleteLine" count="6" />
+      <entry action="EditorDeleteToWordStart" count="8" />
+      <entry action="EditorDown" count="204" />
+      <entry action="EditorDownWithSelection" count="9" />
+      <entry action="EditorDuplicate" count="2" />
+      <entry action="EditorEnter" count="20" />
+      <entry action="EditorEscape" count="14" />
+      <entry action="EditorLeft" count="132" />
+      <entry action="EditorLeftWithSelection" count="5" />
+      <entry action="EditorLineEnd" count="21" />
+      <entry action="EditorLineEndWithSelection" count="4" />
+      <entry action="EditorLineStart" count="6" />
+      <entry action="EditorLineStartWithSelection" count="7" />
+      <entry action="EditorNextWord" count="8" />
+      <entry action="EditorNextWordWithSelection" count="15" />
+      <entry action="EditorPaste" count="70" />
+      <entry action="EditorPasteSimple" count="1" />
+      <entry action="EditorPreviousWord" count="9" />
+      <entry action="EditorPreviousWordWithSelection" count="24" />
+      <entry action="EditorRight" count="225" />
+      <entry action="EditorRightWithSelection" count="26" />
+      <entry action="EditorSelectWord" count="6" />
+      <entry action="EditorSplitLine" count="4" />
+      <entry action="EditorStartNewLine" count="9" />
+      <entry action="EditorTab" count="19" />
+      <entry action="EditorUnSelectWord" count="6" />
+      <entry action="EditorUnindentSelection" count="3" />
+      <entry action="EditorUp" count="61" />
+      <entry action="EditorUpWithSelection" count="5" />
+      <entry action="ExecuteInPyConsoleAction" count="220" />
+      <entry action="ExpandRegion" count="4" />
+      <entry action="ExportToHTML" count="3" />
+      <entry action="Find" count="10" />
+      <entry action="FindNext" count="15" />
+      <entry action="FindPrevious" count="3" />
+      <entry action="FindUsages" count="1" />
+      <entry action="Forward" count="4" />
+      <entry action="Git.Pull" count="2" />
+      <entry action="GotoAction" count="3" />
+      <entry action="GotoBookmark3" count="2" />
+      <entry action="Help.KeymapReference" count="1" />
+      <entry action="HideActiveWindow" count="13" />
+      <entry action="IdeScriptingConsole" count="2" />
+      <entry action="Insert type assertion" count="1" />
+      <entry action="Introduce variable for statement" count="1" />
+      <entry action="IntroduceVariable" count="7" />
+      <entry action="IpnbRunAllCellsAction" count="1" />
+      <entry action="MoveLineDown" count="7" />
+      <entry action="MoveLineUp" count="9" />
+      <entry action="MoveStatementDown" count="1" />
+      <entry action="MoveStatementUp" count="3" />
+      <entry action="NewElement" count="11" />
+      <entry action="NewScratchFile" count="5" />
+      <entry action="NextProjectWindow" count="2" />
+      <entry action="NextTab" count="1" />
+      <entry action="OpenFile" count="3" />
+      <entry action="PasteMultiple" count="1" />
+      <entry action="Print" count="3" />
+      <entry action="PySciView" count="20" />
+      <entry action="QuickJavaDoc" count="3" />
+      <entry action="RecentChangedFiles" count="3" />
+      <entry action="RecentChanges" count="1" />
+      <entry action="Refactorings.QuickListPopupAction" count="1" />
+      <entry action="Reformat file" count="6" />
+      <entry action="Replace" count="1" />
+      <entry action="ReplaceInPath" count="1" />
+      <entry action="Rerun" count="1" />
+      <entry action="RestoreDefaultLayout" count="1" />
+      <entry action="Resume" count="1" />
+      <entry action="SaveAll" count="18" />
+      <entry action="SaveAs" count="3" />
+      <entry action="SelectAllOccurrences" count="1" />
+      <entry action="SelectNextOccurrence" count="17" />
+      <entry action="ShowIntentionActions" count="3" />
+      <entry action="ShowNavBar" count="4" />
+      <entry action="Stop" count="1" />
+      <entry action="ToggleDistractionFreeMode" count="32" />
+      <entry action="ToggleFullScreen" count="6" />
+      <entry action="ToggleLineBreakpoint" count="3" />
+      <entry action="TogglePresentationMode" count="20" />
+      <entry action="ToggleSideMode" count="1" />
+      <entry action="UnselectPreviousOccurrence" count="4" />
+      <entry action="Vcs.Push" count="1" />
+      <entry action="Vcs.QuickListPopupAction" count="1" />
+      <entry action="Vcs.UpdateProject" count="1" />
+      <entry action="VimPluginToggle" count="2" />
+      <entry action="com.jetbrains.python.console.RunPythonConsoleAction" count="1" />
+      <entry action="editRunConfigurations" count="3" />
+    </counts>
+  </component>
+</application>

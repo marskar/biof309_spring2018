@@ -1,0 +1,216 @@
+<application>
+  <component name="VimSettings">
+    <state version="4" enabled="true" />
+    <globalmarks />
+    <filemarks>
+      <file name="/start_script.py" timestamp="1514314225698">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="/code.py" timestamp="1514738235077">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="/Python Console" timestamp="1514738238945">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="$USER_HOME$/github/ncd/ncd_gzip.py" timestamp="1514495521860">
+        <mark key="[" line="31" column="0" />
+        <mark key="]" line="31" column="25" />
+        <mark key="." line="31" column="0" />
+        <mark key="^" line="29" column="0" />
+      </file>
+      <file name="$USER_HOME$/github/biof309_spring2018/ideavim_actionlist.py" timestamp="1514388430279">
+        <mark key="a" line="9" column="0" />
+        <mark key="'" line="5" column="0" />
+        <mark key="[" line="15" column="0" />
+        <mark key="]" line="17" column="0" />
+        <mark key="^" line="17" column="0" />
+        <mark key="." line="17" column="0" />
+      </file>
+      <file name="$USER_HOME$/github/ncd/ncds.py" timestamp="1514480517151">
+        <mark key="[" line="37" column="0" />
+        <mark key="]" line="37" column="15" />
+      </file>
+      <file name="$APPLICATION_CONFIG_DIR$/scratches/scratch_2.py" timestamp="1514157350872">
+        <mark key="[" line="2" column="0" />
+        <mark key="]" line="2" column="0" />
+        <mark key="." line="2" column="0" />
+        <mark key="^" line="2" column="1" />
+      </file>
+      <file name="$APPLICATION_CONFIG_DIR$/scratches/scratch_3.py" timestamp="1514155083582">
+        <mark key="[" line="0" column="1051" />
+        <mark key="]" line="0" column="1051" />
+        <mark key="." line="0" column="1051" />
+        <mark key="^" line="0" column="1403" />
+      </file>
+      <file name="$USER_HOME$/github/140-638_AnalysisOfBiologicalSequences/hw3/problem6.py" timestamp="1514496844693">
+        <mark key="'" line="70" column="0" />
+        <mark key="[" line="65" column="0" />
+        <mark key="]" line="65" column="0" />
+        <mark key="." line="65" column="0" />
+      </file>
+      <file name="$USER_HOME$/github/140-638_AnalysisOfBiologicalSequences/hw3/output.py" timestamp="1514243017667">
+        <mark key="a" line="131" column="6" />
+        <mark key="'" line="128" column="0" />
+        <mark key="[" line="131" column="7" />
+        <mark key="]" line="131" column="6" />
+        <mark key="." line="131" column="6" />
+        <mark key="^" line="131" column="6" />
+      </file>
+    </filemarks>
+    <jumps>
+      <jump line="2" column="8" filename="$APPLICATION_CONFIG_DIR$/scratches/scratch_2.py" />
+      <jump line="109" column="0" filename="$USER_HOME$/github/140-638_AnalysisOfBiologicalSequences/hw3/output.py" />
+      <jump line="116" column="12" filename="$USER_HOME$/github/140-638_AnalysisOfBiologicalSequences/hw3/output.py" />
+      <jump line="122" column="0" filename="$USER_HOME$/github/140-638_AnalysisOfBiologicalSequences/hw3/output.py" />
+      <jump line="128" column="0" filename="$USER_HOME$/github/140-638_AnalysisOfBiologicalSequences/hw3/output.py" />
+      <jump line="134" column="0" filename="$USER_HOME$/github/140-638_AnalysisOfBiologicalSequences/hw3/output.py" />
+      <jump line="13" column="8" filename="$USER_HOME$/github/140-638_AnalysisOfBiologicalSequences/hw3/problem6.py" />
+      <jump line="23" column="0" filename="$USER_HOME$/github/140-638_AnalysisOfBiologicalSequences/hw3/problem6.py" />
+      <jump line="31" column="0" filename="$USER_HOME$/github/140-638_AnalysisOfBiologicalSequences/hw3/problem6.py" />
+      <jump line="27" column="0" filename="$USER_HOME$/github/140-638_AnalysisOfBiologicalSequences/hw3/problem6.py" />
+      <jump line="9" column="4" filename="$USER_HOME$/github/biof309_spring2018/ideavim_actionlist.py" />
+      <jump line="8" column="0" filename="$USER_HOME$/github/biof309_spring2018/ideavim_actionlist.py" />
+      <jump line="2" column="3" filename="$USER_HOME$/github/biof309_spring2018/ideavim_actionlist.py" />
+      <jump line="5" column="0" filename="$USER_HOME$/github/biof309_spring2018/ideavim_actionlist.py" />
+      <jump line="9" column="0" filename="$USER_HOME$/github/140-638_AnalysisOfBiologicalSequences/hw3/problem6.py" />
+      <jump line="0" column="0" filename="$USER_HOME$/github/140-638_AnalysisOfBiologicalSequences/hw3/problem6.py" />
+      <jump line="24" column="0" filename="$USER_HOME$/github/140-638_AnalysisOfBiologicalSequences/hw3/problem6.py" />
+      <jump line="38" column="0" filename="$USER_HOME$/github/140-638_AnalysisOfBiologicalSequences/hw3/problem6.py" />
+      <jump line="56" column="0" filename="$USER_HOME$/github/140-638_AnalysisOfBiologicalSequences/hw3/problem6.py" />
+      <jump line="29" column="0" filename="$USER_HOME$/github/ncd/ncd_gzip.py" />
+      <jump line="31" column="0" filename="$USER_HOME$/github/ncd/ncd_gzip.py" />
+      <jump line="40" column="0" filename="$USER_HOME$/github/140-638_AnalysisOfBiologicalSequences/hw3/problem6.py" />
+      <jump line="29" column="0" filename="$USER_HOME$/github/140-638_AnalysisOfBiologicalSequences/hw3/problem6.py" />
+      <jump line="7" column="0" filename="$USER_HOME$/github/140-638_AnalysisOfBiologicalSequences/hw3/problem6.py" />
+      <jump line="10" column="0" filename="$USER_HOME$/github/140-638_AnalysisOfBiologicalSequences/hw3/problem6.py" />
+      <jump line="19" column="0" filename="$USER_HOME$/github/140-638_AnalysisOfBiologicalSequences/hw3/problem6.py" />
+      <jump line="22" column="0" filename="$USER_HOME$/github/140-638_AnalysisOfBiologicalSequences/hw3/problem6.py" />
+      <jump line="25" column="0" filename="$USER_HOME$/github/140-638_AnalysisOfBiologicalSequences/hw3/problem6.py" />
+      <jump line="35" column="4" filename="$USER_HOME$/github/140-638_AnalysisOfBiologicalSequences/hw3/problem6.py" />
+      <jump line="53" column="0" filename="$USER_HOME$/github/140-638_AnalysisOfBiologicalSequences/hw3/problem6.py" />
+      <jump line="57" column="0" filename="$USER_HOME$/github/140-638_AnalysisOfBiologicalSequences/hw3/problem6.py" />
+      <jump line="65" column="0" filename="$USER_HOME$/github/140-638_AnalysisOfBiologicalSequences/hw3/problem6.py" />
+      <jump line="70" column="0" filename="$USER_HOME$/github/140-638_AnalysisOfBiologicalSequences/hw3/problem6.py" />
+    </jumps>
+    <registers>
+      <register name="&quot;" type="4">
+        <text>a</text>
+      </register>
+      <register name="-" type="4">
+        <text>a</text>
+      </register>
+      <register name="/" type="4">
+        <text>#</text>
+      </register>
+      <register name="0" type="4">
+        <text>.encode()</text>
+      </register>
+      <register name="1" type="2">
+        <text encoding="base64">Y29tcHJlc3NlZC5rZXlzKCkK</text>
+      </register>
+      <register name="2" type="2">
+        <text encoding="base64">ZGVmIG5jZChmYSwgZmIpOgo=</text>
+      </register>
+      <register name="3" type="2">
+        <text encoding="base64">Cg==</text>
+      </register>
+      <register name="4" type="2">
+        <text encoding="base64">ICAgIHJldHVybiBsZW4oY29tcHJlc3MoY29udGVudHMpKQo=</text>
+      </register>
+      <register name="5" type="2">
+        <text encoding="base64">ZGVmIFooY29udGVudHMpOgo=</text>
+      </register>
+      <register name="6" type="4">
+        <text encoding="base64">CmhvbSA9IHJlYWRHZW5lKCJjb3cuZmEiKQpib3MgPSByZWFkR2VuZSgiaHVtLmZhIikKbWFjID0gcmVhZEdlbmUoIm1hYy5mYSIp</text>
+      </register>
+      <register name="7" type="2">
+        <text encoding="base64">Ym9zID0gcmVhZEdlbmUoIgptYWMgPSByZWFkR2VuZSgiKQo=</text>
+      </register>
+      <register name="8" type="8">
+        <text>ENSBTAG00000038748_bos-taurus_HBB.txt&quot;)
+ENSMMUG00000041831_macaca-mulatta_HBB.txt&quot;</text>
+      </register>
+      <register name="9" type="2">
+        <text encoding="base64">Y29tcHJlc3NlZAo=</text>
+      </register>
+      <register name=":" type="4">
+        <text>d</text>
+      </register>
+    </registers>
+    <search>
+      <last-search>#</last-search>
+      <last-offset />
+      <last-pattern>#</last-pattern>
+      <last-dir>1</last-dir>
+      <show-last>false</show-last>
+    </search>
+    <history>
+      <history-search>
+        <entry>#</entry>
+      </history-search>
+      <history-cmd>
+        <entry>d1</entry>
+        <entry>actionlist</entry>
+        <entry>d</entry>
+      </history-cmd>
+      <history-expr />
+      <history-input />
+    </history>
+    <shortcut-conflicts>
+      <shortcut-conflict owner="vim">
+        <text>ctrl pressed V</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="vim">
+        <text>ctrl pressed O</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="vim">
+        <text>ctrl pressed P</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="vim">
+        <text>ctrl pressed E</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="vim">
+        <text>ctrl pressed F</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="vim">
+        <text>ctrl pressed A</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="vim">
+        <text>ctrl pressed B</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="vim">
+        <text>ctrl pressed R</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="ide">
+        <text>ctrl pressed G</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="vim">
+        <text>ctrl pressed H</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="ide">
+        <text>ctrl pressed M</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="vim">
+        <text>ctrl pressed N</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="vim">
+        <text>ctrl pressed D</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="vim">
+        <text>ctrl pressed T</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="vim">
+        <text>ctrl pressed I</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="vim">
+        <text>ctrl pressed 2</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="vim">
+        <text>shift ctrl pressed 2</text>
+      </shortcut-conflict>
+    </shortcut-conflicts>
+    <editor>
+      <key-repeat enabled="true" />
+    </editor>
+  </component>
+</application>

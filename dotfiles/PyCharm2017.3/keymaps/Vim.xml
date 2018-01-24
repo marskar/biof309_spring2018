@@ -1,0 +1,35 @@
+<keymap version="1" name="Vim" parent="Mac OS X 10.5+">
+  <action id="ActivateDatabaseToolWindow">
+    <keyboard-shortcut first-keystroke="ctrl meta b" />
+  </action>
+  <action id="ActivateDockerToolWindow">
+    <keyboard-shortcut first-keystroke="ctrl meta w" />
+  </action>
+  <action id="ActivateEventLogToolWindow">
+    <keyboard-shortcut first-keystroke="ctrl meta e" />
+  </action>
+  <action id="ActivatePythonConsoleToolWindow">
+    <keyboard-shortcut first-keystroke="meta 0" />
+  </action>
+  <action id="ActivateSciViewToolWindow">
+    <keyboard-shortcut first-keystroke="meta 8" />
+  </action>
+  <action id="ActivateTerminalToolWindow">
+    <keyboard-shortcut first-keystroke="ctrl meta t" />
+  </action>
+  <action id="ActivateVersionControlToolWindow">
+    <keyboard-shortcut first-keystroke="meta 9" />
+  </action>
+  <action id="PySciView">
+    <keyboard-shortcut first-keystroke="ctrl meta s" />
+  </action>
+  <action id="Refactorings.QuickListPopupAction">
+    <keyboard-shortcut first-keystroke="shift ctrl t" />
+  </action>
+  <action id="ToggleDistractionFreeMode">
+    <keyboard-shortcut first-keystroke="ctrl alt f" />
+  </action>
+  <action id="TogglePresentationMode">
+    <keyboard-shortcut first-keystroke="shift meta p" />
+  </action>
+</keymap>

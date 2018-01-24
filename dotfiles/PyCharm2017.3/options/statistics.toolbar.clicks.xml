@@ -1,0 +1,19 @@
+<application>
+  <component name="ToolbarClicksCollector">
+    <counts>
+      <entry action="Rerun@RunnerToolbar" count="1" />
+      <entry action="Stop@RunnerToolbar" count="1" />
+      <entry action="com.intellij.application.options.schemes.AbstractSchemesPanel$ShowSchemesActionsListAction@NavBarToolbar" count="3" />
+      <entry action="com.intellij.find.editorHeaderActions.SelectAllAction@EditorToolbar" count="2" />
+      <entry action="com.jetbrains.python.console.PydevConsoleRunnerImpl$7@PydevConsoleRunner" count="2" />
+      <entry action="com.jetbrains.python.console.PydevConsoleRunnerImpl$7@PydevConsoleRunnerErrors" count="3" />
+      <entry action="com.jetbrains.python.console.PydevConsoleRunnerImpl$RestartAction@PydevConsoleRunner" count="9" />
+      <entry action="com.jetbrains.python.console.PydevConsoleRunnerImpl$RestartAction@PydevConsoleRunnerErrors" count="4" />
+      <entry action="org.jetbrains.plugins.ipnb.editor.actions.IpnbAddCellBelowAction@IpnbEditor" count="10" />
+      <entry action="org.jetbrains.plugins.ipnb.editor.actions.IpnbInterruptKernelAction@IpnbEditor" count="5" />
+      <entry action="org.jetbrains.plugins.ipnb.editor.actions.IpnbRunCellAction@IpnbEditor" count="11" />
+      <entry action="org.jetbrains.plugins.terminal.TerminalView$CloseSession@Terminal" count="4" />
+      <entry action="org.jetbrains.plugins.terminal.TerminalView$NewSession@Terminal" count="1" />
+    </counts>
+  </component>
+</application>
