@@ -1,0 +1,30 @@
+<application>
+  <component name="MainMenuCollector">
+    <counts>
+      <entry path="Edit -&gt; Find -&gt; Replace in Path..." count="1" />
+      <entry path="Edit -&gt; Find -&gt; Replace..." count="1" />
+      <entry path="Edit -&gt; Redo" count="2" />
+      <entry path="File -&gt; Close Project" count="3" />
+      <entry path="File -&gt; Export to HTML..." count="3" />
+      <entry path="File -&gt; New Scratch File" count="1" />
+      <entry path="File -&gt; Open Recent -&gt; Reopen Project" count="1" />
+      <entry path="File -&gt; Open..." count="2" />
+      <entry path="File -&gt; Print..." count="3" />
+      <entry path="File -&gt; Save All" count="2" />
+      <entry path="File -&gt; Save As.." count="3" />
+      <entry path="Help -&gt; Keymap Reference" count="1" />
+      <entry path="Run -&gt; Edit Configurations..." count="3" />
+      <entry path="Run -&gt; Run..." count="2" />
+      <entry path="Tools -&gt; Create Command-line Launcher..." count="1" />
+      <entry path="Tools -&gt; IDE Scripting Console" count="2" />
+      <entry path="Tools -&gt; Python Console..." count="1" />
+      <entry path="View -&gt; Scientific Mode" count="4" />
+      <entry path="View -&gt; Toggle Distraction Free mode" count="3" />
+      <entry path="View -&gt; Toggle Presentation mode" count="1" />
+      <entry path="View -&gt; Tool Windows -&gt; Project" count="2" />
+      <entry path="View -&gt; Tool Windows -&gt; SciView" count="1" />
+      <entry path="Window -&gt; Active Tool Window -&gt; Split Mode" count="1" />
+      <entry path="Window -&gt; Restore Default Layout" count="1" />
+    </counts>
+  </component>
+</application>
