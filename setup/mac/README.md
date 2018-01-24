@@ -19,10 +19,26 @@ brew cask install keycastr
 
 #Install vmail
 gem install vmail
+# add .vimrc to home directory
 
+# Install iterm2
+brew cask install iterm2
+brew cask install evernote
+brew cask install alfred
+brew cask install flux
+brew cask install vlc
 brew install w3m
-
-#Install miniconda for managing python dependencies https://conda.io/miniconda.html
+brew install django-completion
+brew install brew-cask-completion
+brew install bash-completion
+brew cask install flycut
+# Install xcode before git
+xcode-select --install
+brew install git
+brew install tree
+brew install wget
+# Install miniconda for managing python dependencies https://conda.io/miniconda.html
 wget https://repo.continuum.io/miniconda/Miniconda3-latest-MacOSX-x86_64.sh && bash Miniconda-latest-MacOSX-x86_64.sh -b
 brew install cmus
 brew install git
+brew install --HEAD https://raw.githubusercontent.com/jeffkowalski/geeknote/master/geeknote.rb
