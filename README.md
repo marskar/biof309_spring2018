@@ -20,7 +20,9 @@ Instructors:
 Course Description
 ------------------
 
-This course is designed for non-programmers, biologists, or those without specific knowledge of Python to learn how to program. Week by week, we will slowly build up your skills and understanding of programming and the Python language. There will be in class demonstrations, using [Jupyter Notebooks](http://jupyter-notebook.readthedocs.io/en/latest/examples/Notebook/What%20is%20the%20Jupyter%20Notebook.html), activities to be completed outside of class, mostly using [DataCamp](https://www.datacamp.com), for you to practice and learn at your own pace.
+This course is designed for non-programmers, biologists, or those without specific knowledge of Python to learn how to program. 
+Week by week, we will slowly build up your skills and understanding of computer programming and the Python programming language. 
+There will be in-class demonstrations, using [PyCharm](https://www.jetbrains.com/pycharm/features/) and [Jupyter Notebooks](http://jupyter-notebook.readthedocs.io/en/latest/examples/Notebook/What%20is%20the%20Jupyter%20Notebook.html), and activities to be completed outside of class, using [DataCamp](https://www.datacamp.com), for you to practice and learn at your own pace.
 
 Learning Objectives
 -------------------
@@ -70,19 +72,26 @@ Required Materials
 **Each student is encouraged to bring their own laptop to each class.**
 
 *Programing without a computer would be an exceptional feat.*
+
 For the course, we will use the
 1. [Anaconda Scientific Python Distribution](https://www.continuum.io/downloads) and the
 2. [PyCharm Integrated Development Environment (IDE)](https://www.jetbrains.com/pycharm/)
+3. [DataCamp](https://www.datacamp.com)
+4. [GitHub](https://github.com/)
 
-The Anaconda installer will automatically install most of the software we will use during the course, including [Jupyter Notebooks](http://jupyter-notebook.readthedocs.io/en/latest/examples/Notebook/What%20is%20the%20Jupyter%20Notebook.html).
+1. The Anaconda installer will automatically install most of the software we will use during the course, including [Jupyter Notebooks](http://jupyter-notebook.readthedocs.io/en/latest/examples/Notebook/What%20is%20the%20Jupyter%20Notebook.html).
 
-All of the course materials are available on GitHub. Before accessing the [course materials repo](https://github.com/marskar/biof309_spring2017), you should know that
-1. it is likely to be under constant development throughout the semester and
-2. you are not expected to work through _everything_ contained therein!
+2. The very nice folks at [JetBrains](https://www.jetbrains.com) have given us free licenses for the Professional version of PyCharm, the best (in my humble opinion) Python Integrated Development Environment (IDE).
+If you have a .edu email address, please install PyCharm Professional using this link: https://www.jetbrains.com/student/
+If not, a installation link will be distributed to you by email and made available on [Slack](https://biof309.slack.com/).
 
+3. The very nice folks at [DataCamp](https://www.datacamp.com) have given us access to their awesome teaching materials.
 We will discuss the most interesting examples during class and point out others to be reviewed outside of class.
 
-The very nice folks at [DataCamp](https://www.datacamp.com) have given us access to their awesome teaching materials.
+4. All of the course materials are available on [GitHub](https://github.com/).
+Before accessing the [course materials repo](https://github.com/marskar/biof309_spring2018), you should know that
+* it is likely to be under constant development throughout the semester and
+* you are not expected to work through _everything_ contained therein!
 
 Homework
 --------
