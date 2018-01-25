@@ -1,0 +1,3 @@
+[submodule "dotfiles/dotfiles/dotvim"]
+	path = dotfiles/dotfiles/dotvim
+	url = https://github.com/marskar/.vim
