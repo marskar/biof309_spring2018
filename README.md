@@ -50,7 +50,7 @@ Logistics
 
 This is a one-semester course starting on the 30th of January 2018 and finishing on 8th of May 2018.
 
-**Class Location: Rathskeller, Building 60, NIH Bethesda campus**
+**Class Location: Rathskeller (Room B1A199C), Building 60, NIH Bethesda campus**
 
 Attendance in class is strongly recommended; however, we realize other commitments may occasionally prevent attendance. If you miss a class, please review the materials available at the course [github repository](https://github.com/marskar/biof309_spring2018) and keep up with activities and homework.
 
