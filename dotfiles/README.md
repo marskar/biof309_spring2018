@@ -1,6 +1,9 @@
 There are many other great software tools that we do not have time to discuss this semester.
 This folder contains configuration files for a few such tools, just in case anyone is curious.
 
+# Vim
+Following the instructions at http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/
+
 This semester we will focus on the Anaconda Python 3.6 distribution and the PyCharm integrated development environment (IDE). 
 These are required course materials and I will not troubleshoot the installation and use of any other tools, IDEs, and distributions. 
 
