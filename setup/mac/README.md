@@ -37,6 +37,7 @@ xcode-select --install
 brew install git
 brew install tree
 brew install wget
+brew install tmux
 # Install miniconda for managing python dependencies https://conda.io/miniconda.html
 wget https://repo.continuum.io/miniconda/Miniconda3-latest-MacOSX-x86_64.sh && bash Miniconda-latest-MacOSX-x86_64.sh -b
 brew install cmus
