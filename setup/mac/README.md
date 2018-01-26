@@ -41,5 +41,10 @@ brew install tmux
 # Install miniconda for managing python dependencies https://conda.io/miniconda.html
 wget https://repo.continuum.io/miniconda/Miniconda3-latest-MacOSX-x86_64.sh && bash Miniconda-latest-MacOSX-x86_64.sh -b
 brew install cmus
-brew install git
+
+# install r and rstudio as per https://www.r-bloggers.com/install-r-and-python-via-homebrew/
+brew cask install rstudio
+brew install openblas
+brew install r --with-openblas
+
 brew install --HEAD https://raw.githubusercontent.com/jeffkowalski/geeknote/master/geeknote.rb
