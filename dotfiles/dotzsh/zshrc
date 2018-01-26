@@ -118,7 +118,7 @@ if [ "$TMUX" = "" ]; then tmux; fi
 setopt auto_cd
 
 # Typo Correction
-setopt correctall
+# setopt correctall
 alias git status='nocorrect git status'
 
 # taken from https://dougblack.io/words/zsh-vi-mode.html
