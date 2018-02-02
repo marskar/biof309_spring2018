@@ -260,4 +260,4 @@ Grading the __final project__ will be done using the following rubric:
 Course Materials
 ----------------
 
-Course materials are available from the course [GitHub repository](https://github.com/marskar/BIO309_Fall2017).
+Course materials are available in the course [GitHub repository](https://github.com/marskar/BIO309_Fall2017).
