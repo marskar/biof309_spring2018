@@ -93,6 +93,11 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+alias v="nvim"
+alias python="python3"
+export PATH=/usr/local/bin/python3:$PATH
+
 # taken from https://dougblack.io/words/zsh-vi-mode.html
 bindkey -v
 
