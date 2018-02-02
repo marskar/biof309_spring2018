@@ -86,10 +86,14 @@ If not, a installation link will be distributed to you by email and made availab
 
 3. [DataCamp](https://www.datacamp.com)
 
-The very nice folks at [DataCamp](https://www.datacamp.com) have given us access to their awesome teaching materials.
+The very nice folks at [DataCamp](https://www.datacamp.com) have given us access to their awesome DataViz📊 Machine Learning🤖 and Data Science learning materials.
 We will discuss the most interesting examples during class and point out others to be reviewed outside of class.
 
-4. [GitHub](https://github.com/)
+4. [PluralSight](https://www.pluralsight.com)
+
+Thanks to the DataCamp-PluralSight partnership, we can get 6 month access to WebDevelopment, Object-Oriented Programming, and Test-Driven Development learning materials on [PluralSight](https://www.pluralsight.com).
+
+5. [GitHub](https://github.com/)
 
 All of the course materials are available on [GitHub](https://github.com/).
 Before accessing the [course materials repo](https://github.com/marskar/biof309_spring2018), you should know that
