@@ -1,0 +1,20 @@
+2018-02-02 10:49:12,885 [INFO @ cm_start.py:main:47] 58314 - start_channel for cm_core
+2018-02-02 10:49:12,912 [INFO @ cm.py:setup_neovim:165] 58314 - connecting to neovim server: /var/folders/9p/spb_5sfj1kn3fz3jw2brys400000gn/T/nvimtcxuDQ/0
+2018-02-02 10:49:12,915 [ERROR @ cm_start.py:main:75] 58314 - Exception when running cm_core: expected bytes, str found
+Traceback (most recent call last):
+  File "/Users/marskar/.vim/bundle/nvim-completion-manager/pythonx/cm_start.py", line 73, in main
+    start_and_run_channel(channel_type, serveraddr, source_name, modulename)
+  File "/Users/marskar/.vim/bundle/nvim-completion-manager/pythonx/cm.py", line 193, in start_and_run_channel
+    nvim = setup_neovim(serveraddr)
+  File "/Users/marskar/.vim/bundle/nvim-completion-manager/pythonx/cm.py", line 172, in setup_neovim
+    nvim = attach('socket',path=serveraddr)
+  File "/usr/local/lib/python3.6/site-packages/neovim/__init__.py", line 101, in attach
+    socket_session(path) if session_type == 'socket' else
+  File "/usr/local/lib/python3.6/site-packages/neovim/msgpack_rpc/__init__.py", line 32, in socket_session
+    return session('socket', path)
+  File "/usr/local/lib/python3.6/site-packages/neovim/msgpack_rpc/__init__.py", line 19, in session
+    msgpack_stream = MsgpackStream(loop)
+  File "/usr/local/lib/python3.6/site-packages/neovim/msgpack_rpc/msgpack_stream.py", line 23, in __init__
+    self._packer = Packer(unicode_errors=unicode_errors_default)
+  File "msgpack/_packer.pyx", line 136, in msgpack._packer.Packer.__init__
+TypeError: expected bytes, str found
