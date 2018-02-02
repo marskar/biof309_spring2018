@@ -7,8 +7,9 @@
 - text mode https://chrome.google.com/webstore/detail/text-mode/adelhekhakakocomdfejiipdnaadiiib
 - dark reader https://chrome.google.com/webstore/detail/dark-reader/eimadpbcbfnmbkopoojfekhnkhdbieeh
 
-# Exclude the following keys in vimium: 
-?/`BFGNOPTUVWXabcdefghijklmnopqrstuvwxyz
+#Use
+When you want to turn off vimium, press i to put vimium in insert mode.
+When you want to turn off SurfingKeys, press Alt+s.
 
 # Unmap the following key mapping in surfingkeys: 
 // remove mapkey `Ctrl-i`

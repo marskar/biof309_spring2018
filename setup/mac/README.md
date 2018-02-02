@@ -23,6 +23,27 @@ gem install vmail
 
 # Install iterm2
 brew cask install iterm2
+
+# keep & access clipboard history
+brew cask install flycut
+
+# Install xcode before git
+xcode-select --install
+brew install git
+brew install tree
+brew install wget
+brew install tmux
+
+# Install python with neovim client
+brew install python
+brew install python3
+pip2 install neovim --upgrade
+pip3 install neovim --upgrade
+
+# Install neovim
+brew install neovim
+
+# Optional apps
 brew cask install evernote
 brew cask install alfred
 brew cask install flux
@@ -31,15 +52,7 @@ brew install w3m
 brew install django-completion
 brew install brew-cask-completion
 brew install bash-completion
-brew cask install flycut
-# Install xcode before git
-xcode-select --install
-brew install git
-brew install tree
-brew install wget
-brew install tmux
 # Install miniconda for managing python dependencies https://conda.io/miniconda.html
 wget https://repo.continuum.io/miniconda/Miniconda3-latest-MacOSX-x86_64.sh && bash Miniconda-latest-MacOSX-x86_64.sh -b
 brew install cmus
-brew install git
 brew install --HEAD https://raw.githubusercontent.com/jeffkowalski/geeknote/master/geeknote.rb
