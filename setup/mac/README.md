@@ -30,9 +30,6 @@ brew cask install flycut
 # Install xcode before git
 xcode-select --install
 brew install git
-brew install tree
-brew install wget
-brew install tmux
 
 # Install python with neovim client
 brew install python
@@ -43,11 +40,23 @@ pip3 install neovim --upgrade
 # Install neovim
 brew install neovim
 
+#Install zsh (according to https://justinzimmerman.net/post/switching-from-bash-to-zsh/)
+brew install zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+# more on zsh: http://zpalexander.com/switching-to-zsh/
+# powerline9k: https://gist.github.com/kevin-smets/8568070
+
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
 # Optional apps
 brew cask install evernote
 brew cask install alfred
 brew cask install flux
 brew cask install vlc
+brew install tree
+brew install wget
+brew install tmux
 brew install w3m
 brew install django-completion
 brew install brew-cask-completion

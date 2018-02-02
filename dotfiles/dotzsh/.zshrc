@@ -1,21 +1,14 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-# If you ran brew install vim, add /usr/local/bin/vim to $PATH to use homebrew installed vim, rather than the version pre-installed on mac at /usr/bin/vim
-# Or run brew install vim --with-override-system-vi
-export PATH=/usr/local/bin:$PATH
-# export EDITOR='vim'
-export EDITOR=/usr/local/bin/vim
-# alias vi=/usr/local/bin/vim
-# alias vim=/usr/local/bin/vim
-
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/marskar/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-# ZSH_THEME="robbyrussell"
+ZSH_THEME="powerlevel9k/powerlevel9k"
+
 
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
@@ -100,27 +93,6 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-
-# taken from https://wrotenwrites.com/a_modern_terminal_workflow_1/
-autoload colors zsh/terminfo
-colors
-
-precmd() { print "" }
-
-PS1="⟩"
-RPS1="%{$fg[magenta]%}%20<...<%~%<<%{$reset_color%}"
-
-# Auto start tmux
-if [ "$TMUX" = "" ]; then tmux; fi
-
-# Auto CD
-setopt auto_cd
-
-# Typo Correction
-setopt correctall
-alias git status='nocorrect git status'
-
 # taken from https://dougblack.io/words/zsh-vi-mode.html
 bindkey -v
 
@@ -155,4 +127,5 @@ zle -N zle-keymap-select
 
 export KEYTIMEOUT=1
 
-
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+prompt_context() {}
