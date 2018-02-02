@@ -81,12 +81,14 @@ The Anaconda installer will automatically install most of the software we will u
 2. [PyCharm Integrated Development Environment (IDE)](https://www.jetbrains.com/pycharm/)
 
 The very nice folks at [JetBrains](https://www.jetbrains.com) have given us free licenses for the Professional version of PyCharm, the best (in my humble opinion) Python Integrated Development Environment (IDE).
-If you have a .edu email address, please install PyCharm Professional using this link: https://www.jetbrains.com/student/
+
+If you have a .edu email address, please install PyCharm Professional using [this link](https://www.jetbrains.com/student/)
+
 If not, a installation link will be distributed to you by email and made available on [Slack](https://biof309.slack.com/).
 
 3. [DataCamp](https://www.datacamp.com)
 
-The very nice folks at [DataCamp](https://www.datacamp.com) have given us access to their awesome DataViz📊 Machine Learning🤖 and Data Science learning materials.
+The very nice folks at [DataCamp](https://www.datacamp.com) have given us access to their awesome Data Visualization📊, Machine Learning🤖, and Data Science learning materials.
 We will discuss the most interesting examples during class and point out others to be reviewed outside of class.
 
 4. [PluralSight](https://www.pluralsight.com)
