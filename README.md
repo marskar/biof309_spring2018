@@ -74,22 +74,24 @@ Required Materials
 *Programing without a computer would be an exceptional feat.*
 
 For the course, we will use the
-1. [Anaconda Scientific Python Distribution](https://www.continuum.io/downloads) and the
+1. [Anaconda Scientific Python Distribution](https://www.continuum.io/downloads)
+
+The Anaconda installer will automatically install most of the software we will use during the course, including [Jupyter Notebooks](http://jupyter-notebook.readthedocs.io/en/latest/examples/Notebook/What%20is%20the%20Jupyter%20Notebook.html).
+
 2. [PyCharm Integrated Development Environment (IDE)](https://www.jetbrains.com/pycharm/)
-3. [DataCamp](https://www.datacamp.com)
-4. [GitHub](https://github.com/)
 
-\1. The Anaconda installer will automatically install most of the software we will use during the course, including [Jupyter Notebooks](http://jupyter-notebook.readthedocs.io/en/latest/examples/Notebook/What%20is%20the%20Jupyter%20Notebook.html).
-
-2. The very nice folks at [JetBrains](https://www.jetbrains.com) have given us free licenses for the Professional version of PyCharm, the best (in my humble opinion) Python Integrated Development Environment (IDE).
+The very nice folks at [JetBrains](https://www.jetbrains.com) have given us free licenses for the Professional version of PyCharm, the best (in my humble opinion) Python Integrated Development Environment (IDE).
 If you have a .edu email address, please install PyCharm Professional using this link: https://www.jetbrains.com/student/
 If not, a installation link will be distributed to you by email and made available on [Slack](https://biof309.slack.com/).
 
-3. The very nice folks at [DataCamp](https://www.datacamp.com) have given us access to their awesome teaching materials.
+3. [DataCamp](https://www.datacamp.com)
+
+The very nice folks at [DataCamp](https://www.datacamp.com) have given us access to their awesome teaching materials.
 We will discuss the most interesting examples during class and point out others to be reviewed outside of class.
 
-4. All of the course materials are available on [GitHub](https://github.com/).
+4. [GitHub](https://github.com/)
 
+All of the course materials are available on [GitHub](https://github.com/).
 Before accessing the [course materials repo](https://github.com/marskar/biof309_spring2018), you should know that
 * it is likely to be under constant development throughout the semester and
 * you are not expected to work through _everything_ contained therein!
