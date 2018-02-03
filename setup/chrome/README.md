@@ -1,23 +1,25 @@
 # Install the following extensions:
 
-- vimium https://chrome.google.com/webstore/detail/vimium/dbepggeogbaibhgnhhndojpepiihcmeb
-- surfingkeys https://chrome.google.com/webstore/detail/surfingkeys/gfbliohnnapiefjpjlpjnehglfpaknnc
-- cVim https://chrome.google.com/webstore/detail/cvim/ihlenndgcmojhcghmfjfneahoeklbjjh
-- wasavi https://chrome.google.com/webstore/detail/wasavi/dgogifpkoilgiofhhhodbodcfgomelhe
-- text mode https://chrome.google.com/webstore/detail/text-mode/adelhekhakakocomdfejiipdnaadiiib
-- dark reader https://chrome.google.com/webstore/detail/dark-reader/eimadpbcbfnmbkopoojfekhnkhdbieeh
+- [vimium](https://chrome.google.com/webstore/detail/vimium/dbepggeogbaibhgnhhndojpepiihcmeb)
+- [surfingkeys](https://chrome.google.com/webstore/detail/surfingkeys/gfbliohnnapiefjpjlpjnehglfpaknnc)
+- [text mode](https://chrome.google.com/webstore/detail/text-mode/adelhekhakakocomdfejiipdnaadiiib)
+- [dark reader](https://chrome.google.com/webstore/detail/dark-reader/eimadpbcbfnmbkopoojfekhnkhdbieeh)
+- (and if you know vim!) [wasavi]( https://chrome.google.com/webstore/detail/wasavi/dgogifpkoilgiofhhhodbodcfgomelhe)
 
-#Use
-When you want to turn off vimium, press i to put vimium in insert mode.
-When you want to turn off SurfingKeys, press Alt+s.
+# Use
 
-# Unmap the following key mapping in surfingkeys: 
+When you want to turn off vimium, press i to put vimium in insert mode. When vimium is in insert mode, you can use any of the many, many surfingkeys shortcuts.
+
+When you want to turn off SurfingKeys, press `alt`+`s` (turn off both vimium and surfingkeys if they conflict with webpage-specific shortcuts e.g. gmail shortcuts).
+
+If you know how to vim, start wasavi with `ctrl`+`enter`.
+
+# (Optional) Navigate to chrome://extensions/ and set the following keyboard shortcuts at the bottom:
+
+- Activate the vimium extension (menu): `alt`+`v`
+- Activate the Text Mode extension: `alt`+`t`
+- Activate the Dark Reader extension: `alt`+`d`
+
+# (Optional) Unmap the following key mapping in surfingkeys: 
 // remove mapkey `Ctrl-i`
 unmap('<Ctrl-i>');
-
-# Navigate to chrome://extensions/ and set the following keyboard shortcuts at the bottom:
-
-- Toggle the enabled state of cVim: Alt+c
-- Activate the Text Mode extension: Alt+t
-- Activate the vimium extension: Alt+v
-- Activate the Dark Reader extension: Alt+d
