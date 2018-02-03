@@ -21,5 +21,6 @@ If you know how to use the [vim](http://www.vim.org/) editor, start `wasavi` wit
 - Activate the `Dark Reader` extension: `alt`+`d`
 
 # (Optional) Unmap the following key mapping in surfingkeys: 
-// remove mapkey `Ctrl-i`
+```// remove mapkey `Ctrl-i`
 unmap('<Ctrl-i>');
+```
