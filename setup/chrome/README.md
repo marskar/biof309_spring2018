@@ -4,7 +4,7 @@
 - [surfingkeys](https://chrome.google.com/webstore/detail/surfingkeys/gfbliohnnapiefjpjlpjnehglfpaknnc)
 - [text mode](https://chrome.google.com/webstore/detail/text-mode/adelhekhakakocomdfejiipdnaadiiib)
 - [dark reader](https://chrome.google.com/webstore/detail/dark-reader/eimadpbcbfnmbkopoojfekhnkhdbieeh)
-- (and if you know vim!) [wasavi]( https://chrome.google.com/webstore/detail/wasavi/dgogifpkoilgiofhhhodbodcfgomelhe)
+- (and if you know [vim](http://www.vim.org/)!) [wasavi]( https://chrome.google.com/webstore/detail/wasavi/dgogifpkoilgiofhhhodbodcfgomelhe)
 
 # Use
 
@@ -12,7 +12,7 @@ When you want to turn off `vimium`, press `i` to put vimium in insert mode. When
 
 When you want to turn off `surfingkeys`, press `alt`+`s` (turn off both vimium and surfingkeys if they conflict with webpage-specific shortcuts e.g. gmail shortcuts).
 
-If you know how to the vim editor, start `wasavi` with `ctrl`+`enter`.
+If you know how to use the [vim](http://www.vim.org/) editor, start `wasavi` with `ctrl`+`enter`.
 
 # (Optional) Navigate to chrome://extensions/ and set the following keyboard shortcuts at the bottom:
 
