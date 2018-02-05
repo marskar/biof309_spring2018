@@ -687,14 +687,6 @@ nrm_ZZ_dsc = 'Write current file, if modified, and quit (same as ":x")'
 nrm_ZQ_use = "ZQ"
 nrm_ZQ_dsc = 'Quit without checking for changes (same as ":q!")'
 #Ctrl
-nrm_1217_use = "<C-r><C-w>"
-nrm_1217_dsc = "use word under cursor to autocomplete search entry when search forward (/) or reverse (?)"
-nrm_1201_use = "<C-r><C-a>"
-nrm_1201_dsc = "use WORD under cursor to autocomplete search entry when search forward (/) or reverse (?)"
-nrm_1217_use = "<C-r><C-w>"
-nrm_1217_dsc = "use word under cursor to autocomplete command mode entry"
-nrm_1201_use = "<C-r><C-a>"
-nrm_1201_dsc = "use WORD under cursor to autocomplete command mode entry"
 nrm_01_use = "[count]<C-a>"
 nrm_01_dsc = "Add [count] to the number or alphabetic character at or after the cursor (need to 'set nrformats=alpha,octal,bin'; hex option will affect zero padded numbers)"
 nrm_18_use = "[count]<C-x>"
@@ -1065,6 +1057,68 @@ nrm_1722_use = "<C-W>|"
 nrm_1722_dsc = "set window width to N columns"
 nrm_1722_use = "<C-W>}"
 nrm_1722_dsc = "show tag under cursor in preview window"
+cmd_e_use = ":e {filename}"
+cmd_e_dsc= "edit file"
+cmd_w_use = ":w {filename}"
+cmd_w_dsc= ":write file"
+cmd_w_use = ":w {filename}"
+cmd_w_dsc= ":write file"
+cmd_w_use = ":w {filename}"
+cmd_w_dsc= ":write file"
+cmd_02_use = "[count]<C-b>"
+cmd_02_dsc = "move cursor to the beginning of the line"
+cmd_05_use = "[count]<C-e>"
+cmd_05_dsc = "move cursor to the end of the line"
+cmd_08_use = "[count]<C-h>"
+cmd_08_dsc = "delete the character in front of the cursor"
+cmd_15_use = "<C-u>"
+cmd_15_dsc = "delete characters entered thus far and then current line"
+cmd_17_use = "<C-w>"
+cmd_17_dsc = "delete back one word"
+cmd_12_use = "<C-r>{register}"
+cmd_12_dsc = "paste from {register}"
+cmd_12nm_use = "<C-r>{1-9}"
+cmd_12nm_dsc = 'paste the Nth latest deleted text that was more than one line or created using a jump, e.g. "%", "(", ")", "`", "/", "?", "n", "N", "{" and "}, from one of the non-zero numbered registers ("{1-9})'
+cmd_1230_use = "<C-r>0"
+cmd_1230_dsc = 'paste the latest yanked text from the yank ("0) register'
+cmd_122B_use = "<C-r>+"
+cmd_122B_dsc = 'paste the latest copied text from the system clipboard ("+) register'
+cmd_1222_use = '<C-r>"'
+cmd_1222_dsc = 'paste the latest deleted text from the unnamed ("") register'
+cmd_122D_use = "<C-r>-"
+cmd_122D_dsc = 'paste the latest deleted text that was less than one line from the small delete ("-) register'
+cmd_122E_use = "<C-r>."
+cmd_122E_dsc = 'paste the latest inserted text from the insert (".) register'
+cmd_1225_use = "<C-r>%"
+cmd_1225_dsc = 'paste the current filename from the filename ("%) register'
+cmd_1223_use = "<C-r>#"
+cmd_1223_dsc = 'paste the alternate filename from the alternate filename ("#) register'
+cmd_123D_use = "<C-r>={expression}<CR>"
+cmd_123D_dsc = 'write an {expression} to be evaluated using the evalution ("=) register'
+cmd_123A_use = "<C-r>:"
+cmd_123A_dsc = 'paste the latest Ex command from the Ex command (":) register'
+cmd_122F_use = "<C-r>/"
+cmd_122F_dsc = 'paste the latest search pattern from the search pattern ("/) register'
+cmd_127E_use = "<C-r>~"
+cmd_127E_dsc = 'paste the dropped text from the latest drag and drop operation using the drop ("~) register'
+src_1217_use = "<C-r><C-w>"
+src_1217_dsc = "use word under cursor to autocomplete search entry when searching forward (/) or reverse (?)"
+src_1201_use = "<C-r><C-a>"
+src_1201_dsc = "use WORD under cursor to autocomplete search entry when searching forward (/) or reverse (?)"
+cmd_1217_use = "<C-r><C-w>"
+cmd_1217_dsc = "use word under cursor to autocomplete command mode entry"
+cmd_1201_use = "<C-r><C-a>"
+cmd_1201_dsc = "use WORD under cursor to autocomplete command mode entry"
+src_1217_use = "<C-r><C-f>"
+src_1217_dsc = "use filename under cursor to autocomplete search entry when searching forward (/) or reverse (?)"
+src_1201_use = "<C-r><C-p>"
+src_1201_dsc = "use file path (as with 'gf') under cursor to autocomplete search entry when searching forward (/) or reverse (?)"
+cmd_1217_use = "<C-r><C-f>"
+cmd_1217_dsc = "use filename under cursor to autocomplete command mode entry"
+cmd_1201_use = "<C-r><C-p>"
+cmd_1201_dsc = "use file path (as with 'gf') under cursor to autocomplete command mode entry"
+cmd_his_use = ":his [{c:s/?e=i@d>a}]"
+cmd_1201_dsc = "list the contents of history {name} which can be c or : for command-line history, s or / or ? for search string history, e or = for expression register history i[nput] or @ input line history d[ebug] or > debug command history a[ll] for all of the above {not in Vi} "
 df <- data.frame(
 df <- data.frame(
 nrm_P_dsc = "paste character(s) [from register] to left of cursor or line(s) above current line, [count] times"
