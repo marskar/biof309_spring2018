@@ -7,11 +7,12 @@ if has('vim_starting')
   set nocompatible               " Be iMproved
 endif
 
-" let g:loaded_python_provider = 1
+let g:loaded_python_provider = 1 "disable python2 support
 let g:jedi#force_py_version=3
+let g:UltisnipsUsePythonVersion=3
 " call jedi#force_py_version(3)
-let g:python_host_prog = '/usr/local/bin/python2'
-let g:python3_host_prog = '/usr/local/bin/python3'
+let g:python_host_prog = '/Users/marskar/miniconda3/bin/python' "Use python3 instead of python2
+let g:python3_host_prog = '/Users/marskar/miniconda3/bin/python'
 let vimplug_exists=expand('~/.config/nvim/autoload/plug.vim')
 
 let g:vim_bootstrap_langs = "python"
