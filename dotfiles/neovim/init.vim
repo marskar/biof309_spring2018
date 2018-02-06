@@ -138,6 +138,8 @@ filetype plugin indent on
 " add this too I guess
 filetype plugin on
 
+syntax on
+color dracula
 
 "*****************************************************************************
 "" Basic Setup
