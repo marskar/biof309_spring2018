@@ -64,43 +64,48 @@ Plug 'kien/ctrlp.vim'
 Plug 'godlygeek/tabular'
 Plug 'sjl/gundo.vim'
 Plug 'terryma/vim-multiple-cursors'
+" discussed here: https://www.oliversherouse.com/2017/08/21/vim_zero.html
+Plug 'lifepillar/vim-mucomplete'
+Plug 'chiel92/vim-autoformat'
+Plug 'tpope/vim-sensible'
+" Plug 'flazz/vim-colorschemes'
 
 " vim-bootstrap plugins
 Plug 'scrooloose/nerdtree'
 Plug 'jistr/vim-nerdtree-tabs'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-Plug 'airblade/vim-gitgutter'
-Plug 'vim-scripts/grep.vim'
-Plug 'vim-scripts/CSApprox'
-Plug 'bronson/vim-trailing-whitespace'
 Plug 'Raimondi/delimitMate'
-Plug 'majutsushi/tagbar'
-Plug 'scrooloose/syntastic'
 Plug 'Yggdroot/indentLine'
 Plug 'avelino/vim-bootstrap-updater'
 Plug 'sheerun/vim-polyglot'
-if isdirectory('/usr/local/opt/fzf')
-  Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
-else
-  Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
-  Plug 'junegunn/fzf.vim'
-endif
-let g:make = 'gmake'
-if exists('make')
-        let g:make = 'make'
-endif
-Plug 'Shougo/vimproc.vim', {'do': g:make}
+" Plug 'vim-airline/vim-airline'
+" Plug 'vim-airline/vim-airline-themes'
+" Plug 'airblade/vim-gitgutter'
+" Plug 'vim-scripts/grep.vim'
+" Plug 'vim-scripts/CSApprox'
+" Plug 'bronson/vim-trailing-whitespace'
+" Plug 'majutsushi/tagbar'
+" Plug 'scrooloose/syntastic'
+" if isdirectory('/usr/local/opt/fzf')
+"   Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
+" else
+"   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
+"   Plug 'junegunn/fzf.vim'
+" endif
+" let g:make = 'gmake'
+" if exists('make')
+"         let g:make = 'make'
+" endif
+" Plug 'Shougo/vimproc.vim', {'do': g:make}
 
-"" Vim-Session
-Plug 'xolox/vim-misc'
-Plug 'xolox/vim-session'
+" "" Vim-Session
+" Plug 'xolox/vim-misc'
+" Plug 'xolox/vim-session'
 
-if v:version >= 703
-  Plug 'Shougo/vimshell.vim'
-endif
+" if v:version >= 703
+"   Plug 'Shougo/vimshell.vim'
+" endif
 
 if v:version >= 704
   "" Snippets
@@ -118,8 +123,8 @@ Plug 'dracula/vim'
 
 " python
 "" Python Bundle
-Plug 'davidhalter/jedi-vim'
-Plug 'raimon49/requirements.txt.vim', {'for': 'requirements'}
+" Plug 'davidhalter/jedi-vim'
+" Plug 'raimon49/requirements.txt.vim', {'for': 'requirements'}
 
 
 "*****************************************************************************
@@ -138,12 +143,20 @@ filetype plugin indent on
 " add this too I guess
 filetype plugin on
 
+" Colors
+" set termguicolors
+" colorscheme darth
 syntax on
 color dracula
 
 "*****************************************************************************
 "" Basic Setup
 "*****************************************************************************"
+" https://www.oliversherouse.com/2017/08/21/vim_zero.html
+set spell spelllang=en_us
+set splitright
+nnoremap <leader><space> :nohls <enter>
+
 " taken from https://www.johnhawthorn.com/2012/09/vi-escape-delays/
 set timeoutlen=1000 ttimeoutlen=10
 
@@ -274,10 +287,10 @@ set expandtab
 set autoindent
 
 "" Map leader to ,
-let mapleader=','
+" let mapleader=','
 
 "" Enable hidden buffers
-set hidden
+set hidden " Allow background buffers without saving
 
 
 "" Directories for swp files
@@ -458,17 +471,11 @@ set autoread
 "*****************************************************************************
 "" Mappings
 "*****************************************************************************
-
-" iron.nvim
-" deactivate default mappings
-" let g:iron_map_defaults=0
-" define custom mappings for the python filetype
-" augroup ironmapping
-"     autocmd!
-"     autocmd Filetype python nmap <buffer> <localleader>t <Plug>(iron-send-motion)
-"     autocmd Filetype python vmap <buffer> <localleader>t <Plug>(iron-send-motion)
-"     autocmd Filetype python nmap <buffer> <localleader>p <Plug>(iron-repeat-cmd)
-" augroup END
+" https://www.oliversherouse.com/2017/08/21/vim_zero.html
+nnoremap <C-H> :bp <enter>
+nnoremap <C-L> :bn <enter>
+nnoremap <Leader>w :w <enter>
+nnoremap <Leader>q :bd <enter>
 
 " Nvim-R mappings
 " remap search key
@@ -504,7 +511,6 @@ nnoremap <leader>sd :DeleteSession<CR>
 nnoremap <leader>sc :CloseSession<CR>
 
 "" Tabs
-nnoremap <Tab> gt
 nnoremap <S-Tab> gT
 nnoremap <silent> <S-t> :tabnew<CR>
 
@@ -611,6 +617,10 @@ nnoremap <Leader>o :.Gbrowse<CR>
 "*****************************************************************************
 "" Custom configs
 "*****************************************************************************
+" Python Version
+augroup python3
+    au! BufEnter *.py setlocal omnifunc=python3complete#Complete
+augroup END
 
 " python
 " vim-python
