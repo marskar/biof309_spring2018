@@ -8,9 +8,37 @@ export ZSH=/Users/marskar/.oh-my-zsh
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 # TERM=xterm-256color
-# POWERLEVEL9K_MODE='awesome-fontconfig'
 ZSH_THEME="powerlevel9k/powerlevel9k"
+POWERLEVEL9K_MODE='nerdfont-complete'
+# SABLE_AUTO_TITLE="true"
 
+POWERLEVEL9K_BATTERY_CHARGING='yellow'
+POWERLEVEL9K_BATTERY_CHARGED='green'
+POWERLEVEL9K_BATTERY_DISCONNECTED='$DEFAULT_COLOR'
+POWERLEVEL9K_BATTERY_LOW_THRESHOLD='10'
+POWERLEVEL9K_BATTERY_LOW_COLOR='red'
+POWERLEVEL9K_BATTERY_ICON='\uf1e6 '
+POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX=''
+POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX='\uf0da'
+POWERLEVEL9K_VCS_GIT_ICON='\ue60a'
+
+POWERLEVEL9K_VCS_MODIFIED_BACKGROUND='yellow'
+POWERLEVEL9K_VCS_UNTRACKED_BACKGROUND='yellow'
+#POWERLEVEL9K_VCS_UNTRACKED_ICON='?'
+
+
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs vi_mode)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status time background_jobs ram virtualenv anaconda battery)
+
+POWERLEVEL9K_SHORTEN_STRATEGY="truncate_middle"
+POWERLEVEL9K_SHORTEN_DIR_LENGTH=4
+
+#POWERLEVEL9K_CUSTOM_TIME_FORMAT="%D{\uf017 %H:%M:%S}"
+POWERLEVEL9K_TIME_FORMAT="%D{\uf017 %H:%M \uf073 %d.%m.%y}"
+
+POWERLEVEL9K_STATUS_VERBOSE=false
+
+#POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
@@ -95,9 +123,10 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 alias v="nvim"
-alias python="python3"
-export PATH=/usr/local/bin/python3:$PATH
-
+# alias python=python3
+# export PATH=/usr/local/bin/python3:$PATH
+export PATH=/Users/marskar/miniconda3/bin:$PATH
+# export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 # taken from https://dougblack.io/words/zsh-vi-mode.html
 bindkey -v
 
