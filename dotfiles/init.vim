@@ -627,9 +627,9 @@ augroup END
 set completeopt=menuone,noinsert,noselect
 set shortmess+=c " Turn off completion messages
 
-inoremap <expr> <c-e> mucomplete#popup_exit("\<c-e>")
-inoremap <expr> <c-y> mucomplete#popup_exit("\<c-y>")
-inoremap <expr>  <cr> mucomplete#popup_exit("\<cr>")
+" inoremap <expr> <c-e> mucomplete#popup_exit("\<c-e>")
+" inoremap <expr> <c-y> mucomplete#popup_exit("\<c-y>")
+" inoremap <expr>  <cr> mucomplete#popup_exit("\<cr>")
 
 let g:mucomplete#enable_auto_at_startup = 1 
 call add(g:mucomplete#chains['default'], 'ulti')
