@@ -79,33 +79,33 @@ Plug 'Raimondi/delimitMate'
 Plug 'Yggdroot/indentLine'
 Plug 'avelino/vim-bootstrap-updater'
 Plug 'sheerun/vim-polyglot'
-" Plug 'vim-airline/vim-airline'
-" Plug 'vim-airline/vim-airline-themes'
-" Plug 'airblade/vim-gitgutter'
-" Plug 'vim-scripts/grep.vim'
-" Plug 'vim-scripts/CSApprox'
-" Plug 'bronson/vim-trailing-whitespace'
-" Plug 'majutsushi/tagbar'
-" Plug 'scrooloose/syntastic'
-" if isdirectory('/usr/local/opt/fzf')
-"   Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
-" else
-"   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
-"   Plug 'junegunn/fzf.vim'
-" endif
-" let g:make = 'gmake'
-" if exists('make')
-"         let g:make = 'make'
-" endif
-" Plug 'Shougo/vimproc.vim', {'do': g:make}
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'airblade/vim-gitgutter'
+Plug 'vim-scripts/grep.vim'
+Plug 'vim-scripts/CSApprox'
+Plug 'bronson/vim-trailing-whitespace'
+Plug 'majutsushi/tagbar'
+Plug 'scrooloose/syntastic'
+if isdirectory('/usr/local/opt/fzf')
+  Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
+else
+  Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
+  Plug 'junegunn/fzf.vim'
+endif
+let g:make = 'gmake'
+if exists('make')
+        let g:make = 'make'
+endif
+Plug 'Shougo/vimproc.vim', {'do': g:make}
 
-" "" Vim-Session
-" Plug 'xolox/vim-misc'
-" Plug 'xolox/vim-session'
+"" Vim-Session
+Plug 'xolox/vim-misc'
+Plug 'xolox/vim-session'
 
-" if v:version >= 703
-"   Plug 'Shougo/vimshell.vim'
-" endif
+if v:version >= 703
+  Plug 'Shougo/vimshell.vim'
+endif
 
 if v:version >= 704
   "" Snippets
@@ -121,10 +121,9 @@ Plug 'dracula/vim'
 "" Custom bundles
 "*****************************************************************************
 
-" python
-"" Python Bundle
-" Plug 'davidhalter/jedi-vim'
-" Plug 'raimon49/requirements.txt.vim', {'for': 'requirements'}
+" Python Bundle
+Plug 'davidhalter/jedi-vim'
+Plug 'raimon49/requirements.txt.vim', {'for': 'requirements'}
 
 
 "*****************************************************************************
@@ -153,7 +152,7 @@ color dracula
 "" Basic Setup
 "*****************************************************************************"
 " https://www.oliversherouse.com/2017/08/21/vim_zero.html
-set spell spelllang=en_us
+set nospell spelllang=en_us
 set splitright
 nnoremap <leader><space> :nohls <enter>
 
@@ -618,9 +617,22 @@ nnoremap <Leader>o :.Gbrowse<CR>
 "" Custom configs
 "*****************************************************************************
 " Python Version
+" https://www.oliversherouse.com/2017/08/21/vim_zero.html
 augroup python3
     au! BufEnter *.py setlocal omnifunc=python3complete#Complete
 augroup END
+
+"" Autocompletion
+" https://www.oliversherouse.com/2017/08/21/vim_zero.html
+set completeopt=menuone,noinsert,noselect
+set shortmess+=c " Turn off completion messages
+
+inoremap <expr> <c-e> mucomplete#popup_exit("\<c-e>")
+inoremap <expr> <c-y> mucomplete#popup_exit("\<c-y>")
+inoremap <expr>  <cr> mucomplete#popup_exit("\<cr>")
+
+let g:mucomplete#enable_auto_at_startup = 1 
+call add(g:mucomplete#chains['default'], 'ulti')
 
 " python
 " vim-python
