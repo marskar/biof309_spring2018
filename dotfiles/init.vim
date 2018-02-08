@@ -53,86 +53,52 @@ Plug 'lervag/vimtex'
 " get definitions using <leader>d
 Plug 'rizzatti/dash.vim'
 
+" For Rmarkdown syntax
+Plug 'vim-pandoc/vim-pandoc'
+Plug 'vim-pandoc/vim-pandoc-syntax'
+Plug 'vim-pandoc/vim-rmarkdown'
+
 " From Vimcast 73: http://vimcasts.org/episodes/neovim-eyecandy/
 Plug 'machakann/vim-highlightedyank'
 
-Plug 'tpope/vim-surround'
-Plug 'tpope/vim-repeat'
-Plug 'tpope/vim-abolish'
-Plug 'tommcdo/vim-exchange'
-Plug 'kien/ctrlp.vim'
-Plug 'godlygeek/tabular'
-Plug 'sjl/gundo.vim'
-Plug 'terryma/vim-multiple-cursors'
+" Plug 'tpope/vim-surround'
+" Plug 'tpope/vim-repeat'
+" Plug 'tpope/vim-abolish'
+" Plug 'tommcdo/vim-exchange'
+" Plug 'kien/ctrlp.vim'
+" Plug 'godlygeek/tabular'
+" Plug 'sjl/gundo.vim'
+" Plug 'terryma/vim-multiple-cursors'
 " discussed here: https://www.oliversherouse.com/2017/08/21/vim_zero.html
 Plug 'lifepillar/vim-mucomplete'
-Plug 'chiel92/vim-autoformat'
-Plug 'tpope/vim-sensible'
+" Plug 'chiel92/vim-autoformat'
+" Plug 'tpope/vim-sensible'
 " Plug 'flazz/vim-colorschemes'
+" Plug 'vim-pandoc/vim-pandoc-syntax'
 
 " vim-bootstrap plugins
-Plug 'scrooloose/nerdtree'
-Plug 'jistr/vim-nerdtree-tabs'
+" Plug 'scrooloose/nerdtree'
+" Plug 'jistr/vim-nerdtree-tabs'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
-Plug 'Raimondi/delimitMate'
-Plug 'Yggdroot/indentLine'
-Plug 'avelino/vim-bootstrap-updater'
 Plug 'sheerun/vim-polyglot'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'airblade/vim-gitgutter'
-Plug 'vim-scripts/grep.vim'
-Plug 'vim-scripts/CSApprox'
+" Plug 'vim-scripts/grep.vim'
+" Plug 'vim-scripts/CSApprox'
 Plug 'bronson/vim-trailing-whitespace'
-Plug 'majutsushi/tagbar'
-Plug 'scrooloose/syntastic'
-if isdirectory('/usr/local/opt/fzf')
-  Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
-else
-  Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
-  Plug 'junegunn/fzf.vim'
-endif
-let g:make = 'gmake'
-if exists('make')
-        let g:make = 'make'
-endif
-Plug 'Shougo/vimproc.vim', {'do': g:make}
+" Plug 'majutsushi/tagbar'
 
-"" Vim-Session
-Plug 'xolox/vim-misc'
-Plug 'xolox/vim-session'
-
-if v:version >= 703
-  Plug 'Shougo/vimshell.vim'
-endif
-
-if v:version >= 704
-  "" Snippets
-  Plug 'SirVer/ultisnips'
-endif
+"" Snippets
+Plug 'SirVer/ultisnips'
 
 Plug 'honza/vim-snippets'
 
 "" Color
 Plug 'dracula/vim'
 
-"*****************************************************************************
-"" Custom bundles
-"*****************************************************************************
-
-" Python Bundle
 Plug 'davidhalter/jedi-vim'
-Plug 'raimon49/requirements.txt.vim', {'for': 'requirements'}
-
-
-"*****************************************************************************
-"*****************************************************************************
-
-"" Include user's extra bundle
-if filereadable(expand("~/.config/nvim/local_bundles.vim"))
-  source ~/.config/nvim/local_bundles.vim
-endif
 
 call plug#end()
 
@@ -143,8 +109,7 @@ filetype plugin indent on
 filetype plugin on
 
 " Colors
-" set termguicolors
-" colorscheme darth
+set termguicolors
 syntax on
 color dracula
 
@@ -291,7 +256,6 @@ set autoindent
 "" Enable hidden buffers
 set hidden " Allow background buffers without saving
 
-
 "" Directories for swp files
 set nobackup
 set noswapfile
@@ -322,35 +286,6 @@ let g:Rout_more_colors = 1
 
 syntax on
 set ruler
-set number
-
-set mousemodel=popup
-set t_Co=256
-set guioptions=egmrti
-set gfn=Monospace\ 10
-
-if has("gui_running")
-  if has("gui_mac") || has("gui_macvim")
-    set guifont=Menlo:h12
-    set transparency=7
-  endif
-else
-  let g:CSApprox_loaded = 1
-
-  " IndentLine
-  let g:indentLine_enabled = 1
-  let g:indentLine_concealcursor = 0
-  let g:indentLine_char = '┆'
-  let g:indentLine_faster = 1
-
-  
-endif
-
-
-
-"" Disable the blinking cursor.
-" set gcr=a:blinkon0
-" set scrolloff=3
 
 "" Status bar
 set laststatus=2
@@ -397,49 +332,6 @@ cnoreabbrev W w
 cnoreabbrev Q q
 cnoreabbrev Qall qall
 
-"" NERDTree configuration
-let g:NERDTreeChDirMode=2
-let g:NERDTreeIgnore=['\.rbc$', '\~$', '\.pyc$', '\.db$', '\.sqlite$', '__pycache__']
-let g:NERDTreeSortOrder=['^__\.py$', '\/$', '*', '\.swp$', '\.bak$', '\~$']
-let g:NERDTreeShowBookmarks=1
-let g:nerdtree_tabs_focus_on_files=1
-let g:NERDTreeMapOpenInTabSilent = '<RightMouse>'
-let g:NERDTreeWinSize = 50
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc,*.db,*.sqlite
-nnoremap <silent> <F2> :NERDTreeFind<CR>
-nnoremap <silent> <F3> :NERDTreeToggle<CR>
-
-" grep.vim
-nnoremap <silent> <leader>f :Rgrep<CR>
-let Grep_Default_Options = '-IR'
-let Grep_Skip_Files = '*.log *.db'
-let Grep_Skip_Dirs = '.git node_modules'
-
-" vimshell.vim
-let g:vimshell_user_prompt = 'fnamemodify(getcwd(), ":~")'
-let g:vimshell_prompt =  '$ '
-
-" terminal emulation
-if g:vim_bootstrap_editor == 'nvim'
-  nnoremap <silent> <leader>sh :terminal<CR>
-else
-  nnoremap <silent> <leader>sh :VimShellCreate<CR>
-endif
-
-"*****************************************************************************
-"" Functions
-"*****************************************************************************
-if !exists('*s:setupWrapping')
-  function s:setupWrapping()
-    set wrap
-    set wm=2
-    set textwidth=79
-  endfunction
-endif
-
-"*****************************************************************************
-"" Autocmd Rules
-"*****************************************************************************
 "" The PC is fast enough, do syntax highlight syncing from start unless 200 lines
 augroup vimrc-sync-fromstart
   autocmd!
@@ -457,15 +349,6 @@ augroup vimrc-wrapping
   autocmd!
   autocmd BufRead,BufNewFile *.txt call s:setupWrapping()
 augroup END
-
-"" make/cmake
-augroup vimrc-make-cmake
-  autocmd!
-  autocmd FileType make setlocal noexpandtab
-  autocmd BufNewFile,BufRead CMakeLists.txt setlocal filetype=cmake
-augroup END
-
-set autoread
 
 "*****************************************************************************
 "" Mappings
@@ -522,46 +405,11 @@ noremap <Leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
 "" Opens a tab edit command with the path of the currently edited file filled
 noremap <Leader>te :tabe <C-R>=expand("%:p:h") . "/" <CR>
 
-"" fzf.vim
-set wildmode=list:longest,list:full
-set wildignore+=*.o,*.obj,.git,*.rbc,*.pyc,__pycache__
-let $FZF_DEFAULT_COMMAND =  "find * -path '*/\.*' -prune -o -path 'node_modules/**' -prune -o -path 'target/**' -prune -o -path 'dist/**' -prune -o  -type f -print -o -type l -print 2> /dev/null"
-
-" The Silver Searcher
-if executable('ag')
-  let $FZF_DEFAULT_COMMAND = 'ag --hidden --ignore .git -g ""'
-  set grepprg=ag\ --nogroup\ --nocolor
-endif
-
-" ripgrep
-if executable('rg')
-  let $FZF_DEFAULT_COMMAND = 'rg --files --hidden --follow --glob "!.git/*"'
-  set grepprg=rg\ --vimgrep
-  command! -bang -nargs=* Find call fzf#vim#grep('rg --column --line-number --no-heading --fixed-strings --ignore-case --hidden --follow --glob "!.git/*" --color "always" '.shellescape(<q-args>).'| tr -d "\017"', 1, <bang>0)
-endif
-
-cnoremap <C-P> <C-R>=expand("%:p:h") . "/" <CR>
-nnoremap <silent> <leader>b :Buffers<CR>
-nnoremap <silent> <leader>e :FZF -m<CR>
-
 " snippets
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<c-b>"
 let g:UltiSnipsEditSplit="vertical"
-
-" syntastic
-let g:syntastic_always_populate_loc_list=1
-let g:syntastic_error_symbol='✗'
-let g:syntastic_warning_symbol='⚠'
-let g:syntastic_style_error_symbol = '✗'
-let g:syntastic_style_warning_symbol = '⚠'
-let g:syntastic_auto_loc_list=1
-let g:syntastic_aggregate_errors = 1
-
-" Tagbar
-nmap <silent> <F4> :TagbarToggle<CR>
-let g:tagbar_autofocus = 1
 
 " Disable visualbell
 set noerrorbells visualbell t_vb=
@@ -655,7 +503,7 @@ let g:jedi#completions_command = "<C-Space>"
 let g:jedi#smart_auto_mappings = 0
 
 " syntastic
-let g:syntastic_python_checkers=['python', 'flake8']
+" let g:syntastic_python_checkers=['python', 'flake8']
 
 " vim-airline
 let g:airline#extensions#virtualenv#enabled = 1
@@ -664,19 +512,6 @@ let g:airline#extensions#virtualenv#enabled = 1
 " Default highlight is better than polyglot
 let g:polyglot_disabled = ['python']
 let python_highlight_all = 1
-
-
-"*****************************************************************************
-"*****************************************************************************
-
-"" Include user's local vim config
-if filereadable(expand("~/.config/nvim/local_init.vim"))
-  source ~/.config/nvim/local_init.vim
-endif
-
-"*****************************************************************************
-"" Convenience variables
-"*****************************************************************************
 
 " vim-airline
 if !exists('g:airline_symbols')
