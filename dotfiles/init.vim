@@ -344,15 +344,30 @@ augroup vimrc-remember-cursor-position
   autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
 augroup END
 
-"" txt
-augroup vimrc-wrapping
-  autocmd!
-  autocmd BufRead,BufNewFile *.txt call s:setupWrapping()
-augroup END
-
 "*****************************************************************************
 "" Mappings
 "*****************************************************************************
+" https://github.com/jalvesaq/Nvim-R/issues/85
+" The trailing space below is intentional!
+autocmd FileType r inoremap <buffer> > <Esc>:normal! a %>%<CR>a 
+autocmd FileType rnoweb inoremap <buffer> > <Esc>:normal! a %>%<CR>a 
+autocmd FileType rmd inoremap <buffer> > <Esc>:normal! a %>%<CR>a 
+" http://sherifsoliman.com/2017/07/22/nvim-r/
+" press -- to have Nvim-R insert the assignment operator: <-
+" let R_assign_map = "--"
+
+" set a minimum source editor width
+" let R_min_editor_width = 80
+
+" make sure the console is at the bottom by making it really wide
+" let R_rconsole_width = 1000
+
+" show arguments for functions during omnicompletion
+" let R_show_args = 1
+
+" Don't expand a dataframe to show columns by default
+" let R_objbr_opendf = 0
+
 " https://www.oliversherouse.com/2017/08/21/vim_zero.html
 nnoremap <C-H> :bp <enter>
 nnoremap <C-L> :bn <enter>
