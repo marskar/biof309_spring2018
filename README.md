@@ -210,7 +210,6 @@ If you would like additional material on the basics, the following resources may
 * [Learn Python the Hard Way (ebook freely available from the author)](http://learnpythonthehardway.org/book/) by Zed A. Shaw; a [video course](http://learnpythonthehardway.org/) is also available.
 * [Think Python (ebook freely available from the author)](http://www.greenteapress.com/thinkpython/thinkpython.html) by Allen B. Downey.
 * [Python for Everybody: Exploring Data in Python 3 (ebook freely available from the author)](https://www.pythonlearn.com/book.php) by Charles Severance.
-* [Python Cookbook](http://chimera.labs.oreilly.com/books/1230000000393/index.html) by David Beazy.
 * [The Hitchhiker’s Guide to Python](http://docs.python-guide.org/en/latest/) by Kenneth Reitz and Tanya Schlusser.
 * [Automate the Boring Stuff with Python](www.automatetheboringstuff.com) by Al Sweigart.
 * [Introduction to Machine Learning with Python](https://github.com/amueller/introduction_to_ml_with_python) by Andreas Mueller and Sarah Guido.
