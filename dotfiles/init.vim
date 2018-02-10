@@ -349,12 +349,24 @@ augroup END
 "*****************************************************************************
 " https://github.com/jalvesaq/Nvim-R/issues/85
 " The trailing space below is intentional!
-autocmd FileType r inoremap <buffer> > <Esc>:normal! a %>%<CR>a 
-autocmd FileType rnoweb inoremap <buffer> > <Esc>:normal! a %>%<CR>a 
-autocmd FileType rmd inoremap <buffer> > <Esc>:normal! a %>%<CR>a 
+autocmd FileType r inoremap <buffer> <A-m> <Esc>:normal! a %>%<CR>a 
+autocmd FileType rnoweb inoremap <buffer> <A-m> <Esc>:normal! a %>%<CR>a 
+autocmd FileType rmd inoremap <buffer> <A-m> <Esc>:normal! a %>%<CR>a 
+autocmd FileType r inoremap <buffer> <A-i> <Esc>:normal! a %in%<CR>a 
+autocmd FileType rnoweb inoremap <buffer> <A-i> <Esc>:normal! a %in%<CR>a 
+autocmd FileType rmd inoremap <buffer> <A-i> <Esc>:normal! a %in%<CR>a 
+autocmd FileType r inoremap <buffer> <A-.> <Esc>:normal! a -><CR>a 
+autocmd FileType rnoweb inoremap <buffer> <A-.> <Esc>:normal! a -><CR>a 
+autocmd FileType rmd inoremap <buffer> <A-.> <Esc>:normal! a -><CR>a 
+autocmd FileType r inoremap <buffer> <A-/> <Esc>:normal! a %/%<CR>a 
+autocmd FileType rnoweb inoremap <buffer> <A-/> <Esc>:normal! a %/%<CR>a 
+autocmd FileType rmd inoremap <buffer> <A-/> <Esc>:normal! a %/%<CR>a 
+autocmd FileType r inoremap <buffer> <A-8> <Esc>:normal! a %*%<CR>a 
+autocmd FileType rnoweb inoremap <buffer> <A-8> <Esc>:normal! a %*%<CR>a 
+autocmd FileType rmd inoremap <buffer> <A-8> <Esc>:normal! a %*%<CR>a 
 " http://sherifsoliman.com/2017/07/22/nvim-r/
-" press -- to have Nvim-R insert the assignment operator: <-
-" let R_assign_map = "--"
+" press alt+, to have Nvim-R insert the assignment operator: <-
+let R_assign_map = "<A-,>"
 
 " set a minimum source editor width
 " let R_min_editor_width = 80
