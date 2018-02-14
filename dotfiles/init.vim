@@ -54,9 +54,9 @@ Plug 'lervag/vimtex'
 Plug 'rizzatti/dash.vim'
 
 " For Rmarkdown syntax
-Plug 'vim-pandoc/vim-pandoc'
-Plug 'vim-pandoc/vim-pandoc-syntax'
-Plug 'vim-pandoc/vim-rmarkdown'
+" Plug 'vim-pandoc/vim-pandoc'
+" Plug 'vim-pandoc/vim-pandoc-syntax'
+" Plug 'vim-pandoc/vim-rmarkdown'
 
 " From Vimcast 73: http://vimcasts.org/episodes/neovim-eyecandy/
 Plug 'machakann/vim-highlightedyank'
@@ -70,7 +70,7 @@ Plug 'machakann/vim-highlightedyank'
 " Plug 'sjl/gundo.vim'
 " Plug 'terryma/vim-multiple-cursors'
 " discussed here: https://www.oliversherouse.com/2017/08/21/vim_zero.html
-Plug 'lifepillar/vim-mucomplete'
+" Plug 'lifepillar/vim-mucomplete'
 " Plug 'chiel92/vim-autoformat'
 " Plug 'tpope/vim-sensible'
 " Plug 'flazz/vim-colorschemes'
@@ -93,7 +93,7 @@ Plug 'bronson/vim-trailing-whitespace'
 "" Snippets
 Plug 'SirVer/ultisnips'
 
-Plug 'honza/vim-snippets'
+" Plug 'honza/vim-snippets'
 
 "" Color
 Plug 'dracula/vim'
@@ -348,10 +348,10 @@ augroup END
 "" Mappings
 "*****************************************************************************
 " https://github.com/jalvesaq/Nvim-R/issues/85
-" The trailing space below is intentional!
-autocmd FileType r inoremap <buffer> <A-m> <Esc>:normal! a %>%<CR>a 
-autocmd FileType rnoweb inoremap <buffer> <A-m> <Esc>:normal! a %>%<CR>a 
-autocmd FileType rmd inoremap <buffer> <A-m> <Esc>:normal! a %>%<CR>a 
+" The trailing spaces below is intentional!
+autocmd FileType r inoremap <buffer> <A-m> <Esc>:normal! a %>%<CR>a<CR>
+autocmd FileType rnoweb inoremap <buffer> <A-m> <Esc>:normal! a %>%<CR>a<CR>
+autocmd FileType rmd inoremap <buffer> <A-m> <Esc>:normal! a %>%<CR>a<CR>
 autocmd FileType r inoremap <buffer> <A-i> <Esc>:normal! a %in%<CR>a 
 autocmd FileType rnoweb inoremap <buffer> <A-i> <Esc>:normal! a %in%<CR>a 
 autocmd FileType rmd inoremap <buffer> <A-i> <Esc>:normal! a %in%<CR>a 
@@ -502,8 +502,8 @@ augroup END
 set completeopt=menuone,noinsert,noselect
 set shortmess+=c " Turn off completion messages
 
-let g:mucomplete#enable_auto_at_startup = 1 
-call add(g:mucomplete#chains['default'], 'ulti')
+" let g:mucomplete#enable_auto_at_startup = 1 
+" call add(g:mucomplete#chains['default'], 'ulti')
 
 " python
 " vim-python
