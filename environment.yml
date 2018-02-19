@@ -116,8 +116,6 @@ dependencies:
 - xz=5.2.3=0
 - zeromq=4.2.3=2
 - zlib=1.2.11=0
-- libcxxabi=4.0.1=hebd6815_0
-- mkl=2018.0.1=hfbd8650_4
 - pip:
   - backports.functools-lru-cache==1.5
   - ipython-genutils==0.2.0
