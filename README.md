@@ -131,7 +131,19 @@ Homework
 --------
 
 This semester we are taking a new approach to homework assignments. The due dates below are guidelines.
-By the end of the semester, you must complete at least one track on [DataCamp](https://www.datacamp.com/tracks/career) or the [Python Path on PluralSight](https://www.pluralsight.com/paths/python). Pick DataCamp if you want to focus on *Data Analysis* and *Machine Learning*. Choose Pluralsight if are interested in *Object-Oriented Programming* and *Test-Driven Development*.
+By the end of the semester, you must complete at least one career track or at least two skills tracks on [DataCamp](https://www.datacamp.com/tracks/career). The DataCamp career tracks include the [Python Path on PluralSight](https://www.pluralsight.com/paths/python). Pick DataCamp if you want to focus on *Data Analysis* and *Machine Learning*. Choose Pluralsight if are interested in *Object-Oriented Programming* and *Test-Driven Development*.
+
+This will take 28-67 hours total to complete, depending on which you choose to do.
+*DataCamp Career Tracks* (complete at least 1):
+- PluralSight Python Path, 30 hours, 8 courses
+- DataCamp Python Programmer, 36 hours, 10 courses
+- DataCamp Data Analyst with Python, 47 hours, 13 Courses
+- DataCamp Data Scientist with Python, 67 hours, 20 Courses
+*DataCamp Skills Tracks* (complete at least 2):
+- Python Programming, 15 hours, 4 courses
+- Importing & Cleaning Data with Python, 13 hours, 4 courses
+- Data Manipulation with Python, 16 hours, 4 courses
+- Machine Learning, 16 hours, 4 courses
 
 **Please start on your chosen track on DataCamp or PluralSight as soon as possible and work towards the certificate throughout the semester. This will require substantial work! Do not wait until the end of the semester!**
 
