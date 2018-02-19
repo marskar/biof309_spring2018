@@ -116,7 +116,6 @@ dependencies:
 - xz=5.2.3=0
 - zeromq=4.2.3=2
 - zlib=1.2.11=0
-- intel-openmp=2018.0.0=h8158457_8
 - libcxxabi=4.0.1=hebd6815_0
 - mkl=2018.0.1=hfbd8650_4
 - pip:
