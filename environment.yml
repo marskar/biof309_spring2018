@@ -89,7 +89,6 @@ dependencies:
 - python-dateutil=2.6.1=py36_0
 - pytz=2018.3=py_0
 - pyzmq=17.0.0=py36_3
-- qt=5.6.2=h9e3eb04_4
 - qtconsole=4.3.1=py36_0
 - readline=7.0=0
 - requests=2.18.4=py36_1
