@@ -147,7 +147,7 @@ This will take 28-67 hours total to complete, depending on which you choose to d
 - Data Manipulation with Python, 16 hours, 4 courses
 - Machine Learning, 16 hours, 4 courses
 
-**Please start on your chosen track(s) on DataCamp or PluralSight as soon as possible and work towards the certificate throughout the semester. This will require substantial work! Do not wait until the end of the semester!**
+**Please start on your chosen track(s) on DataCamp or PluralSight as soon as possible and work towards the certificate(s) throughout the semester. This will require substantial work! Do not wait until the end of the semester!**
 
 Please use the schedule below as a guide to which DataCamp and PluralSight chapters/lessons correspond to what is covered in class.
 
