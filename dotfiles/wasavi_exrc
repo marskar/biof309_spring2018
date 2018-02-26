@@ -1,0 +1,8 @@
+set bellvolume=0
+set nolaunchbell
+set number
+set relativenumber
+set tabstop=4
+set cursorline
+set history=100
+set undolevels=100
