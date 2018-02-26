@@ -10,6 +10,10 @@ Syllabus
 
 Changes are tracked using the git version control system.
 
+To interact with the materials in the repo using [Binder](https://mybinder.org/), please click the button below.
+
+[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/marskar/biof309_spring2018/master)
+
 Instructors:
 ------------
 
@@ -127,7 +131,25 @@ Homework
 --------
 
 This semester we are taking a new approach to homework assignments. The due dates below are guidelines.
-By the end of the semester, you must complete at least one track on [DataCamp](https://www.datacamp.com/tracks/career) or the [Python Path on PluralSight](https://www.pluralsight.com/paths/python). Pick DataCamp if you want to focus on *Data Analysis* and *Machine Learning*. Choose Pluralsight if are interested in *Object-Oriented Programming* and *Test-Driven Development*.
+By the end of the semester, you must complete at least one career track or at least two skills tracks on [DataCamp](https://www.datacamp.com/tracks/career). The DataCamp career tracks include the [Python Path on PluralSight](https://www.pluralsight.com/paths/python). Pick DataCamp if you want to focus on *Data Analysis* and *Machine Learning*. Choose Pluralsight if are interested in *Object-Oriented Programming* and *Test-Driven Development*.
+
+This will take 28-67 hours total to complete, depending on which you choose to do.
+
+*DataCamp Career Tracks* (complete at least 1):
+- PluralSight Python Path, 30 hours, 8 courses
+- DataCamp Python Programmer, 36 hours, 10 courses
+- DataCamp Data Analyst with Python, 47 hours, 13 Courses
+- DataCamp Data Scientist with Python, 67 hours, 20 Courses
+
+*DataCamp Skills Tracks* (complete at least 2):
+- Python Programming, 15 hours, 4 courses
+- Importing & Cleaning Data with Python, 13 hours, 4 courses
+- Data Manipulation with Python, 16 hours, 4 courses
+- Machine Learning, 16 hours, 4 courses
+
+**Please start on your chosen track(s) on DataCamp or PluralSight as soon as possible and work towards the certificate(s) throughout the semester. This will require substantial work! Do not wait until the end of the semester!**
+
+Please use the schedule below as a guide to which DataCamp and PluralSight chapters/lessons correspond to what is covered in class.
 
 01. DUE January 30, 2018 (BEFORE Class)
     - Install [Anaconda Scientific Python Distribution](https://www.continuum.io/downloads)
@@ -206,26 +228,17 @@ If you would like additional material on the basics, the following resources may
 * [Learn Python the Hard Way (ebook freely available from the author)](http://learnpythonthehardway.org/book/) by Zed A. Shaw; a [video course](http://learnpythonthehardway.org/) is also available.
 * [Think Python (ebook freely available from the author)](http://www.greenteapress.com/thinkpython/thinkpython.html) by Allen B. Downey.
 * [Python for Everybody: Exploring Data in Python 3 (ebook freely available from the author)](https://www.pythonlearn.com/book.php) by Charles Severance.
-* [Python Cookbook](http://chimera.labs.oreilly.com/books/1230000000393/index.html) by David Beazy.
-* [The Hitchhiker’s Guide to Python](http://docs.python-guide.org/en/latest/) by Kenneth Reitz and‎ Tanya Schlusser.
+* [The Hitchhiker’s Guide to Python](http://docs.python-guide.org/en/latest/) by Kenneth Reitz and Tanya Schlusser.
 * [Automate the Boring Stuff with Python](www.automatetheboringstuff.com) by Al Sweigart.
 * [Introduction to Machine Learning with Python](https://github.com/amueller/introduction_to_ml_with_python) by Andreas Mueller and Sarah Guido.
 
 For more information about Python, please see the official [Python Software Foundation website](https://www.python.org/).
 
-Assignments and Grading
+Grading
 -----------------------
-The emphasis of the course is on learning and mastering the skills covered. We hope that everyone will be able to complete the assignments and project. If some of the material appears unclear, please ask for clarification.
+The emphasis of the course is on learning and mastering the skills covered. We hope that everyone will be able to complete one of the Python tracks on DataCamp or PluralSight and the final project. If some of the material appears unclear, please ask for clarification.
 
-Assignments will be uploaded to the GitHub classroom setup for the course.
-
-Grading __assignments__ will be done using the following rubric:
-
-* Program runs, produces correct result, contains useful comments, meaningful variable names, follows coding conventions: A+
-* Program runs, produces correct result, contains useful comments: A
-* Program runs, produces something close to the correct result: B
-* Program runs, does not produce correct result: C
-* Program does not run: Incomplete (I)
+Completion of the Python tracks on DataCamp or PluralSight will be graded in a binary manner (completed/incomplete).
 
 Grading the __final project__ will be done using the following rubric:
 
