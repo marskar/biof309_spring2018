@@ -47,9 +47,8 @@ dependencies:
 - jupyter_core=4.4.0=py_0
 - jupyterlab=0.31.8=py36_1
 - jupyterlab_launcher=0.10.4=py36_0
-- libcurl=7.58.0=hf30b1f0_0
 - libcxx=5.0.0=0
-- libcxxabi=4.0.1=hebd6815_0
+- libcxxabi=4.0.1
 - libedit=3.1.20170329=0
 - libffi=3.2.1=3
 - libiconv=1.15=0
