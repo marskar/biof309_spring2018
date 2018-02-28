@@ -12,7 +12,7 @@ Changes are tracked using the git version control system.
 
 To interact with the materials in the repo using [Binder](https://mybinder.org/), please click the button below.
 
-[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/marskar/biof309_spring2018/master)
+[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/marskar/biof309_spring2018/master?urlpath=lab)
 
 Instructors:
 ------------
