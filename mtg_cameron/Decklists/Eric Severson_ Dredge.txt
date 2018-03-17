@@ -1,0 +1,32 @@
+4 Bloodghast
+4 Narcomoeba
+4 Prized Amalgam
+3 Golgari Thug
+4 Stinkweed Imp
+4 Insolent Neonate
+1 Scourge Devil
+3 Life from the Loam
+4 Faithless Looting
+4 Cathartic Reunion
+3 Conflagrate
+1 Darkblast
+2 Blood Crypt
+2 Stomping Ground
+2 Mountain
+3 Scalding Tarn
+2 Bloodstained Mire
+2 Wooded Foothills
+2 Dakmor Salvage
+2 Gemstone Mine
+3 Copperline Gorge
+1 Blackcleave Cliffs
+
+
+1 Darkblast
+3 Thoughtseize
+3 Collective Brutality
+1 Golgari Charm
+2 Abrupt Decay
+2 Ancient Grudge
+1 Lightning Axe
+2 Leyline of the Void

@@ -1,0 +1,35 @@
+4 Death's Shadow
+3 Gurmag Angler
+1 Tasigur, the Golden Fang
+4 Street Wraith
+4 Snapcaster Mage
+4 Thoughtseize
+4 Serum Visions
+1 Inquisition of Kozilek
+4 Fatal Push
+4 Thought Scour
+1 Lightning Bolt
+2 Temur Battle Rage
+3 Stubborn Denial
+2 Dismember
+1 Kolaghan's Command
+1 Island
+1 Swamp
+1 Steam Vents
+2 Blood Crypt
+2 Watery Grave
+4 Polluted Delta
+4 Bloodstained Mire
+3 Scalding Tarn
+
+
+1 Stubborn Denial
+1 Kolaghan's Command
+2 Liliana of the Veil
+1 Liliana, the Last Hope
+2 Collective Brutality
+2 Disdainful Stroke
+1 Kozilek's Return
+1 Engineered Explosives
+2 Ceremonious Rejection
+2 Young Pyromancer

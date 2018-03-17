@@ -1,0 +1,36 @@
+4 Kitchen Finks
+4 Birds of Paradise
+4 Devoted Druid
+4 Vizier of Remedies
+3 Noble Hierarch
+3 Duskwatch Recruiter
+3 Eternal Witness
+1 Tireless Tracker
+1 Scavenging Ooze
+1 Viscera Seer
+1 Qasali Pridemage
+1 Walking Ballista
+4 Chord of Calling
+4 Collected Company
+2 Razorverge Thicket
+2 Gavony Township
+2 Horizon Canopy
+4 Verdant Catacombs
+4 Windswept Heath
+2 Temple Garden
+2 Overgrown Tomb
+1 Godless Shrine
+1 Plains
+2 Forest
+
+
+2 Tireless Tracker
+3 Path to Exile
+2 Sin Collector
+2 Tidehollow Sculler
+1 Burrenton Forge-Tender
+1 Orzhov Pontiff
+1 Kataki, War's Wage
+1 Reclamation Sage
+1 Eidolon of Rhetoric
+1 Chameleon Colossus

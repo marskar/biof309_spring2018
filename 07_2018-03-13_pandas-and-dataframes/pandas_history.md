@@ -1,0 +1,3 @@
+[History of Pandas](https://codeburst.io/overview-of-python-data-visualization-tools-e32e1f716d10)
+
+First tool is Pandas. The Pandas name is derived from panel data, a term for multidimensional structured data-set. It is a free software that was developed by Wes McKinney in 2008 while working at Applied Quantitative Research Capital Management global firm based in Greenwich, Connecticut, United States. It all started when the company needed a productive, easy to use tool to analyze quantitative data on financial data-sets. By the end of 2009, Wes McKinney convinced management to permit him to open source the library and it is being supported by other contributors ever since, to make it even better.
