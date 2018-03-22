@@ -103,7 +103,7 @@ POWERLEVEL9K_VI_MODE_NORMAL_BACKGROUND='black'
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions)
+plugins=(git zsh-autosuggestions brew)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -116,7 +116,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
+export EDITOR='nvim'
 # else
 #   export EDITOR='mvim'
 # fi
@@ -149,7 +149,7 @@ bindkey '^N' down-history
 bindkey '^?' backward-delete-char
 bindkey '^h' backward-delete-char
 bindkey '^w' backward-kill-word
-bindkey '^r' history-incremental-search-backward
+# bindkey '^r' history-incremental-search-backward
 
 # taken from https://emily.st/2013/05/03/zsh-vi-cursor/
 function zle-keymap-select zle-line-init
@@ -177,3 +177,5 @@ export KEYTIMEOUT=1
 
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 prompt_context() {}
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
