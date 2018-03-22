@@ -54,16 +54,18 @@ Plug 'lervag/vimtex'
 Plug 'rizzatti/dash.vim'
 
 " For Rmarkdown syntax
-" Plug 'vim-pandoc/vim-pandoc'
-" Plug 'vim-pandoc/vim-pandoc-syntax'
-" Plug 'vim-pandoc/vim-rmarkdown'
+Plug 'vim-pandoc/vim-pandoc'
+Plug 'vim-pandoc/vim-pandoc-syntax'
+Plug 'vim-pandoc/vim-rmarkdown'
 
 " From Vimcast 73: http://vimcasts.org/episodes/neovim-eyecandy/
 Plug 'machakann/vim-highlightedyank'
 
-" Plug 'tpope/vim-surround'
-" Plug 'tpope/vim-repeat'
-" Plug 'tpope/vim-abolish'
+" fuzzy find with fzf ( If installed using Homebrew )
+" https://github.com/junegunn/fzf#installation
+" PlugInstall and PlugUpdate will clone fzf in ~/.fzf and run install script
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+
 " Plug 'tommcdo/vim-exchange'
 " Plug 'kien/ctrlp.vim'
 " Plug 'godlygeek/tabular'
@@ -72,15 +74,28 @@ Plug 'machakann/vim-highlightedyank'
 " discussed here: https://www.oliversherouse.com/2017/08/21/vim_zero.html
 " Plug 'lifepillar/vim-mucomplete'
 " Plug 'chiel92/vim-autoformat'
-" Plug 'tpope/vim-sensible'
 " Plug 'flazz/vim-colorschemes'
-" Plug 'vim-pandoc/vim-pandoc-syntax'
+Plug 'jiangmiao/auto-pairs'
+Plug 'plasticboy/vim-markdown'
+
+" citation tools
+" Plug 'shougo/unite.vim'
+" Plug 'rafaqz/citation.vim'
 
 " vim-bootstrap plugins
 " Plug 'scrooloose/nerdtree'
 " Plug 'jistr/vim-nerdtree-tabs'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-abolish'
+Plug 'tpope/vim-sensible'
+Plug 'tpope/vim-rhubarb'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-obsession'
+Plug 'tpope/vim-unimpaired'
+
+Plug 'qpkorr/vim-bufkill'
 Plug 'sheerun/vim-polyglot'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -91,9 +106,9 @@ Plug 'bronson/vim-trailing-whitespace'
 " Plug 'majutsushi/tagbar'
 
 "" Snippets
-Plug 'SirVer/ultisnips'
+Plug 'sirver/ultisnips'
 
-" Plug 'honza/vim-snippets'
+Plug 'honza/vim-snippets'
 
 "" Color
 Plug 'dracula/vim'
@@ -116,10 +131,19 @@ color dracula
 "*****************************************************************************
 "" Basic Setup
 "*****************************************************************************"
+" citation settings
+let g:citation_vim_bibtex_file="/path/to/your/bib/file/library.bib"
+let g:citation_vim_mode="bibtex"
+
+"If you want to use vim-pandoc-syntax without vim-pandoc, you'll need to tell Vim to load it for certain files. Just add something like this to your vimrc:
+" https://github.com/vim-pandoc/vim-pandoc-syntax
+    " augroup pandoc_syntax
+    "     au! BufNewFile,BufFilePre,BufRead *.md set filetype=markdown.pandoc
+    " augroup END
 " https://www.oliversherouse.com/2017/08/21/vim_zero.html
 set nospell spelllang=en_us
 set splitright
-nnoremap <leader><space> :nohls <enter>
+" nnoremap <leader><space> :nohls <enter>
 
 " taken from https://www.johnhawthorn.com/2012/09/vi-escape-delays/
 set timeoutlen=1000 ttimeoutlen=10
@@ -406,8 +430,8 @@ noremap <Leader>v :<C-u>vsplit<CR>
 "" Git
 noremap <Leader>ga :Gwrite<CR>
 noremap <Leader>gc :Gcommit<CR>
-noremap <Leader>gsh :Gpush<CR>
-noremap <Leader>gll :Gpull<CR>
+noremap <Leader>gps :Gpush<CR>
+noremap <Leader>gpl :Gpull<CR>
 noremap <Leader>gs :Gstatus<CR>
 noremap <Leader>gb :Gblame<CR>
 noremap <Leader>gd :Gvdiff<CR>
@@ -445,9 +469,9 @@ if has('autocmd')
 endif
 
 "" Copy/Paste/Cut
-if has('unnamedplus')
-  set clipboard=unnamed,unnamedplus
-endif
+" if has('unnamedplus')
+"   set clipboard=unnamed,unnamedplus
+" endif
 
 noremap YY "+y<CR>
 noremap <leader>p "+gP<CR>
@@ -472,10 +496,10 @@ noremap <leader>c :bd<CR>
 nnoremap <silent> <leader><space> :noh<cr>
 
 "" Switching windows
-noremap <C-j> <C-w>j
-noremap <C-k> <C-w>k
-noremap <C-l> <C-w>l
-noremap <C-h> <C-w>h
+" noremap <C-j> <C-w>j
+" noremap <C-k> <C-w>k
+" noremap <C-l> <C-w>l
+" noremap <C-h> <C-w>h
 
 "" Vmap for maintain Visual Mode after shifting > and <
 vmap < <gv
