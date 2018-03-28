@@ -56,7 +56,7 @@ Plug 'rizzatti/dash.vim'
 " For Rmarkdown syntax
 Plug 'vim-pandoc/vim-pandoc'
 Plug 'vim-pandoc/vim-pandoc-syntax'
-Plug 'vim-pandoc/vim-rmarkdown'
+" Plug 'vim-pandoc/vim-rmarkdown'
 
 " From Vimcast 73: http://vimcasts.org/episodes/neovim-eyecandy/
 Plug 'machakann/vim-highlightedyank'
@@ -75,7 +75,7 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 " Plug 'lifepillar/vim-mucomplete'
 " Plug 'chiel92/vim-autoformat'
 " Plug 'flazz/vim-colorschemes'
-Plug 'jiangmiao/auto-pairs'
+" Plug 'jiangmiao/auto-pairs'
 Plug 'plasticboy/vim-markdown'
 
 " citation tools
@@ -131,9 +131,12 @@ color dracula
 "*****************************************************************************
 "" Basic Setup
 "*****************************************************************************"
-" citation settings
-let g:citation_vim_bibtex_file="/path/to/your/bib/file/library.bib"
-let g:citation_vim_mode="bibtex"
+set nofoldenable "I do not like automatic folding
+
+let g:pandoc_bibfiles = ['~/gdrive/nhanes/bib/nhanes.bib']
+
+let g:pandoc#modules#disabled = ["folding", "spell"]
+let g:pandoc#syntax#conceal#blacklist = ["codeblock_start", "codeblock_delim"]
 
 "If you want to use vim-pandoc-syntax without vim-pandoc, you'll need to tell Vim to load it for certain files. Just add something like this to your vimrc:
 " https://github.com/vim-pandoc/vim-pandoc-syntax
