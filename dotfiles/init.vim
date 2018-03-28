@@ -135,6 +135,17 @@ set nofoldenable "I do not like automatic folding
 
 let g:pandoc_bibfiles = ['~/gdrive/nhanes/bib/nhanes.bib']
 
+" vanilla vim autopairs replacement
+" https://stackoverflow.com/questions/21316727/automatic-closing-brackets-for-vim
+ino " ""<left>
+ino ' ''<left>
+ino ( ()<left>
+ino [ []<left>
+ino { {}<left>
+ino {<CR> {<CR>}<ESC>O
+ino {;<CR> {<CR>};<ESC>O
+ino {,<CR> {<CR>},<ESC>O
+
 let g:pandoc#modules#disabled = ["folding", "spell"]
 let g:pandoc#syntax#conceal#blacklist = ["codeblock_start", "codeblock_delim"]
 
