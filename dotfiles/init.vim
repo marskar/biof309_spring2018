@@ -51,12 +51,16 @@ Plug 'gaalcaras/ncm-R'
 " Optional: better Rnoweb support (LaTeX completion)
 Plug 'lervag/vimtex'
 " get definitions using <leader>d
-Plug 'rizzatti/dash.vim'
+" Plug 'rizzatti/dash.vim' " Use \rh instead
 
 " For Rmarkdown syntax
 Plug 'vim-pandoc/vim-pandoc'
 Plug 'vim-pandoc/vim-pandoc-syntax'
-" Plug 'vim-pandoc/vim-rmarkdown'
+" Plug 'vim-pandoc/vim-rmarkdown' " This plugin interferes with ncm-R
+" Plug 'plasticboy/vim-markdown'
+" Plug 'gabrielelana/vim-markdown'
+
+" Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 
 " From Vimcast 73: http://vimcasts.org/episodes/neovim-eyecandy/
 Plug 'machakann/vim-highlightedyank'
@@ -76,7 +80,6 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 " Plug 'chiel92/vim-autoformat'
 " Plug 'flazz/vim-colorschemes'
 " Plug 'jiangmiao/auto-pairs'
-Plug 'plasticboy/vim-markdown'
 
 " citation tools
 " Plug 'shougo/unite.vim'
@@ -131,6 +134,7 @@ color dracula
 "*****************************************************************************
 "" Basic Setup
 "*****************************************************************************"
+
 set nofoldenable "I do not like automatic folding
 
 let g:pandoc_bibfiles = ['~/gdrive/nhanes/bib/nhanes.bib']
@@ -145,6 +149,7 @@ ino { {}<left>
 ino {<CR> {<CR>}<ESC>O
 ino {;<CR> {<CR>};<ESC>O
 ino {,<CR> {<CR>},<ESC>O
+
 
 let g:pandoc#modules#disabled = ["folding", "spell"]
 let g:pandoc#syntax#conceal#blacklist = ["codeblock_start", "codeblock_delim"]
@@ -179,6 +184,7 @@ endif
 
 " Underline the line the cursor is on
 set cursorline
+set cursorcolumn
 
 " (In times of great desperation) allow use of the mouse
 set mouse=a
@@ -425,8 +431,6 @@ nnoremap <Leader>w :w <enter>
 nnoremap <Leader>q :bd <enter>
 
 " Nvim-R mappings
-" remap search key
-nmap <silent> <leader>d <Plug>DashSearch<CR>
 " remapping the basic :: send line
 nmap <space> <Plug>RSendLine
 " remapping selection :: send multiple lines
