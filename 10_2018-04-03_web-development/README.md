@@ -11,7 +11,7 @@ Here we'll make a website that functions as a CV!  To do this we'll use [Academi
   - Click "Save & Deploy"
   - Netlify will automatically generate a unique URL for you to use to view the website, click on it to check out the defaults for the Academic template
 
-![demo_1](https://thumbs.gfycat.com/SilverGloriousEider-size_restricted.gif)
+![create academic website](https://thumbs.gfycat.com/UnlinedJauntyKinkajou-size_restricted.gif)
 
 Congrats, you just made a website!  You can access this site using the URL that Netlify generated, so send the link to all your friends.
 
@@ -60,7 +60,7 @@ Lets change some content on the website.
 4. Commit the changes to your repository
 5. Check out your site and see that the changes were made
 
-# demo for changing about.md
+![change content of site](https://thumbs.gfycat.com/InferiorBadBelugawhale-size_restricted.gif)
 
 From here you can continue to customize the content of your site as well as the URL path (cause you probably don't want to use that wonky URL provided by Netlify).
 
@@ -73,7 +73,7 @@ Here's how you can customize the URL to your new website.
   - You'll still have ".netlify.com" after your custom site name (beggars can't be choosers)
 5. Save your new site name and head out to view your site at its new address!
 
-# demo for changing the site url
+![change site url](https://thumbs.gfycat.com/NeatFickleGentoopenguin-size_restricted.gif)
 
 That kinda covers the basics, now you're up and running!  From here you can head back to the Academic's guide for [getting started](https://sourcethemes.com/academic/docs/) or check out [who forked Academic](https://github.com/gcushen/hugo-academic/network) on GitHub, you can check out their work for inspiration.
 
