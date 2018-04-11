@@ -1,3 +1,5 @@
+# ideas to warp strategies https://www.quantamagazine.org/the-game-theory-math-behind-rock-paper-scissors-20180402/
+
 def janken_bot():
     """
     User plays takes on JANKEN_BOT in a traditional game of rock, paper, sissors.
