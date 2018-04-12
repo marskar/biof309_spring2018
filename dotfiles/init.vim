@@ -60,10 +60,13 @@ Plug 'vim-pandoc/vim-pandoc-syntax'
 " Plug 'plasticboy/vim-markdown'
 " Plug 'gabrielelana/vim-markdown'
 
+Plug 'ervandew/supertab'
 " Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 
 " From Vimcast 73: http://vimcasts.org/episodes/neovim-eyecandy/
 Plug 'machakann/vim-highlightedyank'
+
+Plug 'vyzyv/vimpyter' "jupyter notebook editing
 
 " fuzzy find with fzf ( If installed using Homebrew )
 " https://github.com/junegunn/fzf#installation
@@ -134,6 +137,14 @@ color dracula
 "*****************************************************************************
 "" Basic Setup
 "*****************************************************************************"
+" deoplete tab completion
+" https://github.com/Shougo/deoplete.nvim/issues/542
+" set completeopt+=noinsert
+
+" NCM tab completion
+" https://github.com/roxma/nvim-completion-manager/blob/master/doc/nvim-completion-manager.txt
+" inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+" inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
 set nofoldenable "I do not like automatic folding
 
@@ -150,6 +161,9 @@ ino {<CR> {<CR>}<ESC>O
 ino {;<CR> {<CR>};<ESC>O
 ino {,<CR> {<CR>},<ESC>O
 
+" from https://github.com/LukeSmithxyz/voidrice/tree/6c6b33635a204a339868e00a18a63547954cbf3c
+" watch https://www.youtube.com/watch?v=hvc-pHjbhdE&t=262s
+autocmd BufRead,BufNewFile /tmp/calcurse*,~/.calcurse/notes/* set filetype=markdown
 
 let g:pandoc#modules#disabled = ["folding", "spell"]
 let g:pandoc#syntax#conceal#blacklist = ["codeblock_start", "codeblock_delim"]
@@ -327,6 +341,10 @@ let g:session_command_aliases = 1
 let g:rout_follow_colorscheme = 1
 " R commands in R output are highlighted
 let g:Rout_more_colors = 1
+" always equal vertical split
+autocmd BufNew * wincmd =
+let R_min_editor_width = 20
+" let R_rconsole_width = winwidth(0) / 2
 
 syntax on
 set ruler
@@ -475,9 +493,10 @@ noremap <Leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
 noremap <Leader>te :tabe <C-R>=expand("%:p:h") . "/" <CR>
 
 " snippets
+" see http://vimcasts.org/episodes/meet-ultisnips/
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
-let g:UltiSnipsJumpBackwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 let g:UltiSnipsEditSplit="vertical"
 
 " Disable visualbell
