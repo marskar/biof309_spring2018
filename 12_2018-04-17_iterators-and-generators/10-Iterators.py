@@ -189,6 +189,10 @@ is_even = lambda x: x % 2 == 0
 for val in filter(is_even, range(10)):
     print(val, end=' ')
 
+#Another example
+number_list = range(-5, 5)
+less_than_zero = list(filter(lambda x: x < 0, number_list))
+print(less_than_zero)
 
 # The ``map`` and ``filter`` functions, along with the ``reduce`` function (which lives in Python's ``functools`` module) are fundamental components of the *functional programming* style, which, while not a dominant programming style in the Python world, has its outspoken proponents (see, for example, the [pytoolz](https://toolz.readthedocs.org/en/latest/) library).
 
