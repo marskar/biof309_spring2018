@@ -1,5 +1,4 @@
 # Iterators and Generators
-## Martin
 ### 4-17-2018
 
 # Class Outline
