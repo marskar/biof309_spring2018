@@ -77,7 +77,7 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 " Plug 'kien/ctrlp.vim'
 " Plug 'godlygeek/tabular'
 " Plug 'sjl/gundo.vim'
-" Plug 'terryma/vim-multiple-cursors'
+Plug 'terryma/vim-multiple-cursors'
 " discussed here: https://www.oliversherouse.com/2017/08/21/vim_zero.html
 " Plug 'lifepillar/vim-mucomplete'
 " Plug 'chiel92/vim-autoformat'
@@ -344,6 +344,7 @@ let g:Rout_more_colors = 1
 " always equal vertical split
 autocmd BufNew * wincmd =
 let R_min_editor_width = 20
+let cmdline_vsplit      = 1
 " let R_rconsole_width = winwidth(0) / 2
 
 syntax on
