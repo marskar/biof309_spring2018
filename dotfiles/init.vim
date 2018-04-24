@@ -76,7 +76,6 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 " Plug 'tommcdo/vim-exchange'
 " Plug 'kien/ctrlp.vim'
 " Plug 'godlygeek/tabular'
-" Plug 'sjl/gundo.vim'
 Plug 'terryma/vim-multiple-cursors'
 " discussed here: https://www.oliversherouse.com/2017/08/21/vim_zero.html
 " Plug 'lifepillar/vim-mucomplete'
@@ -84,9 +83,12 @@ Plug 'terryma/vim-multiple-cursors'
 " Plug 'flazz/vim-colorschemes'
 " Plug 'jiangmiao/auto-pairs'
 
-" citation tools
-" Plug 'shougo/unite.vim'
-" Plug 'rafaqz/citation.vim'
+" Replacing gundo because mundo works with neovim
+" gundo vimcast: http://vimcasts.org/episodes/undo-branching-and-gundo-vim/
+Plug 'simnalamburt/vim-mundo'
+
+" http://www.rushiagr.com/blog/2016/06/17/you-dont-need-vim-swap-files-and-how-to-get-rid-of-them/
+Plug '907th/vim-auto-save'
 
 " vim-bootstrap plugins
 " Plug 'scrooloose/nerdtree'
@@ -150,6 +152,28 @@ set nofoldenable "I do not like automatic folding
 
 let g:pandoc_bibfiles = ['~/gdrive/nhanes/bib/nhanes.bib']
 
+" From https://github.com/simnalamburt/vim-mundo/blob/master/doc/mundo.txt
+nnoremap <F5> :MundoToggle<CR>
+let g:mundo_verbose_graph=0
+
+" Autosave setting 
+" http://www.rushiagr.com/blog/2016/06/17/you-dont-need-vim-swap-files-and-how-to-get-rid-of-them/
+" Enable autosave plugin
+let g:auto_save = 1  " enable AutoSave on Vim startup
+" Only save in Normal mode periodically. If the value is changed to '1',
+" then changes are saved when you are in Insert mode too, as you type, but
+" I would say prefer not save in Insert mode
+let g:auto_save_in_insert_mode = 0
+" Silently autosave. If you disable this option by changing value to '0',
+" then in the vim status, it will display "(AutoSaved at <current time>)" all
+" the time, which might get annoying
+let g:auto_save_silent = 0
+" And now turn Vim swapfile off
+set noswapfile
+set nobackup
+
+" let g:auto_save_write_all_buffers = 1  " write all open buffers as if you would use :wa
+
 " vanilla vim autopairs replacement
 " https://stackoverflow.com/questions/21316727/automatic-closing-brackets-for-vim
 ino " ""<left>
@@ -196,9 +220,9 @@ else
   let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 endif
 
-" Underline the line the cursor is on
-set cursorline
-set cursorcolumn
+" Underline the line/column the cursor is on
+" set cursorline
+" set cursorcolumn
 
 " (In times of great desperation) allow use of the mouse
 set mouse=a
@@ -314,10 +338,6 @@ let mapleader=' '
 "" Enable hidden buffers
 set hidden " Allow background buffers without saving
 
-"" Directories for swp files
-set nobackup
-set noswapfile
-
 set fileformats=unix,dos,mac
 
 if exists('$SHELL')
@@ -410,11 +430,15 @@ augroup END
 "*****************************************************************************
 "" Mappings
 "*****************************************************************************
+" Keyboard shortcuts for <- -> and other operators in R specific files
 " https://github.com/jalvesaq/Nvim-R/issues/85
-" The trailing spaces below is intentional!
-autocmd FileType r inoremap <buffer> <A-m> <Esc>:normal! a %>%<CR>a<CR>
-autocmd FileType rnoweb inoremap <buffer> <A-m> <Esc>:normal! a %>%<CR>a<CR>
-autocmd FileType rmd inoremap <buffer> <A-m> <Esc>:normal! a %>%<CR>a<CR>
+" The trailing spaces below are intentional!
+autocmd FileType r inoremap <buffer> <A-n> <Esc>:normal! a %>%<CR>a<CR>
+autocmd FileType rnoweb inoremap <buffer> <A-n> <Esc>:normal! a %>%<CR>a<CR>
+autocmd FileType rmd inoremap <buffer> <A-n> <Esc>:normal! a %>%<CR>a<CR>
+autocmd FileType r inoremap <buffer> <A-m> <Esc>:normal! a %>%<CR>a 
+autocmd FileType rnoweb inoremap <buffer> <A-m> <Esc>:normal! a %>%<CR>a 
+autocmd FileType rmd inoremap <buffer> <A-m> <Esc>:normal! a %>%<CR>a 
 autocmd FileType r inoremap <buffer> <A-i> <Esc>:normal! a %in%<CR>a 
 autocmd FileType rnoweb inoremap <buffer> <A-i> <Esc>:normal! a %in%<CR>a 
 autocmd FileType rmd inoremap <buffer> <A-i> <Esc>:normal! a %in%<CR>a 
