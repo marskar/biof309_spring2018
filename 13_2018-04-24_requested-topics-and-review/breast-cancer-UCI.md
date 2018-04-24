@@ -11,7 +11,7 @@ toc-title: Overview
 - Presenting the _Wisconsin Breast Cancer_ dataset
 
 # Data Description
-- I obtained the Cervical Cancer dataset from [the UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/breast+cancer+wisconsin+(original\))
+- I obtained the Cervical Cancer dataset from [the UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/breast+cancer+wisconsin+(original))
 - Number of observations: `569`
 - Number of features: `32`
 - Number of target variables: `1`
