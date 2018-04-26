@@ -148,7 +148,8 @@ color dracula
 " inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 " inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
-set nofoldenable "I do not like automatic folding
+
+"set nofoldenable "I do not like automatic folding
 
 let g:pandoc_bibfiles = ['~/gdrive/nhanes/bib/nhanes.bib']
 
