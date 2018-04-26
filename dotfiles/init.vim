@@ -189,7 +189,7 @@ ino {,<CR> {<CR>},<ESC>O
 " watch https://www.youtube.com/watch?v=hvc-pHjbhdE&t=262s
 autocmd BufRead,BufNewFile /tmp/calcurse*,~/.calcurse/notes/* set filetype=markdown
 
-let g:pandoc#modules#disabled = ["folding", "spell"]
+" let g:pandoc#modules#disabled = ["folding", "spell"]
 let g:pandoc#syntax#conceal#blacklist = ["codeblock_start", "codeblock_delim"]
 
 "If you want to use vim-pandoc-syntax without vim-pandoc, you'll need to tell Vim to load it for certain files. Just add something like this to your vimrc:
