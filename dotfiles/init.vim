@@ -148,8 +148,8 @@ color dracula
 " inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 " inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
-
-"set nofoldenable "I do not like automatic folding
+" set foldmethod=manual
+" set nofoldenable "I do not like automatic folding
 
 let g:pandoc_bibfiles = ['~/gdrive/nhanes/bib/nhanes.bib']
 
@@ -190,7 +190,7 @@ ino {,<CR> {<CR>},<ESC>O
 " watch https://www.youtube.com/watch?v=hvc-pHjbhdE&t=262s
 autocmd BufRead,BufNewFile /tmp/calcurse*,~/.calcurse/notes/* set filetype=markdown
 
-" let g:pandoc#modules#disabled = ["folding", "spell"]
+let g:pandoc#modules#disabled = ["folding"]
 let g:pandoc#syntax#conceal#blacklist = ["codeblock_start", "codeblock_delim"]
 
 "If you want to use vim-pandoc-syntax without vim-pandoc, you'll need to tell Vim to load it for certain files. Just add something like this to your vimrc:
@@ -463,12 +463,13 @@ let R_assign_map = "<A-,>"
 " let R_rconsole_width = 1000
 
 " show arguments for functions during omnicompletion
-" let R_show_args = 1
+let R_show_args = 1
 
 " Don't expand a dataframe to show columns by default
 " let R_objbr_opendf = 0
 
 " https://www.oliversherouse.com/2017/08/21/vim_zero.html
+" there do not work with my Keyboard setup: https://github.com/jasonrudolph/keyboard
 nnoremap <C-H> :bp <enter>
 nnoremap <C-L> :bn <enter>
 nnoremap <Leader>w :w <enter>
@@ -555,7 +556,7 @@ noremap <leader>w :bn<CR>
 "" Close buffer
 noremap <leader>c :bd<CR>
 
-"" Clean search (highlight)
+"" Clear search (highlight)
 nnoremap <silent> <leader><space> :noh<cr>
 
 "" Switching windows
@@ -586,7 +587,7 @@ augroup END
 
 "" Autocompletion
 " https://www.oliversherouse.com/2017/08/21/vim_zero.html
-set completeopt=menuone,noinsert,noselect
+set completeopt=menuone,longest
 set shortmess+=c " Turn off completion messages
 
 " let g:mucomplete#enable_auto_at_startup = 1 
